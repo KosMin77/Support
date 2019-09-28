@@ -1,0 +1,31 @@
+//-
+    name: choice
+    description: Markup for the choice block
+    arguments:
+        - {object} props - block properties
+
+mixin choice(data = {})
+    .choice&attributes(attributes)
+        .container
+            .row
+                .col-md-6
+                    h1.choice__title=data.title
+                .col-md-6
+                    .row
+                        .col-md-4
+                            img.choice__plane(src="../../img/Shape.png", alt="alt")
+                        .col-md-8
+                            img.choice__path(src="../../img/Path_2.png", alt="alt")
+            .row
+                .col-md-7
+                    input(type="checkbox", name="")
+                    input(type="checkbox", name="")
+                    a.choice__btn(href="dovidka.in.ua/choice")
+                        p.btn__descr=data.btn
+                .col-md-5
+                    .row
+                        .col-md-8
+                            img.choice__man(src="../../img/business-presentation-2253131_1920.png", alt="alt")
+                        .col-md-4
+                            img.choice__build(src="../../img/Shape (1).png", alt="alt")
+                            img.choice__dot(src="../../img/Oval_Copy_2.png", alt="alt")

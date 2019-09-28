@@ -1,0 +1,15 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "base";
+
+// TODO: include third-party styles
+@import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+
+@import "../blocks/common/page/page.scss";
+@import "../blocks/home/home.scss";
+
+// TODO: include other block styles

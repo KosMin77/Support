@@ -1,0 +1,10 @@
+extends ../layouts/base.pug
+
+
+//- TODO: include page-specific block templates
+include ../../blocks/choice/choice.pug
+
+block page
+    //- TODO: add code
+    +choice(data.choice)
+    //- +info(data.info)
