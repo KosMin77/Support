@@ -1,6 +1,8 @@
 dist/
 node_modules/
 package-lock.json
+README.md
+docs/
 
 # ignore auto-generated files
 src/blocks/icon/icon.scss
