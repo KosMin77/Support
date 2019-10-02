@@ -34,6 +34,17 @@
  */
 function initBlock() {
     // TODO: add code here
+
+    $(document).ready(function () {
+        $('.info__slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
+          });
+    })
+    
     return true;
 }
 

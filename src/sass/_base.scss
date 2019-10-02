@@ -77,3 +77,56 @@ body {
 img {
     max-width: 100%;
 }
+
+.info__wrapp{
+    background-position: center;
+    width: 1120px;
+    height: 704px;
+    margin-top: 110px;
+    margin-left: 0px;
+    margin-right: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.info__title{
+    height: 24px;
+    color: #000000;
+    font-family: "Helvetica";
+    font-size: 22px;
+    font-weight: 700;
+    padding-top: 140px;
+    padding-left: 120px;
+}
+
+input, label {
+    margin-left: 100px;
+}
+
+input{
+    margin-bottom: 15px;
+    width: 236px;
+    height: 40px;
+    box-shadow: 0 0 6px rgba(224, 224, 224, 0.5);
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+}
+::placeholder{
+    padding-left: 12px;
+    color: #767676;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.slick-dots > li{
+    display: flex;
+    justify-content: center;
+    border-radius: 50% !important;
+
+}
+.slick-slide{
+    width: 1440px;
+    background-position:center;
+}

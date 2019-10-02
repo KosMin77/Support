@@ -76,6 +76,96 @@ img {
   max-width: 100%;
 }
 
+.info__wrapp {
+  background-position: center;
+  width: 1120px;
+  height: 704px;
+  margin-top: 110px;
+  margin-left: 0px;
+  margin-right: 0px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.info__title {
+  height: 24px;
+  color: #000000;
+  font-family: "Helvetica";
+  font-size: 22px;
+  font-weight: 700;
+  padding-top: 140px;
+  padding-left: 120px;
+}
+
+input, label {
+  margin-left: 100px;
+}
+
+input {
+  margin-bottom: 15px;
+  width: 236px;
+  height: 40px;
+  box-shadow: 0 0 6px rgba(224, 224, 224, 0.5);
+  border-radius: 3px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+}
+
+::-webkit-input-placeholder {
+  padding-left: 12px;
+  color: #767676;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+::-moz-placeholder {
+  padding-left: 12px;
+  color: #767676;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+:-ms-input-placeholder {
+  padding-left: 12px;
+  color: #767676;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+::-ms-input-placeholder {
+  padding-left: 12px;
+  color: #767676;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+::placeholder {
+  padding-left: 12px;
+  color: #767676;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.slick-dots > li {
+  display: flex;
+  justify-content: center;
+  border-radius: 50% !important;
+}
+
+.slick-slide {
+  width: 1440px;
+  background-position: center;
+}
+
 /*!
  * Bootstrap Grid v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -6975,48 +7065,188 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /**
- * Styles for the choice block.
+ * Styles for the info block.
  */
-.choice__firstSlide {
+.info__secondPage {
   background-image: url(../../img/page2/5-layers.png);
-  background-position: center;
-  width: 1120px;
-  height: 704px;
-  margin-top: 110px;
-  margin-left: 60px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.choice__title {
-  height: 24px;
-  color: #000000;
-  font-family: "Helvetica";
-  font-size: 22px;
-  font-weight: 700;
-  padding-top: 160px;
-  padding-left: 120px;
-}
-
-.choice__form {
+.info__radio {
   display: flex;
   flex-direction: column;
   margin-top: 120px;
-  margin-left: 120px;
 }
 
-.choice__descr {
+.info #first, .info #second {
+  margin-left: 100px;
+  size: 12px;
+  height: auto;
+  width: auto;
+}
+
+.info__choice {
   height: 18px;
   color: #000000;
   font-family: "Helvetica";
   font-size: 16px;
+  margin-left: 0;
+  margin-top: 0;
 }
 
-.choice__upper {
+.info__passport, .info__idPass, .info__pasNumb {
+  margin-left: 120px;
+}
+
+.info__upper {
   margin-top: 5px;
 }
 
-.choice__lower {
+.info__lower {
   margin-top: 60px;
+}
+
+.info__thirdPage {
+  background-image: url(../../img/page3/thirdPage.png);
+  position: relative;
+}
+
+.info #info__form {
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.info__fio {
+  width: 21px;
+  height: 13px;
+  color: #010000;
+  font-family: Helvetica;
+  font-size: 12px;
+  font-weight: 700;
+  margin-left: 120px;
+}
+
+.info__names {
+  width: 29px;
+  height: 15px;
+  color: #767676;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.info__descr {
+  width: 251px;
+  height: 12px;
+  color: #3a9acd;
+  font-family: Helvetica;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-left: 110px;
+  margin-top: 20px;
+}
+
+.info__fourthPage {
+  background-image: url(../../img/page4/2-layers.png);
+}
+
+.info__fifthPage {
+  background-image: url(../../img/page5/5-layers.png);
+}
+
+.info__contactPage {
+  background-image: url(../../img/page6/contactPage.png);
+}
+
+.info__contactTitle {
+  height: 24px;
+  color: #000000;
+  font-family: Helvetica;
+  font-size: 22px;
+  font-weight: 700;
+  margin-left: 100px;
+  padding-top: 150px;
+  margin-bottom: 60px;
+}
+
+.info__phone, .info__email {
+  height: 16px;
+  color: #767676;
+  font-family: "PT Sans Caption";
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.26px;
+  margin-bottom: 10px;
+}
+
+.info__contact {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.info__adress {
+  color: #030000;
+  font-family: Helvetica;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: 120px;
+}
+
+.info #phone, .info #email {
+  width: 45%;
+  height: 40px;
+  margin-top: 15px;
+}
+
+.info__payPage {
+  background-image: url(../../img/page7/Path_2.png);
+}
+
+.info__payTitle {
+  height: 24px;
+  color: #000000;
+  font-family: Helvetica;
+  font-size: 22px;
+  font-weight: 700;
+  padding-top: 140px;
+  margin-left: 120px;
+}
+
+.info__paySubtitle {
+  height: 18px;
+  color: #000000;
+  font-family: Helvetica;
+  font-size: 16px;
+  margin-top: 100px;
+  margin-left: 120px;
+}
+
+.info__wait {
+  width: 181px;
+  height: 39px;
+  color: #000000;
+  font-family: Helvetica;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.info__lastPageDescr {
+  width: 570px;
+  height: 184px;
+  color: #000000;
+  font-family: Helvetica;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+/**
+ * Styles for the last block.
+ */
+.last__rocket {
+  margin-left: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */

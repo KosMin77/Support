@@ -4,5 +4,73 @@
     arguments:
         - {object} props - block properties
 
-mixin info(props = {})
+mixin info(data = {})
     .info&attributes(attributes)
+        .container
+            .info__slider
+                .info__wrapp.info__secondPage
+                    h1.info__title=data.title
+                    form.info__radio(action="mailto:", enctype="text/plain")
+                        .col-md-6.info__upper
+                            input(type="radio", id="first", name="rad", value="1" checked="checked" data-waschecked="true")
+                            label.info__choice(for="first")=data.first
+                        .col-md-6.info__lower
+                            input(type="radio",id="second" name="rad", value="2")
+                            label.info__choice(for="second")=data.second
+                
+                .info__wrapp.info__thirdPage
+                    h1.info__title=data.fillTitle
+                    form#info__form(action="mailto:", enctype="text/plain")
+                    label.info__fio(for="#info__form")=data.fio
+                        .col-md-4
+                            input#info__name(type="name", placeholder=data.name required)
+                            input#info__lastName(type="name", placeholder=data.lastName required)
+                            input#info__middleName(type="name", placeholder=data.middleName required)
+                    p.info__descr=data.descr
+                        .col-md-4.
+                        .col-md-4
+
+                .info__wrapp.info__fourthPage
+                    h1.info__title=data.fillTitle
+                    form#info__form(action="mailto:", enctype="text/plain")
+                    label.info__passport(for="#info__form")=data.passport
+                        .col-md-4.info__upper
+                            input#info__series(type="name", placeholder=data.series required)
+                            input#info__numb(type="name", placeholder=data.numb required)
+                            input#info__ssn(type="name", placeholder=data.ssn required)
+                    label.info__idPass(for="#info__idPass")=data.idPass
+                    form#info__idPass(action="mailto:", enctype="text/plain")
+                        input#info__pasNumb(type="name", placeholder=data.passNumb required)
+                    p.info__descr=data.descr
+                        .col-md-4.
+                        .col-md-4
+                    
+                .info__wrapp.info__fifthPage
+                    h1.info__title=data.fillTitle
+                    form#info__form(action="mailto:", enctype="text/plain")
+                    label.info__adress(for="#info__form")=data.adress
+                        .col-md-4
+                            input#info__city(type="name", placeholder=data.city required)
+                            input#info__region(type="name", placeholder=data.region required)
+                            input#info__locality(type="name", placeholder=data.locality required)
+                            input#info__street(type="name", placeholder=data.street required)
+                            input#info__houseNumb(type="name", placeholder=data.houseNumb required)
+                            input#info__houseblock(type="name", placeholder=data.houseblock required)
+                    p.info__descr=data.descr
+                        .col-md-4
+                        .col-md-4
+
+                .info__wrapp.info__contactPage
+                    h1.info__contactTitle=data.contactTitle
+                    .row
+                        .col-md-6
+                            form.info__contact(action="mailto:", enctype="text/plain")
+                                label.info__phone(for="#phone")=data.phone
+                                input#phone(type="number", name="", placeholder=data.number)
+                            form.info__contact(action="mailto:", enctype="text/plain")
+                                label.info__email(for="#email")=data.email
+                                input#email(type="email", name="", placeholder=data.examp)
+                        .col-md-6
+                .info__wrapp.info__payPage
+                    h1.info__payTitle=data.payTitle
+                    p.info__paySubtitle=data.paySubtitle

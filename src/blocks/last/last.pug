@@ -1,0 +1,17 @@
+//-
+    name: last
+    description: Markup for the last block
+    arguments:
+        - {object} props - block properties
+
+mixin last(data = {})
+    .last&attributes(attributes)
+        .container-fluid
+            .row
+                .col-md-6
+                .col-md-6
+                    p.info__lastPageDescr=data.subtitle
+                    h1.info__wait=data.wait
+                    p.info__advice=data.advice
+                    span=data.mail
+            img.info__rocket(src="../../img/lastPage/2-layers.png", alt="alt")

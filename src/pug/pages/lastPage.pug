@@ -2,9 +2,8 @@ extends ../layouts/base.pug
 
 
 //- TODO: include page-specific block templates
-include ../../blocks/choice/choice.pug
+include ../../blocks/last/last.pug
 
 block page
     //- TODO: add code
-    +choice(data.choice)
-    //- +info(data.info)
+    +last(data.last)
