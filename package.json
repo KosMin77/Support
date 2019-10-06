@@ -64,6 +64,7 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.0",
+    "jquery-mask-plugin": "^1.14.16",
     "slick-carousel": "^1.8.1",
     "svg4everybody": "^2.1.9"
   }

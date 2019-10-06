@@ -16,21 +16,26 @@
 
     // BEM elements
     // TODO: add code
-    &__secondPage{
-        background-image: url(../../img/page2/5-layers.png); 
+    &__secondPage {
+        background-image: url(../../img/page2/5-layers.png);
     }
+
     &__radio {
         display: flex;
         flex-direction: column;
         margin-top: 120px;
     }
-    #first, #second{
+
+    #first,
+    #second {
         margin-left: 100px;
-        size: 12px;
+        width: 5px;
+        height: 5px;
         height: auto;
         width: auto;
     }
-    &__choice{
+
+    &__choice {
         height: 18px;
         color: #000000;
         font-family: "Helvetica";
@@ -38,25 +43,51 @@
         margin-left: 0;
         margin-top: 0;
     }
-    &__passport, &__idPass, &__pasNumb{
+
+    &__passport,
+    &__idPass {
         margin-left: 120px;
     }
+
     &__upper {
         margin-top: 5px;
+        display: flex;
     }
+
     &__lower {
         margin-top: 60px;
     }
 
-    &__thirdPage{
+    #info__pasNumb {
+        margin-left: 116px;
+    }
+
+    #info__series {
+        width: 70px;
+        height: 40px;
+    }
+
+    &__thirdPage {
         background-image: url(../../img/page3/thirdPage.png);
         position: relative;
     }
-    #info__form{
+
+    #info__ssn {
+        margin-left: 115px;
+    }
+
+    #info__form {
         margin-top: 100px;
         margin-left: 100px;
     }
-    &__fio{
+
+    #info__numb {
+        width: 152px;
+        height: 40px;
+        margin-left: 15px;
+    }
+
+    &__fio {
         width: 21px;
         height: 13px;
         color: #010000;
@@ -65,7 +96,8 @@
         font-weight: 700;
         margin-left: 120px;
     }
-    &__names{ 
+
+    &__names {
         width: 29px;
         height: 15px;
         color: #767676;
@@ -74,7 +106,8 @@
         font-weight: 700;
         letter-spacing: 0.5px;
     }
-    &__descr{
+
+    &__descr {
         width: 251px;
         height: 12px;
         color: #3a9acd;
@@ -85,18 +118,24 @@
         margin-left: 110px;
         margin-top: 20px;
     }
-    &__fourthPage{
+
+    &__fourthPage {
         background-image: url(../../img/page4/2-layers.png);
     }
 
-    &__fifthPage{
+    &__fifthPage {
         background-image: url(../../img/page5/5-layers.png);
     }
 
-    &__contactPage{
+    #info__location {
+        margin-top: 50px;
+    }
+
+    &__contactPage {
         background-image: url(../../img/page6/contactPage.png);
     }
-    &__contactTitle{
+
+    &__contactTitle {
         height: 24px;
         color: #000000;
         font-family: Helvetica;
@@ -106,7 +145,9 @@
         padding-top: 150px;
         margin-bottom: 60px;
     }
-    &__phone, &__email{
+
+    &__phone,
+    &__email {
         height: 16px;
         color: #767676;
         font-family: "PT Sans Caption";
@@ -115,12 +156,14 @@
         letter-spacing: 0.26px;
         margin-bottom: 10px;
     }
-    &__contact{
+
+    &__contact {
         display: flex;
         flex-direction: column;
         margin-top: 20px;
     }
-    &__adress{
+
+    &__adress {
         color: #030000;
         font-family: Helvetica;
         font-size: 12px;
@@ -128,16 +171,19 @@
         text-transform: uppercase;
         margin-left: 120px;
     }
-    #phone, #email{
+
+    #phone,
+    #email {
         width: 45%;
         height: 40px;
         margin-top: 15px;
     }
 
-    &__payPage{
+    &__payPage {
         background-image: url(../../img/page7/Path_2.png);
     }
-    &__payTitle{
+
+    &__payTitle {
         height: 24px;
         color: #000000;
         font-family: Helvetica;
@@ -146,7 +192,8 @@
         padding-top: 140px;
         margin-left: 120px;
     }
-    &__paySubtitle{
+
+    &__paySubtitle {
         height: 18px;
         color: #000000;
         font-family: Helvetica;
@@ -155,7 +202,7 @@
         margin-left: 120px;
     }
 
-    &__wait{
+    &__wait {
         width: 181px;
         height: 39px;
         color: #000000;
@@ -163,7 +210,8 @@
         font-size: 36px;
         font-weight: 700;
     }
-    &__lastPageDescr{
+
+    &__lastPageDescr {
         width: 570px;
         height: 184px;
         color: #000000;
@@ -171,6 +219,7 @@
         font-size: 36px;
         line-height: 46px;
     }
+
     // Bem modifiers
     // TODO: add code
 }

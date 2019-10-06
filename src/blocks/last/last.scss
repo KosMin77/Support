@@ -2,6 +2,7 @@
  * Styles for the last block.
  */
 .last {
+
     // Selector styles
     // TODO: add code
 
@@ -16,9 +17,61 @@
 
     // BEM elements
     // TODO: add code
-    &__rocket{
-        margin-left: 100px;
+    &__lastPageDescr {
+        width: 570px;
+        height: 179px;
+        color: #000000;
+        font-family: Helvetica;
+        font-size: 36px;
+        line-height: 46px;
+        margin-top: 300px;
+        margin-left: 150px;
     }
+
+    &__wait {
+        width: 181px;
+        height: 39px;
+        color: #000000;
+        font-family: Helvetica;
+        font-size: 36px;
+        font-weight: 700;
+        margin-top: 80px;
+        margin-bottom: 300px;
+        margin-left: 150px;
+
+    }
+
+    &__advice {
+        width: 604px;
+        height: 22px;
+        color: #000000;
+        font-family: Helvetica;
+        font-size: 20px;
+    }
+
+    &__footer {
+        position: relative;
+        display: flex;
+        left: -100px;
+    }
+
+    &__mail {
+        width: 293px;
+        height: 22px;
+        color: #000000;
+        font-family: Helvetica;
+        font-size: 20px;
+        font-weight: 700;
+        margin-left: 20px;
+    }
+
+    &__rocket {
+        position: absolute;
+        top: 530px;
+        left: 0px;
+
+    }
+
     // Bem modifiers
     // TODO: add code
 }

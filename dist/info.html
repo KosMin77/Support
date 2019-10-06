@@ -13,9 +13,9 @@
     <div class="info">
         <div class="container">
             <div class="info__slider">
-                <div class="info__wrapp info__secondPage">
+                <div class="info__secondPage" id="info__slide">
                     <h1 class="info__title">Оберіть яка саме довідка вам потрібна на рухоме / нерухоме майно:</h1>
-                    <form class="info__radio" action="mailto:" enctype="text/plain">
+                    <form class="info__radio" action="mailto:min4enkokonstantin@gmail.com" enctype="text/plain">
                         <div class="col-md-6 info__upper">
                             <input type="radio" id="first" name="rad" value="1" checked="checked" data-waschecked="true" />
                             <label class="info__choice" for="first">Довідка з державного реєстру нерухомого майна</label>
@@ -25,72 +25,90 @@
                             <label class="info__choice" for="second">Довідка з державного реєстру рухомого майна</label>
                         </div>
                     </form>
+                    <button class="btn slick-next btn-next" type="button">ДАЛІ</button>
                 </div>
-                <div class="info__wrapp info__thirdPage">
+                <div class="info__thirdPage" id="info__slide">
                     <h1 class="info__title">Заповніть дані для отримання довідки:</h1>
-                    <form id="info__form" action="mailto:" enctype="text/plain"></form>
-                    <label class="info__fio" for="#info__form">ПІП<div class="col-md-4">
-                            <input id="info__name" type="name" placeholder="Ім’я" required="required" />
-                            <input id="info__lastName" type="name" placeholder="Прізвище" required="required" />
-                            <input id="info__middleName" type="name" placeholder="По батькові" required="required" />
-                        </div>
-                    </label>
-                    <p class="info__descr">*Дані повині бути введені державною мовою <div class="col-md-4"></div>
-                        <div class="col-md-4"></div>
-                    </p>
+                    <div class="col-md-6">
+                        <form id="info__form" action="mailto:help.dovidka.in.ua@gmail.com" enctype="text/plain"></form>
+                        <label class="info__fio" for="#info__form">ПІП<div class="col-md-4">
+                                <input type="name" id="info__name" placeholder="Ім’я" required="required" />
+                                <input type="name" id="info__lastName" placeholder="Прізвище" required="required" />
+                                <input type="name" id="info__middleName" placeholder="По батькові" required="required" />
+                            </div>
+                        </label>
+                        <p class="info__descr">*Дані повині бути введені державною мовою <div class="col-md-4"></div>
+                            <div class="col-md-4"></div>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <button class="btn slick-next btn-next" type="submit">ДАЛІ</button>
+                        <button class="btn slick-next btn-pass" type="button">ПРОПУСТИТИ</button>
+                        <button class="btn slick-prev" type="button">&larr;Назад</button>
+                    </div>
                 </div>
-                <div class="info__wrapp info__fourthPage">
+                <div class="info__fourthPage" id="info__slide">
                     <h1 class="info__title">Заповніть дані для отримання довідки:</h1>
-                    <form id="info__form" action="mailto:" enctype="text/plain"></form>
+                    <form action="mailto:help.dovidka.in.ua@gmail.com" id="info__form" enctype="text/plain"></form>
                     <label class="info__passport" for="#info__form">Паспорт<div class="col-md-4 info__upper">
-                            <input id="info__series" type="name" placeholder="Серія" required="required" />
-                            <input id="info__numb" type="name" placeholder="Номер" required="required" />
-                            <input id="info__ssn" type="name" placeholder="ІНН" required="required" />
+                            <input type="name" id="info__series" placeholder="Серія" required="required" />
+                            <input type="name" id="info__numb" placeholder="Номер" required="required" />
                         </div>
                     </label>
+                    <form action="mailto:help.dovidka.in.ua@gmail.com" id="ssn" enctype="text/plain">
+                        <input type="name" id="info__ssn" placeholder="ІНН" required="required" />
+                    </form>
                     <label class="info__idPass" for="#info__idPass">ID Паспорт</label>
-                    <form id="info__idPass" action="mailto:" enctype="text/plain">
-                        <input id="info__pasNumb" type="name" placeholder="Номер" required="required" />
+                    <form id="info__idPass" action="mailto:help.dovidka.in.ua@gmail.com" enctype="text/plain">
+                        <input type="name" id="info__pasNumb" placeholder="Номер" required="required" />
                     </form>
                     <p class="info__descr">*Дані повині бути введені державною мовою <div class="col-md-4"></div>
                         <div class="col-md-4"></div>
                     </p>
+                    <button class="btn slick-next btn-next" type="submit">ДАЛІ</button>
+                    <button class="btn slick-next btn-pass" type="button">ПРОПУСТИТИ</button>
+                    <button class="btn slick-prev" type="button">&larr;Назад</button>
                 </div>
-                <div class="info__wrapp info__fifthPage">
+                <div class="info__fifthPage" id="info__slide">
                     <h1 class="info__title">Заповніть дані для отримання довідки:</h1>
-                    <form id="info__form" action="mailto:" enctype="text/plain"></form>
-                    <label class="info__adress" for="#info__form">АДРЕСА<div class="col-md-4">
-                            <input id="info__city" type="name" placeholder="Місто" required="required" />
-                            <input id="info__region" type="name" placeholder="Область" required="required" />
-                            <input id="info__locality" type="name" placeholder="Населений пункт" required="required" />
-                            <input id="info__street" type="name" placeholder="Вулиця" required="required" />
-                            <input id="info__houseNumb" type="name" placeholder="№ Дім / кв" required="required" />
-                            <input id="info__houseblock" type="name" placeholder="Корпус" required="required" />
+                    <form action="mailto:help.dovidka.in.ua@gmail.com" enctype="text/plain" id="info__location"></form>
+                    <label class="info__adress" for="#info__location">АДРЕСА<div class="col-md-4">
+                            <input type="name" id="info__city" placeholder="Місто" required="required" />
+                            <input type="name" id="info__region" placeholder="Область" required="required" />
+                            <input type="name" id="info__locality" placeholder="Населений пункт" required="required" />
+                            <input type="name" id="info__street" placeholder="Вулиця" required="required" />
+                            <input type="name" id="info__houseNumb" placeholder="№ Дім / кв" required="required" />
+                            <input type="name" id="info__houseblock" placeholder="Корпус" required="required" />
                         </div>
                     </label>
                     <p class="info__descr">*Дані повині бути введені державною мовою <div class="col-md-4"></div>
                         <div class="col-md-4"></div>
                     </p>
+                    <button class="btn slick-next btn-next" type="submit">ДАЛІ</button>
+                    <button class="btn slick-prev" type="button">&larr;Назад</button>
                 </div>
-                <div class="info__wrapp info__contactPage">
+                <div class="info__contactPage" id="info__slide">
                     <h1 class="info__contactTitle">Оберіть спосіб отримання довідки:</h1>
                     <div class="row">
                         <div class="col-md-6">
-                            <form class="info__contact" action="mailto:" enctype="text/plain">
+                            <form class="info__contact" action="mailto:help.dovidka.in.ua@gmail.com" enctype="text/plain">
                                 <label class="info__phone" for="#phone">Telegram /Viber</label>
-                                <input id="phone" type="number" name="" placeholder="+38 (ххх) ххх хх хх" />
+                                <input type="text" id="phone" placeholder="+38 (ххх) ххх хх хх" required="required" />
                             </form>
-                            <form class="info__contact" action="mailto:" enctype="text/plain">
+                            <form class="info__contact" action="mailto:help.dovidka.in.ua@gmail.com" enctype="text/plain">
                                 <label class="info__email" for="#email">Адреса електронної пошти</label>
-                                <input id="email" type="email" name="" placeholder="@example.com" />
+                                <input type="email" id="email" placeholder="@example.com" required="required" />
                             </form>
                         </div>
-                        <div class="col-md-6"></div>
+                        <div class="col-md-6">
+                            <button class="btn slick-next btn-next" type="submit">ОТРИМАТИ</button>
+                        </div>
                     </div>
                 </div>
-                <div class="info__wrapp info__payPage">
+                <div class="info__payPage" id="info__slide">
                     <h1 class="info__payTitle">Оплатіть замовлення довідки та отримайте її на вашу пошту:</h1>
                     <p class="info__paySubtitle">Довідка з державного реєстру рухомого майна</p>
+                    <a class="slick-next btn-next btn-link" href="./lastPage.html">ОТРИМАТИ</a>
                 </div>
             </div>
         </div>
