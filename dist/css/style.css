@@ -1,11 +1,11 @@
 @font-face {
   font-family: Helvetica;
-  src: url(../fonts/Helvetica.ttf);
+  src: url(./fonts/Helvetica.ttf);
 }
 
 @font-face {
   font-family: 'Helvetica-light';
-  src: url(../fonts/Helvetica-Light.ttf);
+  src: url(./fonts/Helvetica-Light.ttf);
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/
