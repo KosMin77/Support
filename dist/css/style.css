@@ -7232,7 +7232,7 @@ a.text-dark:hover, a.text-dark:focus {
  * Styles for the info block.
  */
 .info__secondPage {
-  background-image: url(./img/page2/5-layers.png);
+  background-image: url(../img/page2/5-layers.png);
 }
 
 .info__radio {
@@ -7282,7 +7282,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .info__thirdPage {
-  background-image: url(./img/page3/thirdPage.png);
+  background-image: url(../img/page3/thirdPage.png);
   position: relative;
 }
 
@@ -7334,11 +7334,11 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .info__fourthPage {
-  background-image: url(./img/page4/2-layers.png);
+  background-image: url(../img/page4/2-layers.png);
 }
 
 .info__fifthPage {
-  background-image: url(./img/page5/5-layers.png);
+  background-image: url(../img/page5/5-layers.png);
 }
 
 .info #info__location {
@@ -7346,7 +7346,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .info__contactPage {
-  background-image: url(./img/page6/contactPage.png);
+  background-image: url(../img/page6/contactPage.png);
 }
 
 .info__contactTitle {
@@ -7393,7 +7393,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .info__payPage {
-  background-image: url(./img/page7/Path_2.png);
+  background-image: url(../img/page7/Path_2.png);
 }
 
 .info__payTitle {
