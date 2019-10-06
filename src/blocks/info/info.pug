@@ -11,10 +11,10 @@ mixin info(data = {})
                 #info__slide.info__firstSlide
                     h1.info__title=data.title
                     form.info__radio(action="mailto:help.dovidka.in.ua@gmail.com", enctype="text/plain")
-                        .col-md-6.info__upper
+                        .col-md-6.info__upperChoice
                             input(type="radio", id="first", name="rad", value="1" checked="checked" data-waschecked="true")
                             label.info__choice(for="first" )=data.first
-                        .col-md-6.info__lower
+                        .col-md-6.info__lowerChoice
                             input(type="radio",id="second" name="rad", value="2")
                             label.info__choice(for="second" )=data.second
                     button.btn(type="button", class="slick-next btn-next") ДАЛІ
@@ -25,11 +25,11 @@ mixin info(data = {})
                     h1.info__title=data.fillTitle
                     .col-md-6
                         p.info__fio=data.fio
-                        form#info__form(action="mailto:help.dovidka.in.ua@gmail.com", enctype="text/plain")
-                            .col-md-4
-                                input(type="name", id="info__name", placeholder=data.name required)
-                                input(type="name", id="info__lastName", placeholder=data.lastName required)
-                                input(type="name", id="info__middleName", placeholder=data.middleName required)
+                        .col-md-4
+                            form#info__form(action="mailto:help.dovidka.in.ua@gmail.com", enctype="text/plain")
+                                input(type="name", id="info__name", placeholder=data.name, required)
+                                input(type="name", id="info__lastName", placeholder=data.lastName, required)
+                                input(type="name", id="info__middleName", placeholder=data.middleName, required)
                         p.info__descr=data.descr
                             .col-md-4
                             .col-md-4

@@ -26,6 +26,16 @@
         margin-top: 120px;
     }
 
+    &__upperChoice {
+        margin-top: 5px;
+        display: flex;
+    }
+
+    &__lowerChoice {
+        margin-top: 60px;
+        display: flex;
+    }
+
     #first,
     #second {
         margin-left: 100px;
