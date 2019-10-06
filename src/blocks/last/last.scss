@@ -5,7 +5,7 @@
 
     // Selector styles
     // TODO: add code
-
+    overflow: hidden;
     // @media queries
     // TODO: add code
 
@@ -18,32 +18,27 @@
     // BEM elements
     // TODO: add code
     &__lastPageDescr {
-        width: 570px;
-        height: 179px;
+        width: 60%;
         color: #000000;
         font-family: Helvetica;
         font-size: 36px;
         line-height: 46px;
-        margin-top: 300px;
-        margin-left: 150px;
+        margin-top: 80px;
+        margin-left: 100px;
     }
 
     &__wait {
-        width: 181px;
-        height: 39px;
         color: #000000;
         font-family: Helvetica;
         font-size: 36px;
         font-weight: 700;
         margin-top: 80px;
-        margin-bottom: 300px;
-        margin-left: 150px;
+        margin-bottom: 200px;
+        margin-left: 100px;
 
     }
 
     &__advice {
-        width: 604px;
-        height: 22px;
         color: #000000;
         font-family: Helvetica;
         font-size: 20px;
@@ -52,7 +47,7 @@
     &__footer {
         position: relative;
         display: flex;
-        left: -100px;
+        left: -100;
     }
 
     &__mail {
@@ -67,7 +62,7 @@
 
     &__rocket {
         position: absolute;
-        top: 530px;
+        top: 228px;
         left: 0px;
 
     }
