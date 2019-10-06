@@ -182,9 +182,21 @@ img {
   padding-left: 120px;
 }
 
+.info__descr {
+  width: 251px;
+  height: 12px;
+  color: #3a9acd;
+  font-family: Helvetica;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-left: 100px;
+  margin-top: 5px;
+}
+
 input,
 label {
-  margin-left: 90px;
+  margin-left: -15px;
 }
 
 input {
@@ -281,7 +293,7 @@ input {
 
 .slick-prev {
   position: fixed;
-  left: 120px;
+  left: 115px;
   top: 630px;
   width: 65px;
   z-index: 1;
@@ -7234,7 +7246,7 @@ a.text-dark:hover, a.text-dark:focus {
 /**
  * Styles for the info block.
  */
-.info__secondPage {
+.info__firstSlide {
   background-image: url(../img/page2/5-layers.png);
 }
 
@@ -7260,47 +7272,9 @@ a.text-dark:hover, a.text-dark:focus {
   margin-top: 0;
 }
 
-.info__passport, .info__idPass {
-  margin-left: 120px;
-}
-
-.info__upper {
-  margin-top: 5px;
-  display: flex;
-  margin-left: 10px;
-}
-
-.info__lower {
-  margin-top: 60px;
-}
-
-.info #info__pasNumb {
-  margin-left: 116px;
-}
-
-.info #info__series {
-  width: 70px;
-  height: 40px;
-}
-
-.info__thirdPage {
+.info__secondSlide {
   background-image: url(../img/page3/thirdPage.png);
   position: relative;
-}
-
-.info #info__ssn {
-  margin-left: 115px;
-}
-
-.info #info__form {
-  margin-top: 100px;
-  margin-left: 100px;
-}
-
-.info #info__numb {
-  width: 152px;
-  height: 40px;
-  margin-left: 15px;
 }
 
 .info__fio {
@@ -7310,44 +7284,83 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: Helvetica;
   font-size: 12px;
   font-weight: 700;
-  margin-left: 110px;
+  margin-left: 105px;
+  margin-top: 62px;
 }
 
-.info__names {
-  width: 29px;
-  height: 15px;
-  color: #767676;
-  font-family: Helvetica;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-
-.info__descr {
-  width: 251px;
-  height: 12px;
-  color: #3a9acd;
-  font-family: Helvetica;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  margin-left: 110px;
-  margin-top: 20px;
-}
-
-.info__fourthPage {
+.info__thirdSlide {
   background-image: url(../img/page4/2-layers.png);
 }
 
-.info__fifthPage {
+.info__passport {
+  margin-left: 120px;
+  margin-top: 62px;
+}
+
+.info__idPass {
+  margin-top: 15px;
+  margin-left: 120px;
+}
+
+.info__upper {
+  margin-top: 5px;
+  display: flex;
+}
+
+.info__lower {
+  margin-top: 60px;
+  display: flex;
+}
+
+.info #info__pasNumb {
+  margin-left: 116px;
+}
+
+.info #info__series {
+  width: 70px;
+  height: 40px;
+  margin-left: 0px;
+}
+
+.info #info__numb {
+  width: 152px;
+  height: 40px;
+  margin-left: 15px;
+}
+
+.info #info__ssn {
+  margin-left: 115px;
+}
+
+.info #info__form {
+  margin-top: 17px;
+  margin-left: 100px;
+}
+
+.info__descr {
+  margin-left: 115px;
+}
+
+.info__fourthSlide {
   background-image: url(../img/page5/5-layers.png);
 }
 
-.info #info__location {
-  margin-top: 50px;
+.info__adress {
+  margin-top: 62px;
+  color: #030000;
+  font-family: Helvetica;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: 118px;
 }
 
-.info__contactPage {
+.info #info__location {
+  margin-top: 15px;
+  margin-left: 115px;
+}
+
+.info__fifthSlide {
   background-image: url(../img/page6/contactPage.png);
 }
 
@@ -7357,13 +7370,12 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: Helvetica;
   font-size: 22px;
   font-weight: 700;
-  margin-left: 100px;
+  margin-left: 115px;
   padding-top: 150px;
   margin-bottom: 60px;
 }
 
 .info__phone, .info__email {
-  height: 16px;
   color: #767676;
   font-family: "PT Sans Caption";
   font-size: 16px;
@@ -7376,15 +7388,7 @@ a.text-dark:hover, a.text-dark:focus {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-}
-
-.info__adress {
-  color: #030000;
-  font-family: Helvetica;
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-left: 120px;
+  margin-left: 115px;
 }
 
 .info #phone,
@@ -7392,9 +7396,10 @@ a.text-dark:hover, a.text-dark:focus {
   width: 45%;
   height: 40px;
   margin-top: 15px;
+  margin-left: 0;
 }
 
-.info__payPage {
+.info__sixthSlide {
   background-image: url(../img/page7/Path_2.png);
 }
 
@@ -7415,24 +7420,6 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 16px;
   margin-top: 100px;
   margin-left: 120px;
-}
-
-.info__wait {
-  width: 181px;
-  height: 39px;
-  color: #000000;
-  font-family: Helvetica;
-  font-size: 36px;
-  font-weight: 700;
-}
-
-.info__lastPageDescr {
-  width: 570px;
-  height: 184px;
-  color: #000000;
-  font-family: Helvetica;
-  font-size: 36px;
-  line-height: 46px;
 }
 
 /**

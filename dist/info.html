@@ -13,7 +13,7 @@
     <div class="info">
         <div class="container">
             <div class="info__slider">
-                <div class="info__secondPage" id="info__slide">
+                <div class="info__firstSlide" id="info__slide">
                     <h1 class="info__title">Оберіть яка саме довідка вам потрібна на рухоме / нерухоме майно:</h1>
                     <form class="info__radio" action="mailto:help.dovidka.in.ua@gmail.com" enctype="text/plain">
                         <div class="col-md-6 info__upper">
@@ -27,16 +27,17 @@
                     </form>
                     <button class="btn slick-next btn-next" type="button">ДАЛІ</button>
                 </div>
-                <div class="info__thirdPage" id="info__slide">
+                <div class="info__secondSlide" id="info__slide">
                     <h1 class="info__title">Заповніть дані для отримання довідки:</h1>
                     <div class="col-md-6">
-                        <form id="info__form" action="mailto:help.dovidka.in.ua@gmail.com" enctype="text/plain"></form>
-                        <label class="info__fio" for="#info__form">ПІП<div class="col-md-4">
+                        <p class="info__fio">ПІП</p>
+                        <form id="info__form" action="mailto:help.dovidka.in.ua@gmail.com" enctype="text/plain">
+                            <div class="col-md-4">
                                 <input type="name" id="info__name" placeholder="Ім’я" required="required" />
                                 <input type="name" id="info__lastName" placeholder="Прізвище" required="required" />
                                 <input type="name" id="info__middleName" placeholder="По батькові" required="required" />
                             </div>
-                        </label>
+                        </form>
                         <p class="info__descr">*Дані повині бути введені державною мовою <div class="col-md-4"></div>
                             <div class="col-md-4"></div>
                         </p>
@@ -47,18 +48,19 @@
                         <button class="btn slick-prev" type="button">&larr;Назад</button>
                     </div>
                 </div>
-                <div class="info__fourthPage" id="info__slide">
+                <div class="info__thirdSlide" id="info__slide">
                     <h1 class="info__title">Заповніть дані для отримання довідки:</h1>
-                    <form action="mailto:help.dovidka.in.ua@gmail.com" id="info__form" enctype="text/plain"></form>
-                    <label class="info__passport" for="#info__form">Паспорт<div class="col-md-4 info__upper">
+                    <p class="info__passport">Паспорт</p>
+                    <form action="mailto:help.dovidka.in.ua@gmail.com" id="info__form" enctype="text/plain">
+                        <div class="col-md-4 info__upper">
                             <input type="name" id="info__series" placeholder="Серія" required="required" />
                             <input type="name" id="info__numb" placeholder="Номер" required="required" />
                         </div>
-                    </label>
+                    </form>
                     <form action="mailto:help.dovidka.in.ua@gmail.com" id="ssn" enctype="text/plain">
                         <input type="name" id="info__ssn" placeholder="ІНН" required="required" />
                     </form>
-                    <label class="info__idPass" for="#info__idPass">ID Паспорт</label>
+                    <p class="info__idPass">ID Паспорт</p>
                     <form id="info__idPass" action="mailto:help.dovidka.in.ua@gmail.com" enctype="text/plain">
                         <input type="name" id="info__pasNumb" placeholder="Номер" required="required" />
                     </form>
@@ -69,10 +71,11 @@
                     <button class="btn slick-next btn-pass" type="button">ПРОПУСТИТИ</button>
                     <button class="btn slick-prev" type="button">&larr;Назад</button>
                 </div>
-                <div class="info__fifthPage" id="info__slide">
+                <div class="info__fourthSlide" id="info__slide">
                     <h1 class="info__title">Заповніть дані для отримання довідки:</h1>
-                    <form action="mailto:help.dovidka.in.ua@gmail.com" enctype="text/plain" id="info__location"></form>
-                    <label class="info__adress" for="#info__location">АДРЕСА<div class="col-md-4">
+                    <p class="info__adress">АДРЕСА</p>
+                    <form action="mailto:help.dovidka.in.ua@gmail.com" enctype="text/plain" id="info__location">
+                        <div class="col-md-4">
                             <input type="name" id="info__city" placeholder="Місто" required="required" />
                             <input type="name" id="info__region" placeholder="Область" required="required" />
                             <input type="name" id="info__locality" placeholder="Населений пункт" required="required" />
@@ -80,23 +83,23 @@
                             <input type="name" id="info__houseNumb" placeholder="№ Дім / кв" required="required" />
                             <input type="name" id="info__houseblock" placeholder="Корпус" required="required" />
                         </div>
-                    </label>
+                    </form>
                     <p class="info__descr">*Дані повині бути введені державною мовою <div class="col-md-4"></div>
                         <div class="col-md-4"></div>
                     </p>
                     <button class="btn slick-next btn-next" type="submit">ДАЛІ</button>
                     <button class="btn slick-prev" type="button">&larr;Назад</button>
                 </div>
-                <div class="info__contactPage" id="info__slide">
+                <div class="info__fifthSlide" id="info__slide">
                     <h1 class="info__contactTitle">Оберіть спосіб отримання довідки:</h1>
                     <div class="row">
                         <div class="col-md-6">
                             <form class="info__contact" action="mailto:help.dovidka.in.ua@gmail.com" enctype="text/plain">
-                                <label class="info__phone" for="#phone">Telegram /Viber</label>
+                                <p class="info__phone">Telegram /Viber</p>
                                 <input type="text" id="phone" placeholder="+38 (ххх) ххх хх хх" required="required" />
                             </form>
                             <form class="info__contact" action="mailto:help.dovidka.in.ua@gmail.com" enctype="text/plain">
-                                <label class="info__email" for="#email">Адреса електронної пошти</label>
+                                <p class="info__email">Адреса електронної пошти</p>
                                 <input type="email" id="email" placeholder="@example.com" required="required" />
                             </form>
                         </div>
@@ -105,7 +108,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="info__payPage" id="info__slide">
+                <div class="info__sixthSlide" id="info__slide">
                     <h1 class="info__payTitle">Оплатіть замовлення довідки та отримайте її на вашу пошту:</h1>
                     <p class="info__paySubtitle">Довідка з державного реєстру рухомого майна</p>
                     <a class="slick-next btn-next btn-link" href="./lastPage.html">ОПЛАТИТИ</a>

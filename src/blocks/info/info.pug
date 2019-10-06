@@ -8,22 +8,24 @@ mixin info(data = {})
     .info&attributes(attributes)
         .container
             .info__slider
-                #info__slide.info__secondPage
+                #info__slide.info__firstSlide
                     h1.info__title=data.title
                     form.info__radio(action="mailto:help.dovidka.in.ua@gmail.com", enctype="text/plain")
                         .col-md-6.info__upper
                             input(type="radio", id="first", name="rad", value="1" checked="checked" data-waschecked="true")
-                            label.info__choice(for="first")=data.first
+                            label.info__choice(for="first" )=data.first
                         .col-md-6.info__lower
                             input(type="radio",id="second" name="rad", value="2")
-                            label.info__choice(for="second")=data.second
+                            label.info__choice(for="second" )=data.second
                     button.btn(type="button", class="slick-next btn-next") ДАЛІ
+
+
                 
-                #info__slide.info__thirdPage
+                #info__slide.info__secondSlide
                     h1.info__title=data.fillTitle
                     .col-md-6
+                        p.info__fio=data.fio
                         form#info__form(action="mailto:help.dovidka.in.ua@gmail.com", enctype="text/plain")
-                        label.info__fio(for="#info__form")=data.fio
                             .col-md-4
                                 input(type="name", id="info__name", placeholder=data.name required)
                                 input(type="name", id="info__lastName", placeholder=data.lastName required)
@@ -36,16 +38,18 @@ mixin info(data = {})
                         button.btn(type="button", class="slick-next btn-pass") ПРОПУСТИТИ
                         button.btn(type="button", class="slick-prev") &larr;Назад
 
-                #info__slide.info__fourthPage
+
+
+                #info__slide.info__thirdSlide
                     h1.info__title=data.fillTitle
+                    p.info__passport=data.passport
                     form(action="mailto:help.dovidka.in.ua@gmail.com", id="info__form", enctype="text/plain")
-                    label.info__passport(for="#info__form")=data.passport
                         .col-md-4.info__upper
                             input(type="name", id="info__series", placeholder=data.series required)
                             input(type="name", id="info__numb", placeholder=data.numb required)
                     form(action="mailto:help.dovidka.in.ua@gmail.com" id="ssn" enctype="text/plain")
                         input(type="name", id="info__ssn", placeholder=data.ssn required)
-                    label.info__idPass(for="#info__idPass")=data.idPass
+                    p.info__idPass=data.idPass
                     form#info__idPass(action="mailto:help.dovidka.in.ua@gmail.com", enctype="text/plain")
                         input(type="name", id="info__pasNumb", placeholder=data.passNumb required)
                     p.info__descr=data.descr
@@ -54,11 +58,14 @@ mixin info(data = {})
                     button.btn(type="submit", class="slick-next btn-next") ДАЛІ
                     button.btn(type="button", class="slick-next btn-pass") ПРОПУСТИТИ
                     button.btn(type="button", class="slick-prev") &larr;Назад
+
+
+
                     
-                #info__slide.info__fifthPage
+                #info__slide.info__fourthSlide
                     h1.info__title=data.fillTitle
+                    p.info__adress=data.adress
                     form(action="mailto:help.dovidka.in.ua@gmail.com", enctype="text/plain", id="info__location")
-                    label.info__adress(for="#info__location")=data.adress
                         .col-md-4
                             input(type="name", id="info__city", placeholder=data.city required)
                             input(type="name", id="info__region", placeholder=data.region required)
@@ -72,19 +79,24 @@ mixin info(data = {})
                     button.btn(type="submit", class="slick-next btn-next") ДАЛІ
                     button.btn(type="button", class="slick-prev") &larr;Назад
 
-                #info__slide.info__contactPage
+
+
+
+                #info__slide.info__fifthSlide
                     h1.info__contactTitle=data.contactTitle
                     .row
                         .col-md-6
                             form.info__contact(action="mailto:help.dovidka.in.ua@gmail.com", enctype="text/plain")
-                                label.info__phone(for="#phone")=data.phone
+                                p.info__phone=data.phone
                                 input(type="text", id="phone", placeholder=data.number, required)
                             form.info__contact(action="mailto:help.dovidka.in.ua@gmail.com", enctype="text/plain")
-                                label.info__email(for="#email")=data.email
+                                p.info__email=data.email
                                 input(type="email", id="email", placeholder=data.examp required)
                         .col-md-6
                             button.btn(type="submit", class="slick-next btn-next") ОТРИМАТИ
-                #info__slide.info__payPage
+
+
+                #info__slide.info__sixthSlide
                     h1.info__payTitle=data.payTitle
                     p.info__paySubtitle=data.paySubtitle
                     a(href="./lastPage.html", class="slick-next btn-next btn-link") ОПЛАТИТИ

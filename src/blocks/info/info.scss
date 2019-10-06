@@ -16,7 +16,7 @@
 
     // BEM elements
     // TODO: add code
-    &__secondPage {
+    &__firstSlide {
         background-image: url(../img/page2/5-layers.png);
     }
 
@@ -42,48 +42,11 @@
         margin-top: 0;
     }
 
-    &__passport,
-    &__idPass {
-        margin-left: 120px;
-    }
 
-    &__upper {
-        margin-top: 5px;
-        display: flex;
-        margin-left: 10px;
-    }
 
-    &__lower {
-        margin-top: 60px;
-    }
-
-    #info__pasNumb {
-        margin-left: 116px;
-    }
-
-    #info__series {
-        width: 70px;
-        height: 40px;
-    }
-
-    &__thirdPage {
+    &__secondSlide {
         background-image: url(../img/page3/thirdPage.png);
         position: relative;
-    }
-
-    #info__ssn {
-        margin-left: 115px;
-    }
-
-    #info__form {
-        margin-top: 100px;
-        margin-left: 100px;
-    }
-
-    #info__numb {
-        width: 152px;
-        height: 40px;
-        margin-left: 15px;
     }
 
     &__fio {
@@ -93,44 +56,92 @@
         font-family: Helvetica;
         font-size: 12px;
         font-weight: 700;
-        margin-left: 110px;
+        margin-left: 105px;
+        margin-top: 62px;
     }
 
-    &__names {
-        width: 29px;
-        height: 15px;
-        color: #767676;
-        font-family: Helvetica;
-        font-size: 14px;
-        font-weight: 700;
-        letter-spacing: 0.5px;
-    }
 
-    &__descr {
-        width: 251px;
-        height: 12px;
-        color: #3a9acd;
-        font-family: Helvetica;
-        font-size: 10px;
-        font-weight: 700;
-        letter-spacing: 0.5px;
-        margin-left: 110px;
-        margin-top: 20px;
-    }
 
-    &__fourthPage {
+
+    &__thirdSlide {
         background-image: url(../img/page4/2-layers.png);
     }
 
-    &__fifthPage {
+    &__passport {
+        margin-left: 120px;
+        margin-top: 62px;
+    }
+
+    &__idPass {
+        margin-top: 15px;
+        margin-left: 120px;
+    }
+
+    &__upper {
+        margin-top: 5px;
+        display: flex;
+    }
+
+    &__lower {
+        margin-top: 60px;
+        display: flex;
+    }
+
+    #info__pasNumb {
+        margin-left: 116px;
+    }
+
+    #info__series {
+        width: 70px;
+        height: 40px;
+        margin-left: 0px;
+    }
+
+    #info__numb {
+        width: 152px;
+        height: 40px;
+        margin-left: 15px;
+    }
+
+    #info__ssn {
+        margin-left: 115px;
+    }
+
+    #info__form {
+        margin-top: 17px;
+        margin-left: 100px;
+    }
+
+    &__descr {
+        margin-left: 115px;
+    }
+
+
+
+
+    &__fourthSlide {
         background-image: url(../img/page5/5-layers.png);
     }
 
-    #info__location {
-        margin-top: 50px;
+    &__adress {
+        margin-top: 62px;
+        color: #030000;
+        font-family: Helvetica;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-left: 118px;
     }
 
-    &__contactPage {
+    #info__location {
+        margin-top: 15px;
+        margin-left: 115px;
+    }
+
+
+
+
+    &__fifthSlide {
         background-image: url(../img/page6/contactPage.png);
     }
 
@@ -140,14 +151,13 @@
         font-family: Helvetica;
         font-size: 22px;
         font-weight: 700;
-        margin-left: 100px;
+        margin-left: 115px;
         padding-top: 150px;
         margin-bottom: 60px;
     }
 
     &__phone,
     &__email {
-        height: 16px;
         color: #767676;
         font-family: "PT Sans Caption";
         font-size: 16px;
@@ -160,15 +170,7 @@
         display: flex;
         flex-direction: column;
         margin-top: 20px;
-    }
-
-    &__adress {
-        color: #030000;
-        font-family: Helvetica;
-        font-size: 12px;
-        font-weight: 700;
-        text-transform: uppercase;
-        margin-left: 120px;
+        margin-left: 115px;
     }
 
     #phone,
@@ -176,9 +178,13 @@
         width: 45%;
         height: 40px;
         margin-top: 15px;
+        margin-left: 0;
     }
 
-    &__payPage {
+
+
+
+    &__sixthSlide {
         background-image: url(../img/page7/Path_2.png);
     }
 
@@ -201,23 +207,23 @@
         margin-left: 120px;
     }
 
-    &__wait {
-        width: 181px;
-        height: 39px;
-        color: #000000;
-        font-family: Helvetica;
-        font-size: 36px;
-        font-weight: 700;
-    }
+    // &__wait {
+    //     width: 181px;
+    //     height: 39px;
+    //     color: #000000;
+    //     font-family: Helvetica;
+    //     font-size: 36px;
+    //     font-weight: 700;
+    // }
 
-    &__lastPageDescr {
-        width: 570px;
-        height: 184px;
-        color: #000000;
-        font-family: Helvetica;
-        font-size: 36px;
-        line-height: 46px;
-    }
+    // &__lastPageDescr {
+    //     width: 570px;
+    //     height: 184px;
+    //     color: #000000;
+    //     font-family: Helvetica;
+    //     font-size: 36px;
+    //     line-height: 46px;
+    // }
 
     // Bem modifiers
     // TODO: add code
