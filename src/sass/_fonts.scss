@@ -1,10 +1,9 @@
 // insert @font-face rules here
 @font-face {
-    font-family: Helvetica;
-    src: url(./fonts/Helvetica.ttf)
+    font-family: "Helvetica";
+    src: local("Helvetica"), url(../fonts/HelveticaRegular.woff) format("woff");
 }
-
 @font-face {
-    font-family: 'Helvetica-light';
-    src: url(./fonts/Helvetica-Light.ttf)
+    font-family: "Helvetica";
+    src: local("Helvetica"), url(../fonts/HelveticaLight.woff) format("woff");
 }
