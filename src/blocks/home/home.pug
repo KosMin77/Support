@@ -10,6 +10,7 @@ mixin home(data = {})
             .row
                 .col-md-6
                     h1.home__title=data.title
+                    p.home__subtitle!=data.subtitle
                 .col-md-6
                     .row
                         .col-md-4
@@ -18,7 +19,6 @@ mixin home(data = {})
                             img.home__path(src="./img/Path.png", alt="alt")
             .row
                 .col-md-7
-                    p.home__subtitle!=data.subtitle
                     a.home__btn(href="./info.html")
                         p.btn__descr=data.btn
                     p.home__price=data.price

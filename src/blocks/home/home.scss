@@ -16,7 +16,7 @@
 
     // BEM elements
     // TODO: add code
-    &__title{
+    &__title {
         width: 215px;
         height: 48px;
         color: #000000;
@@ -24,21 +24,23 @@
         font-size: 46px;
         font-weight: 700;
         text-transform: uppercase;
-        margin-top: 140px;
+        margin-top: 100px;
         margin-left: 60px;
     }
-    &__subtitle{
+
+    &__subtitle {
         width: 632px;
         height: 230px;
         color: #000000;
         font-family: "Helvetica - Light";
-        font-size: 36px;
+        font-size: 32px;
         font-weight: 300;
         line-height: 46px;
-        margin-top: -80px;
+        margin-top: 50px;
         margin-left: 60px;
     }
-    &__btn{
+
+    &__btn {
         width: 206px;
         height: 40px;
         border-radius: 27px;
@@ -47,7 +49,8 @@
         margin-left: 60px;
         text-decoration: none;
     }
-    &__price{
+
+    &__price {
         width: 325px;
         height: 20px;
         color: #000000;
@@ -57,31 +60,38 @@
         margin-top: 105px;
         margin-left: 60px;
     }
-    &__man{
-        margin-left: 0px;
-        margin-top: 20px;
+
+    &__man {
+        position: absolute;
+        top: -150px;
+        left: 0px;
     }
-    &__plane{
+
+    &__plane {
         margin-top: 85px;
         margin-left: 100px;
     }
-    &__path{
+
+    &__path {
         margin-top: 115px;
         margin-left: -28px;
     }
-    &__build{
+
+    &__build {
         position: absolute;
         margin-left: 55px;
         margin-top: -130px;
     }
-    &__dot{
+
+    &__dot {
         position: absolute;
         margin-left: 102px;
         margin-top: -20px;
     }
+
     // Bem modifiers
     // TODO: add code
-    .btn__descr{
+    .btn__descr {
         color: #ffffff;
         font-family: "Helvetica";
         font-size: 18px;
@@ -95,4 +105,4 @@
         border-radius: 27px;
         background-color: #3a9acd;
     }
-}   
+}
