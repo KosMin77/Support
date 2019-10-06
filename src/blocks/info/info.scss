@@ -50,12 +50,10 @@
     }
 
     &__fio {
-        width: 21px;
-        height: 13px;
         color: #010000;
         font-family: Helvetica;
         font-size: 12px;
-        font-weight: 700;
+        font-weight: 900;
         margin-left: 105px;
         margin-top: 62px;
     }
@@ -70,11 +68,22 @@
     &__passport {
         margin-left: 120px;
         margin-top: 62px;
+        font-weight: 900;
+        color: #030000;
+        font-family: Helvetica;
+        font-size: 12px;
+        text-transform: uppercase;
     }
 
     &__idPass {
         margin-top: 15px;
+        margin-bottom: 15px;
         margin-left: 120px;
+        font-weight: 900;
+        color: #030000;
+        font-family: Helvetica;
+        font-size: 12px;
+        text-transform: uppercase;
     }
 
     &__upper {
@@ -98,9 +107,9 @@
     }
 
     #info__numb {
-        width: 152px;
+        width: 157px;
         height: 40px;
-        margin-left: 15px;
+        margin-left: 10px;
     }
 
     #info__ssn {
@@ -128,7 +137,7 @@
         color: #030000;
         font-family: Helvetica;
         font-size: 12px;
-        font-weight: 700;
+        font-weight: 900;
         text-transform: uppercase;
         margin-left: 118px;
     }
@@ -160,7 +169,7 @@
     &__email {
         color: #767676;
         font-family: "PT Sans Caption";
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 700;
         letter-spacing: 0.26px;
         margin-top: 15px;
