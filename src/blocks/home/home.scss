@@ -7,6 +7,94 @@
 
     // @media queries
     // TODO: add code
+    @media screen and (max-width : 767px) {
+
+        .home {
+            &__title {
+                text-align: center;
+                margin-left: 0;
+                margin-top: 25px;
+            }
+
+            &__subtitle {
+                font-size: 18px;
+                margin-left: 20px;
+                text-align: center;
+            }
+
+            &__btn {
+                margin-top: 0;
+                margin-left: 60px;
+            }
+
+            &__man,
+            &__path,
+            &__plane,
+            &__build,
+            &__dot {
+                display: none;
+            }
+
+            &__price {
+                margin-left: 15px;
+                margin-top: 55px;
+                text-align: center;
+            }
+        }
+    }
+
+    @media only screen and (min-width : 768px) and (max-width : 1199px) {
+        .home {
+            &__title {
+                text-align: center;
+                margin-top: 25px;
+            }
+
+            &__subtitle {
+                font-size: 18px;
+                margin-left: 20px;
+                text-align: center;
+            }
+
+            .btn__descr {
+                margin-top: 0;
+                text-align: center;
+            }
+
+            &__man,
+            &__path,
+            &__plane,
+            &__build,
+            &__dot {
+                display: none;
+            }
+
+            &__price {
+                margin-left: 15px;
+                margin-top: 55px;
+                text-align: center;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1200px) and (max-width : 1823px) {
+        .home {
+            &__title {
+                margin-top: 225px;
+            }
+
+            &__plane {
+                margin-top: 195px;
+            }
+
+            &__path {
+                margin-top: 215px;
+            }
+
+        }
+    }
+
+    @media only screen and (min-width : 1824px) {}
 
     // Pseudo-classes and pseudo-elements
     // TODO: add code
@@ -17,8 +105,7 @@
     // BEM elements
     // TODO: add code
     &__title {
-        width: 215px;
-        height: 48px;
+
         color: #000000;
         font-family: Helvetica;
         font-size: 46px;
@@ -29,11 +116,9 @@
     }
 
     &__subtitle {
-        width: 632px;
-        height: 230px;
         color: #000000;
-        font-family: "Helvetica - Light";
-        font-size: 32px;
+        font-family: "Helvetica-Light";
+        font-size: 36px;
         font-weight: 300;
         line-height: 46px;
         margin-top: 50px;
@@ -41,8 +126,6 @@
     }
 
     &__btn {
-        width: 206px;
-        height: 40px;
         border-radius: 27px;
         background-color: #044568;
         margin-top: 100px;
@@ -51,13 +134,11 @@
     }
 
     &__price {
-        width: 325px;
-        height: 20px;
         color: #000000;
         font-family: Helvetica;
         font-size: 18px;
         font-weight: 700;
-        margin-top: 105px;
+        margin-top: 100px;
         margin-left: 60px;
     }
 
@@ -68,25 +149,25 @@
     }
 
     &__plane {
-        margin-top: 85px;
-        margin-left: 100px;
+        margin-top: 60px;
+        margin-left: 105px;
     }
 
     &__path {
-        margin-top: 150px;
+        margin-top: 85px;
         margin-left: -28px;
     }
 
     &__build {
         position: absolute;
         margin-left: 55px;
-        margin-top: -165px;
+        margin-top: -230px;
     }
 
     &__dot {
         position: absolute;
         margin-left: 102px;
-        margin-top: -55px;
+        margin-top: -115px;
     }
 
     // Bem modifiers
