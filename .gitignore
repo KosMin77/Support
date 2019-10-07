@@ -6,5 +6,3 @@ docs/
 # ignore auto-generated files
 src/blocks/icon/icon.scss
 src/img/icons.svg
-
-dist/
