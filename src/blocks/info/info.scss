@@ -46,13 +46,11 @@
     &__choice {
         height: 18px;
         color: #000000;
-        font-family: "Helvetica";
+        font-family: "Helvetica", sans-serif;
         font-size: 16px;
         margin-left: 0;
         margin-top: 0;
     }
-
-
 
     &__secondSlide {
         background-image: url(../img/page3/thirdPage.png);
@@ -61,15 +59,12 @@
 
     &__fio {
         color: #010000;
-        font-family: Helvetica;
+        font-family: "Helvetica", sans-serif;
         font-size: 12px;
         font-weight: 900;
         margin-left: 105px;
         margin-top: 62px;
     }
-
-
-
 
     &__thirdSlide {
         background-image: url(../img/page4/2-layers.png);
@@ -80,7 +75,7 @@
         margin-top: 62px;
         font-weight: 900;
         color: #030000;
-        font-family: Helvetica;
+        font-family: "Helvetica", sans-serif;
         font-size: 12px;
         text-transform: uppercase;
     }
@@ -91,7 +86,7 @@
         margin-left: 120px;
         font-weight: 900;
         color: #030000;
-        font-family: Helvetica;
+        font-family: "Helvetica", sans-serif;
         font-size: 12px;
         text-transform: uppercase;
     }
@@ -135,9 +130,6 @@
         margin-left: 115px;
     }
 
-
-
-
     &__fourthSlide {
         background-image: url(../img/page5/5-layers.png);
     }
@@ -145,7 +137,7 @@
     &__adress {
         margin-top: 62px;
         color: #030000;
-        font-family: Helvetica;
+        font-family: "Helvetica", sans-serif;
         font-size: 12px;
         font-weight: 900;
         text-transform: uppercase;
@@ -157,9 +149,6 @@
         margin-left: 115px;
     }
 
-
-
-
     &__fifthSlide {
         background-image: url(../img/page6/contactPage.png);
     }
@@ -167,7 +156,7 @@
     &__contactTitle {
         height: 24px;
         color: #000000;
-        font-family: Helvetica;
+        font-family: "Helvetica", sans-serif;
         font-size: 22px;
         font-weight: 700;
         margin-left: 115px;
@@ -200,9 +189,6 @@
         margin-left: 0;
     }
 
-
-
-
     &__sixthSlide {
         background-image: url(../img/page7/Path_2.png);
     }
@@ -210,7 +196,7 @@
     &__payTitle {
         height: 24px;
         color: #000000;
-        font-family: Helvetica;
+        font-family: "Helvetica", sans-serif;
         font-size: 22px;
         font-weight: 700;
         padding-top: 140px;
@@ -220,7 +206,7 @@
     &__paySubtitle {
         height: 18px;
         color: #000000;
-        font-family: Helvetica;
+        font-family: "Helvetica", sans-serif;
         font-size: 16px;
         margin-top: 100px;
         margin-left: 120px;
@@ -230,7 +216,7 @@
     //     width: 181px;
     //     height: 39px;
     //     color: #000000;
-    //     font-family: Helvetica;
+    //     font-family: "Helvetica", sans-serif;
     //     font-size: 36px;
     //     font-weight: 700;
     // }
@@ -239,7 +225,7 @@
     //     width: 570px;
     //     height: 184px;
     //     color: #000000;
-    //     font-family: Helvetica;
+    //     font-family: "Helvetica", sans-serif;
     //     font-size: 36px;
     //     line-height: 46px;
     // }

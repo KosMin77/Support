@@ -50,16 +50,16 @@ function initBlock() {
 
     $('.info__slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
         $('.slick-prev').css('display', nextSlide ? 'block' : 'none');
-    });
 
-    $('.slick-next').on('click', function() {
-        console.log($('#email').val().length);
-        if (($('#email').val().length > 0) && ($('#email').val().match(/.+?\@.+/g) || []).length !== 1) {
-            console.log('invalid')
-            return false;
+        if ($('#email').val().length > 0 || ($('#email').val().match(/.+?\@.+/g) || []).length !== 1 && nextSlide == 4) {
+
+            $('.slick-next').css('display', 'none');
+
+
         } else {
-            console.log(123);
+            $('.slick-next').css('display', 'block');
         }
+
     });
 
     $('#info__series').mask('SS', {
@@ -76,16 +76,16 @@ function initBlock() {
     $('#phone').mask("+38 (000) 000 00 00");
 
     $('#email').on('blur', function() {
+
         let email = $(this).val();
 
         if (email.length > 0 && (email.match(/.+?\@.+/g) || []).length !== 1) {
             if ($('.info__slider').slick('slickCurrentSlide') == 5) {
-                console.log('invalid')
+                $('.slick-next').css('display', 'none');
             }
 
         } else {
-            console.log('valid');
-            //   alert('Вы ввели корректный e-mail!');
+            $('.slick-next').css('display', 'block');
         }
 
     });
