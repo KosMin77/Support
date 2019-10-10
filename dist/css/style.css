@@ -117,6 +117,7 @@ section {
 }
 
 body {
+  overflow: hidden;
   box-sizing: border-box;
   line-height: 1;
   width: 100%;
@@ -170,17 +171,18 @@ img {
   width: 100%;
   height: 711px;
   margin-top: 5px;
+  margin-bottom: 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .info__title {
   height: 24px;
   color: #000000;
-  font-family: "Helvetica", sans-serif;
+  font-family: Helvetica;
   font-size: 22px;
-  font-weight: 700;
+  font-weight: 900;
   padding-top: 160px;
-  padding-left: 120px;
+  margin-left: 153px;
 }
 
 .info__descr {
@@ -191,16 +193,17 @@ img {
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.5px;
-  margin-left: 100px;
-  margin-top: 5px;
+  margin-left: 152px;
 }
 
 input,
 label {
-  margin-left: -15px;
+  cursor: pointer;
+  text-transform: capitalize;
 }
 
 input {
+  margin-left: 103px;
   margin-bottom: 15px;
   padding-left: 10px;
   width: 236px;
@@ -208,7 +211,7 @@ input {
   box-shadow: 0 0 6px rgba(224, 224, 224, 0.5);
   border-radius: 3px;
   border: 1px solid #cccccc;
-  background-color: #ffffff;
+  background-color: transparent;
 }
 
 ::-webkit-input-placeholder {
@@ -273,7 +276,7 @@ input {
 .btn-next {
   position: fixed;
   left: 800px;
-  top: 620px;
+  top: 550px;
   padding-right: 10px;
   padding-top: 3px;
 }
@@ -294,8 +297,8 @@ input {
 
 .slick-prev {
   position: fixed;
-  left: 115px;
-  top: 630px;
+  left: 152px;
+  top: 560px;
   width: 65px;
   z-index: 1;
   background-color: transparent;
@@ -313,6 +316,7 @@ input {
   position: absolute;
   top: 60px;
   left: 470px;
+  pointer-events: none;
 }
 
 ul {
@@ -333,6 +337,7 @@ button {
   outline: none;
   color: #fff;
   background-color: #fff;
+  cursor: pointer;
 }
 
 .slick-active > button {
@@ -7193,8 +7198,8 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .home__subtitle {
+  display: flex;
   width: 700px;
-  height: 230px;
   color: #000000;
   font-family: Helvetica;
   font-size: 36px;
@@ -7222,27 +7227,27 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .home__plane {
-  margin-top: 60px;
-  margin-left: 105px;
+  margin-top: 90px;
+  margin-left: 20px;
 }
 
 .home__path {
-  margin-top: 85px;
-  margin-left: -28px;
+  margin-top: 120px;
+  margin-left: -80px;
   width: 100%;
   height: auto;
 }
 
 .home__build {
   position: absolute;
-  margin-left: 55px;
-  margin-top: -230px;
+  margin-left: 5px;
+  margin-top: -240px;
 }
 
 .home__dot {
   position: absolute;
-  margin-left: 102px;
-  margin-top: -115px;
+  margin-left: 50px;
+  margin-top: -127px;
 }
 
 .home .btn__descr {
@@ -7259,11 +7264,30 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: #3a9acd;
 }
 
+.home .home__subtitle--dots {
+  font-size: 14px;
+  margin-left: -35px;
+  padding-right: 25px;
+  margin-top: 3px;
+}
+
 /**
  * Styles for the info block.
  */
 .info__firstSlide {
-  background-image: url(../img/page2/5-layers.png);
+  background-color: #fff;
+}
+
+.info__pic--woman {
+  position: relative;
+  top: -18px;
+  left: 250px;
+}
+
+.info__path--two {
+  position: relative;
+  left: 560px;
+  top: 140px;
 }
 
 .info__radio {
@@ -7273,20 +7297,22 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .info__upperChoice {
-  margin-top: 5px;
+  margin-top: 105px;
   display: flex;
 }
 
 .info__lowerChoice {
-  margin-top: 60px;
+  margin-top: 30px;
   display: flex;
 }
 
 .info #first,
 .info #second {
-  margin-left: 100px;
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  margin-left: -15px;
+  box-shadow: none;
 }
 
 .info__choice {
@@ -7308,8 +7334,18 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: "Helvetica", sans-serif;
   font-size: 12px;
   font-weight: 900;
-  margin-left: 105px;
+  margin-left: 140px;
   margin-top: 62px;
+  margin-bottom: 10px;
+}
+
+.info__fio--fields {
+  margin-left: 20px;
+}
+
+.info__descr--fio {
+  margin-left: 105px;
+  margin-top: 10px;
 }
 
 .info__thirdSlide {
@@ -7317,7 +7353,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .info__passport {
-  margin-left: 120px;
+  margin-left: 153px;
   margin-top: 62px;
   font-weight: 900;
   color: #030000;
@@ -7329,7 +7365,7 @@ a.text-dark:hover, a.text-dark:focus {
 .info__idPass {
   margin-top: 15px;
   margin-bottom: 15px;
-  margin-left: 120px;
+  margin-left: 152px;
   font-weight: 900;
   color: #030000;
   font-family: "Helvetica", sans-serif;
@@ -7338,23 +7374,40 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .info__upper {
+  margin-left: 135px;
   margin-top: 5px;
   display: flex;
 }
 
-.info__lower {
-  margin-top: 60px;
-  display: flex;
-}
-
 .info #info__pasNumb {
-  margin-left: 116px;
+  margin-left: 150px;
 }
 
 .info #info__series {
   width: 70px;
   height: 40px;
   margin-left: 0px;
+  text-transform: uppercase;
+}
+
+.info #info__series > ::-webkit-input-placeholder {
+  text-transform: capitalize;
+}
+
+.info #info__series > ::-moz-placeholder {
+  text-transform: capitalize;
+}
+
+.info #info__series > :-ms-input-placeholder {
+  text-transform: capitalize;
+}
+
+.info #info__series > ::-ms-input-placeholder {
+  text-transform: capitalize;
+}
+
+.info #info__series > ::placeholder {
+  text-transform: capitalize;
 }
 
 .info #info__numb {
@@ -7364,16 +7417,12 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .info #info__ssn {
-  margin-left: 115px;
+  margin-left: 150px;
 }
 
 .info #info__form {
   margin-top: 17px;
   margin-left: 100px;
-}
-
-.info__descr {
-  margin-left: 115px;
 }
 
 .info__fourthSlide {
@@ -7387,12 +7436,31 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 12px;
   font-weight: 900;
   text-transform: uppercase;
-  margin-left: 118px;
+  margin-left: 152px;
 }
 
-.info #info__location {
+.info .location {
+  margin-left: 33px;
+  margin-top: 5px;
+}
+
+.info__btn--prev {
+  display: flex;
   margin-top: 15px;
-  margin-left: 115px;
+  margin-left: 160px;
+}
+
+.info__prev--arrow {
+  margin-top: 10px;
+}
+
+.info .btn-next {
+  margin-top: 50px;
+}
+
+.info #btn-previous {
+  margin-top: 61px;
+  margin-left: 15px;
 }
 
 .info__fifthSlide {
@@ -7420,8 +7488,6 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .info__contact {
-  display: flex;
-  flex-direction: column;
   margin-top: 20px;
   margin-left: 115px;
 }
@@ -7432,6 +7498,7 @@ a.text-dark:hover, a.text-dark:focus {
   height: 40px;
   margin-top: 5px;
   margin-left: 0;
+  text-transform: lowercase;
 }
 
 .info__sixthSlide {

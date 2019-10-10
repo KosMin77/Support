@@ -239,6 +239,27 @@ function initBlock() {
       $('.slick-next').css('display', 'block');
     }
   });
+  $('#info__name').mask('SSSSSSSSSSSSSS', {
+    'translation': {
+      S: {
+        pattern: /[A-Za-z]/
+      }
+    }
+  });
+  $('#info__lastName').mask('SSSSSSSSSSSSSS', {
+    'translation': {
+      S: {
+        pattern: /[A-Za-z-]/
+      }
+    }
+  });
+  $('#info__middleName').mask('SSSSSSSSSSSSSS', {
+    'translation': {
+      S: {
+        pattern: /[A-Za-z]/
+      }
+    }
+  });
   $('#info__series').mask('SS', {
     'translation': {
       S: {
@@ -249,6 +270,41 @@ function initBlock() {
   $('#info__numb').mask('000000');
   $('#info__ssn').mask('000000000000');
   $('#info__pasNumb').mask('000000000');
+  $('#info__city').mask('SSSSSSSSSSSSSSSSSSSSSSSS', {
+    'translation': {
+      S: {
+        pattern: /[A-Za-z-]/
+      }
+    }
+  });
+  $('#info__region').mask('SSSSSSSSSSSSSSSSSSSSSSSS', {
+    'translation': {
+      S: {
+        pattern: /[A-Za-z-]/
+      }
+    }
+  });
+  $('#info__locality').mask('SSSSSSSSSSSSSSSSSSSSSSSS', {
+    'translation': {
+      S: {
+        pattern: /[A-Za-z-]/
+      }
+    }
+  });
+  $('#info__street').mask('SSSSSSSSSSSSSSSSSSSSSSSS', {
+    'translation': {
+      S: {
+        pattern: /[A-Za-z-]/
+      }
+    }
+  });
+  $('#info__houseNumb').mask('YYYYYYYYYYYYYYYYYYYYYYY', {
+    'translation': {
+      Y: {
+        pattern: /[0-9]/
+      }
+    }
+  });
   $('#phone').mask("+38 (000) 000 00 00");
   $('#email').on('blur', function () {
     var email = $(this).val();

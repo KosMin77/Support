@@ -31,10 +31,11 @@
         "street": "Вулиця",
         "houseNumb": "№ Дім / кв",
         "houseblock": "Корпус",
+        "arrow": "&larr;",
 
 
         "contactTitle": "Оберіть спосіб отримання довідки:",
-        "phone": "Telegram /Viber",
+        "phone": "Telegram / Viber",
         "number": "+38 (ххх) ххх хх хх",
         "email": "Адреса електронної пошти",
         "examp": "@example.com",

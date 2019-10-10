@@ -7,6 +7,7 @@
 
     // @media queries
     // TODO: add code
+    @media screen and (min-width : 1200px) {}
 
     // Pseudo-classes and pseudo-elements
     // TODO: add code
@@ -17,7 +18,19 @@
     // BEM elements
     // TODO: add code
     &__firstSlide {
-        background-image: url(../img/page2/5-layers.png);
+        background-color: #fff;
+    }
+
+    &__pic--woman {
+        position: relative;
+        top: -18px;
+        left: 250px;
+    }
+
+    &__path--two {
+        position: relative;
+        left: 560px;
+        top: 140px;
     }
 
     &__radio {
@@ -27,20 +40,22 @@
     }
 
     &__upperChoice {
-        margin-top: 5px;
+        margin-top: 105px;
         display: flex;
     }
 
     &__lowerChoice {
-        margin-top: 60px;
+        margin-top: 30px;
         display: flex;
     }
 
     #first,
     #second {
-        margin-left: 100px;
-        width: 15px;
-        height: 15px;
+        width: 20px;
+        height: 20px;
+        margin-right: 20px;
+        margin-left: -15px;
+        box-shadow: none;
     }
 
     &__choice {
@@ -62,16 +77,27 @@
         font-family: "Helvetica", sans-serif;
         font-size: 12px;
         font-weight: 900;
-        margin-left: 105px;
+        margin-left: 140px;
         margin-top: 62px;
+        margin-bottom: 10px;
     }
+
+    &__fio--fields {
+        margin-left: 20px;
+    }
+
+    &__descr--fio {
+        margin-left: 105px;
+        margin-top: 10px;
+    }
+
 
     &__thirdSlide {
         background-image: url(../img/page4/2-layers.png);
     }
 
     &__passport {
-        margin-left: 120px;
+        margin-left: 153px;
         margin-top: 62px;
         font-weight: 900;
         color: #030000;
@@ -83,7 +109,7 @@
     &__idPass {
         margin-top: 15px;
         margin-bottom: 15px;
-        margin-left: 120px;
+        margin-left: 152px;
         font-weight: 900;
         color: #030000;
         font-family: "Helvetica", sans-serif;
@@ -92,23 +118,24 @@
     }
 
     &__upper {
+        margin-left: 135px;
         margin-top: 5px;
         display: flex;
     }
 
-    &__lower {
-        margin-top: 60px;
-        display: flex;
-    }
-
     #info__pasNumb {
-        margin-left: 116px;
+        margin-left: 150px;
     }
 
     #info__series {
         width: 70px;
         height: 40px;
         margin-left: 0px;
+        text-transform: uppercase;
+    }
+
+    #info__series>::placeholder {
+        text-transform: capitalize;
     }
 
     #info__numb {
@@ -118,16 +145,12 @@
     }
 
     #info__ssn {
-        margin-left: 115px;
+        margin-left: 150px;
     }
 
     #info__form {
         margin-top: 17px;
         margin-left: 100px;
-    }
-
-    &__descr {
-        margin-left: 115px;
     }
 
     &__fourthSlide {
@@ -141,12 +164,31 @@
         font-size: 12px;
         font-weight: 900;
         text-transform: uppercase;
-        margin-left: 118px;
+        margin-left: 152px;
     }
 
-    #info__location {
+    .location {
+        margin-left: 33px;
+        margin-top: 5px;
+    }
+
+    &__btn--prev {
+        display: flex;
         margin-top: 15px;
-        margin-left: 115px;
+        margin-left: 160px;
+    }
+
+    &__prev--arrow {
+        margin-top: 10px;
+    }
+
+    .btn-next {
+        margin-top: 50px;
+    }
+
+    #btn-previous {
+        margin-top: 61px;
+        margin-left: 15px;
     }
 
     &__fifthSlide {
@@ -175,8 +217,6 @@
     }
 
     &__contact {
-        display: flex;
-        flex-direction: column;
         margin-top: 20px;
         margin-left: 115px;
     }
@@ -187,6 +227,7 @@
         height: 40px;
         margin-top: 5px;
         margin-left: 0;
+        text-transform: lowercase;
     }
 
     &__sixthSlide {

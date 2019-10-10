@@ -10,7 +10,12 @@ mixin home(data = {})
             .row
                 .col-md-7.col-sm-12
                     h1.home__title=data.title
-                    p.home__subtitle!=data.subtitle
+                    .home__subtitle
+                        p.home__subtitle--dots!=data.dot
+                        p.home__subtitle--firstLine!=data.firstLine
+                    .home__subtitle
+                        p.home__subtitle--dots!=data.dot
+                        p.home__subtitle--secondLine=data.secondLine
                 .col-md-5.col-sm-12
                     .row
                         .col-md-4
