@@ -419,7 +419,7 @@ function scanImages() {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/inevix/projects/Support/src/js/main.js */"./src/js/main.js");
+module.exports = __webpack_require__(/*! E:\Support\src\js\main.js */"./src/js/main.js");
 
 
 /***/ })

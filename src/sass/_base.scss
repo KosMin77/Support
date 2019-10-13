@@ -159,6 +159,7 @@ img {
 
 .info__slide {
     display: block;
+    background-color: #fff;
     background-position: center;
     width: 100%;
     height: 700px;
@@ -289,7 +290,7 @@ button {
     cursor: pointer;
 }
 
-.slick-active > button {
+.slick-active>button {
     background-color: #000;
 }
 

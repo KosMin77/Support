@@ -6,14 +6,11 @@
             }
         }
     }
+
     &__logo {
         margin-top: 33px;
         margin-left: 33px;
         margin-bottom: 30px;
-    }
-
-    &__slide_first {
-        background-color: #fff;
     }
 
 
@@ -66,7 +63,7 @@
     }
 
     &__slide_second {
-        background-image: url("../../img/page3/thirdPage.png");
+        background-image: url("./img/page3/thirdPage.png");
         position: relative;
     }
 
@@ -98,7 +95,7 @@
 
 
     &__slide_third {
-        background-image: url("../../img/page4/2-layers.png");
+        background-image: url("./img/page4/2-layers.png");
     }
 
     &__passport {
@@ -159,7 +156,7 @@
     }
 
     &__slide_fourth {
-        background-image: url("../../img/page5/5-layers.png");
+        background-image: url("./img/page5/5-layers.png");
     }
 
     &__adress {
@@ -193,7 +190,7 @@
     }
 
     &__slide_fifth {
-        background-image: url("../../img/page6/contactPage.png");
+        background-image: url("./img/page6/contactPage.png");
     }
 
     &__contactTitle {
@@ -232,7 +229,7 @@
     }
 
     &__slide_sixth {
-        background-image: url("../../img/page7/Path_2.png");
+        background-image: url("./img/page7/Path_2.png");
     }
 
     &__payTitle {
