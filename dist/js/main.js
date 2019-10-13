@@ -196,50 +196,72 @@ function initBlock() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/**
- * @file Implementation of the info block
- */
-// -------------------------- BEGIN MODULE VARIABLES --------------------------
-// TODO: add code here
-// --------------------------- END MODULE VARIABLES ---------------------------
-// -------------------------- BEGIN UTILITY FUNCTIONS -------------------------
-// TODO: add code here
-// --------------------------- END UTILITY FUNCTIONS --------------------------
-// ----------------------------- BEGIN DOM METHODS ----------------------------
-// TODO: add code here
-// ------------------------------ END DOM METHODS -----------------------------
-// --------------------------- BEGIN EVENT HANDLERS ---------------------------
-// TODO: add code here
-// ---------------------------- END EVENT HANDLERS ----------------------------
-// --------------------------- BEGIN PUBLIC METHODS ---------------------------
-
-/**
- * Initialize the info block.
- * @return true if the block is present on the page, false otherwise
- */
 function initBlock() {
-  // TODO: add code here
-  $('#info__name').mask('SSSSSSSSSSSSSS', {
-    'translation': {
-      S: {
-        pattern: /[А-Яа-я]/
-      }
-    }
-  });
-  $('#info__lastName').mask('SSSSSSSSSSSSSS', {
-    'translation': {
-      S: {
-        pattern: /[А-Яа-я-]/
-      }
-    }
-  });
-  $('#info__middleName').mask('SSSSSSSSSSSSSS', {
-    'translation': {
-      S: {
-        pattern: /[А-Яа-я]/
-      }
-    }
-  });
+  var toggleSlides = function toggleSlides() {
+    var btns = document.querySelectorAll('.js-btn');
+    var classHidden = 'is-hidden';
+    var classError = 'box-error';
+    Array.from(btns).forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var currentSlide = document.querySelector("[data-slide=\"".concat(btn.dataset.current, "\"]"));
+        var nextSlide = document.querySelector("[data-slide=\"".concat(btn.dataset.next, "\"]"));
+        var action = btn.dataset.action;
+
+        var changeSlide = function changeSlide() {
+          currentSlide.classList.add(classHidden);
+          nextSlide.classList.remove(classHidden);
+        };
+
+        var addErrorBox = function addErrorBox() {
+          var boxError = document.createElement('div');
+          boxError.className = classError;
+          boxError.innerText = 'Пожалуйста заполните все поля';
+          currentSlide.append(boxError);
+        };
+
+        var removeErrorBox = function removeErrorBox() {
+          var boxError = currentSlide.querySelector(".".concat(classError));
+
+          if (boxError) {
+            boxError.remove();
+          }
+        };
+
+        if (action === 'check') {
+          var inputs = currentSlide.querySelectorAll('input');
+          var statusArray = [];
+          Array.from(inputs).forEach(function (input) {
+            var type = input.dataset.type;
+            var control = input.dataset.control;
+            var minValue = input.dataset.min ? input.dataset.min : 1;
+            var maxValue = input.dataset.max ? input.dataset.max : 100;
+
+            if (type === 'text') {
+              if (control === 'length') {
+                if (input.value.length >= minValue && input.value.length <= maxValue) {
+                  statusArray.push('true');
+                } else {
+                  statusArray.push('false');
+                }
+              }
+            }
+          });
+
+          if (statusArray.length && !statusArray.includes('false')) {
+            removeErrorBox();
+            changeSlide();
+          } else {
+            addErrorBox();
+          }
+        } else {
+          removeErrorBox();
+          changeSlide();
+        }
+      });
+    });
+  };
+
+  toggleSlides();
   $('#info__series').mask('SS', {
     'translation': {
       S: {
@@ -286,18 +308,6 @@ function initBlock() {
     }
   });
   $('#phone').mask('+38 (000) 000 00 00');
-  $('#email').on('blur', function () {
-    var email = $(this).val();
-
-    if (email.length && (email.match('@') || []).length !== 1) {
-      if ($('.info__slider').slick('slickCurrentSlide') === 5) {
-        $('.slick-next').css('display', 'none');
-      }
-    } else {
-      $('.slick-next').css('display', 'block');
-    }
-  });
-  return true;
 } // ---------------------------- END PUBLIC METHODS ----------------------------
 
 

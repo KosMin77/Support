@@ -9,7 +9,7 @@ mixin info(data = {})
         p.info__logo=data.logo
         .container
             form.info__mainForm(action="mailto:help.dovidka.in.ua@gmail.com", enctype="text/plain", method="post")
-                .info__slide.info__slide--first
+                .info__slide(data-slide="first")
                     .info__title=data.title
                     .info__upperChoice
                         input(type="radio", id="first", name="rad", value="1" checked="checked" data-waschecked="true")
@@ -17,31 +17,30 @@ mixin info(data = {})
                     .info__lowerChoice
                         input(type="radio",id="second" name="rad", value="2")
                         label.info__choice(for="second" )=data.second
-                    img.info__pic--woman(src="../../img/page2/woman.png", alt="")
-                    img.info__path--two(src="../../img/page2/3-layers.png", alt="")
-                    button(type="button", class="slick-next slick-next--first btn-next", onclick='changeClass' ) ДАЛІ
+                    img.info__pic_woman(src="../../img/page2/woman.png", alt="")
+                    img.info__path_two(src="../../img/page2/3-layers.png", alt="")
+                    a(class="js-btn btn-next", data-current="first", data-next="second") ДАЛІ
                 
-                .info__slide.info__slide--second.is-hidden
+                .info__slide.info__slide_second.is-hidden(data-slide="second")
                     .info__title=data.fillTitle
                     .row
                         .col-md-6
                             p.info__fio=data.fio
-                            .info__fio--fields
-                                input(type="name", id="info__name", placeholder=data.name)
-                                input(type="name", id="info__lastName", placeholder=data.lastName)
-                                input(type="name", id="info__middleName", placeholder=data.middleName)
-                                p.info__descr.info__descr--fio=data.descr
+                            .info__fio_fields
+                                input(type="text", id="first_name", data-type="text", data-control="length", data-min="2", placeholder=data.name)
+                                input(type="text", id="last_name", data-type="text", data-control="length", data-min="2", placeholder=data.lastName)
+                                input(type="text", id="middle_name", data-type="text", data-control="length", data-min="2", placeholder=data.middleName)
+                                p.info__descr.info__descr_fio=data.descr
                         .col-md-6
-                            .info__btn.info__btn--next
-                                button.btn(type="submit", class="slick-next slick-next--second btn-next") ДАЛІ
-                                button.btn(type="button", class="slick-next btn-pass") ПРОПУСТИТИ
-                        .info__btn--prev
-                            label(for="btn-previous", class="info__prev--arrow")!=data.arrow
-                            button(class="btn slick-prev", id="btn-previous", type="submit") Назад
+                            .info__btn.info__btn_next
+                                a(class="js-btn btn-next", data-action="check", data-current="second", data-next="third") ДАЛІ
+                                a(class="js-btn btn-next btn-next_skip", data-current="second", data-next="third") ПРОПУСТИТИ
+                        .info__btn_prev
+                            a(class="js-btn btn-prev", data-current="second", data-next="first") Назад
 
 
 
-                .info__slide.info__slide--third.is-hidden
+                .info__slide.info__slide_third.is-hidden(data-slide="third")
                     .info__title=data.fillTitle
                     p.info__passport=data.passport
                     .row
@@ -54,16 +53,16 @@ mixin info(data = {})
                             input(type="name", id="info__pasNumb", placeholder=data.passNumb)
                             p.info__descr=data.descr
                         .col-md-6
-                            button.btn(type="submit", class="slick-next slick-next--third btn-next") ДАЛІ
-                            button.btn(type="button", class="slick-next btn-pass btn-pass--third ") ПРОПУСТИТИ
-                        .info__btn--prev.info__btn--prev--third
-                            label(for="btn-previous", class="info__prev--arrow")!=data.arrow
+                            button.btn(type="submit", class="slick-next slick-next_third btn-next") ДАЛІ
+                            button.btn(type="button", class="slick-next btn-pass btn-pass_third ") ПРОПУСТИТИ
+                        .info__btn_prev.info__btn_prev_third
+                            label(for="btn-previous", class="info__prev_arrow")!=data.arrow
                             button(class="btn slick-prev", id="btn-previous", type="submit") Назад
 
 
 
                     
-                .info__slide.info__slide--fourth.is-hidden
+                .info__slide.info__slide_fourth.is-hidden
                     .info__title=data.fillTitle
                     p.info__adress=data.adress
                     .row
@@ -77,15 +76,15 @@ mixin info(data = {})
                                 input(type="name", id="info__houseblock", placeholder=data.houseblock required)
                             p.info__descr=data.descr
                         .col-md-6
-                            button.btn(type="submit", class="slick-next slick-next--fourth btn-next") ДАЛІ
-                        .info__btn--prev.info__btn--fourth
-                            label(for="btn-previous", class="info__prev--arrow")!=data.arrow
+                            button.btn(type="submit", class="slick-next slick-next_fourth btn-next") ДАЛІ
+                        .info__btn_prev.info__btn_fourth
+                            label(for="btn-previous", class="info__prev_arrow")!=data.arrow
                             button(class="btn slick-prev", id="btn-previous", type="submit") Назад
 
 
 
 
-                .info__slide.info__slide--fifth.is-hidden
+                .info__slide.info__slide_fifth.is-hidden
                     .info__contactTitle=data.contactTitle
                     .row
                         .col-md-6
@@ -95,13 +94,13 @@ mixin info(data = {})
                                 p.info__email=data.email
                                 input(type="email", id="email", placeholder=data.examp required)
                         .col-md-6
-                            button.btn(type="submit", class="slick-next slick-next--fifth btn-next") ОТРИМАТИ
+                            button.btn(type="submit", class="slick-next slick-next_fifth btn-next") ОТРИМАТИ
 
 
-                .info__slide.info__slide--sixth.is-hidden
+                .info__slide.info__slide_sixth.is-hidden
                     .row
                         .col-md-6
                         h1.info__payTitle=data.payTitle
                         p.info__paySubtitle=data.paySubtitle
                         .col-md-6
-                            a(href="./lastPage.html", class="slick-next slick-next--sixth btn-link") ОПЛАТИТИ
+                            a(href="./lastPage.html", class="slick-next slick-next_sixth btn-link") ОПЛАТИТИ
