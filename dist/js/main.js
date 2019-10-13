@@ -219,14 +219,6 @@ __webpack_require__.r(__webpack_exports__);
  */
 function initBlock() {
   // TODO: add code here
-  var changeClass = function changeClass() {
-    var slide = document.querySelectorAll('.info__slide');
-    Array.from(slide).forEach(function (slide) {
-      slide.classList.add('.is-hiden');
-    });
-    window.addEventListener('load', changeClass);
-  };
-
   $('#info__name').mask('SSSSSSSSSSSSSS', {
     'translation': {
       S: {
@@ -293,12 +285,12 @@ function initBlock() {
       }
     }
   });
-  $('#phone').mask("+38 (000) 000 00 00");
+  $('#phone').mask('+38 (000) 000 00 00');
   $('#email').on('blur', function () {
     var email = $(this).val();
 
-    if (email.length > 0 && (email.match(/.+?\@.+/g) || []).length !== 1) {
-      if ($('.info__slider').slick('slickCurrentSlide') == 5) {
+    if (email.length && (email.match('@') || []).length !== 1) {
+      if ($('.info__slider').slick('slickCurrentSlide') === 5) {
         $('.slick-next').css('display', 'none');
       }
     } else {
@@ -427,7 +419,7 @@ function scanImages() {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! E:\Support\src\js\main.js */"./src/js/main.js");
+module.exports = __webpack_require__(/*! /home/inevix/projects/Support/src/js/main.js */"./src/js/main.js");
 
 
 /***/ })

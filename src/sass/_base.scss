@@ -131,7 +131,6 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    // content: '';
     content: none;
 }
 
@@ -141,7 +140,6 @@ table {
 }
 
 /* box-sizing fix */
-/* stylelint-disable-next-line no-duplicate-selectors */
 *,
 *:before,
 *:after {
@@ -172,7 +170,7 @@ img {
 .info__title {
     height: 24px;
     color: #000000;
-    font-family: Helvetica;
+    font-family: $font-family-sans-serif;
     font-size: 22px;
     font-weight: 900;
     padding-top: 160px;
@@ -183,7 +181,7 @@ img {
     width: 251px;
     height: 12px;
     color: #3a9acd;
-    font-family: "Helvetica", sans-serif;
+    font-family: $font-family-sans-serif;
     font-size: 10px;
     font-weight: 700;
     letter-spacing: 0.5px;
@@ -210,7 +208,7 @@ input {
 
 ::placeholder {
     color: #767676;
-    font-family: "Helvetica", sans-serif;
+    font-family: $font-family-sans-serif;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.5px;
@@ -239,12 +237,8 @@ input {
 }
 
 .btn-link {
-    margin-top: 0px;
-    padding-left: 30px;
-    padding-top: 8px;
-    padding-right: 30px;
-    padding-bottom: 7px;
-
+    margin-top: 0;
+    padding: 8px 30px 7px;
 }
 
 .btn-pass {
@@ -260,10 +254,10 @@ input {
     outline: none;
     border: none;
     color: #000000;
-    font-family: "Helvetica", sans-serif;
+    font-family: $font-family-sans-serif;
     font-size: 13px;
     font-weight: 300;
-    letter-spacing: 0.81p
+    letter-spacing: 0.81px;
 }
 
 .slick-dots {
@@ -287,17 +281,16 @@ button {
     height: 12px;
     width: 12px;
     font-size: 3px;
-    padding-right: 0px;
-    border: 1px solid black;
+    padding-right: 0;
+    border: 1px solid #000;
     outline: none;
     color: #fff;
     background-color: #fff;
     cursor: pointer;
 }
 
-.slick-active>button {
-    background-color: black;
-
+.slick-active > button {
+    background-color: #000;
 }
 
 .slick-dots li button {
@@ -306,6 +299,6 @@ button {
     width: 8px;
 }
 
-.is-hiden {
+.is-hidden {
     display: none;
 }

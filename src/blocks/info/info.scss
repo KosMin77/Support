@@ -1,12 +1,4 @@
-/**
- * Styles for the info block.
- */
 .info {
-    // Selector styles
-    // TODO: add code
-
-    // @media queries
-    // TODO: add code
     @media only screen and (min-width: 1200px) {
         .info {
             &__slider {
@@ -14,33 +6,24 @@
             }
         }
     }
-
-    // Pseudo-classes and pseudo-elements
-    // TODO: add code
-
-    // Nested selectors
-    // TODO: add code
-
-    // BEM elements
-    // TODO: add code
     &__logo {
         margin-top: 33px;
         margin-left: 33px;
         margin-bottom: 30px;
     }
 
-    &__slide--first {
+    &__slide_first {
         background-color: #fff;
     }
 
 
-    &__pic--woman {
+    &__pic_woman {
         position: relative;
         top: 36px;
         left: 250px;
     }
 
-    &__path--two {
+    &__path_two {
         position: relative;
         left: 420px;
         top: -105px;
@@ -76,20 +59,20 @@
     &__choice {
         height: 18px;
         color: #000000;
-        font-family: "Helvetica", sans-serif;
+        font-family: $font-family-sans-serif;
         font-size: 16px;
         margin-left: 0;
         margin-top: 0;
     }
 
-    &__slide--second {
-        background-image: url(../img/page3/thirdPage.png);
+    &__slide_second {
+        background-image: url("../../img/page3/thirdPage.png");
         position: relative;
     }
 
     &__fio {
         color: #010000;
-        font-family: "Helvetica", sans-serif;
+        font-family: $font-family-sans-serif;
         font-size: 12px;
         font-weight: 900;
         margin-left: 153px;
@@ -97,25 +80,25 @@
         margin-bottom: 10px;
     }
 
-    &__fio--fields {
+    &__fio_fields {
         display: flex;
         flex-direction: column;
         margin-left: 152px;
     }
 
-    &__descr--fio {
-        margin-left: 0px;
+    &__descr_fio {
+        margin-left: 0;
         margin-top: 10px;
     }
 
-    &__btn--next {
+    &__btn_next {
         display: flex;
         flex-direction: column;
     }
 
 
-    &__slide--third {
-        background-image: url(../img/page4/2-layers.png);
+    &__slide_third {
+        background-image: url("../../img/page4/2-layers.png");
     }
 
     &__passport {
@@ -123,7 +106,7 @@
         margin-top: 62px;
         font-weight: 900;
         color: #030000;
-        font-family: "Helvetica", sans-serif;
+        font-family: $font-family-sans-serif;
         font-size: 12px;
         text-transform: uppercase;
     }
@@ -134,7 +117,7 @@
         margin-left: 152px;
         font-weight: 900;
         color: #030000;
-        font-family: "Helvetica", sans-serif;
+        font-family: $font-family-sans-serif;
         font-size: 12px;
         text-transform: uppercase;
     }
@@ -152,11 +135,11 @@
     #info__series {
         width: 70px;
         height: 40px;
-        margin-left: 0px;
+        margin-left: 0;
         text-transform: uppercase;
     }
 
-    #info__series>::placeholder {
+    #info__series::placeholder {
         text-transform: capitalize;
     }
 
@@ -175,14 +158,14 @@
         margin-left: 100px;
     }
 
-    &__slide--fourth {
-        background-image: url(../img/page5/5-layers.png);
+    &__slide_fourth {
+        background-image: url("../../img/page5/5-layers.png");
     }
 
     &__adress {
         margin-top: 62px;
         color: #030000;
-        font-family: "Helvetica", sans-serif;
+        font-family: $font-family-sans-serif;
         font-size: 12px;
         font-weight: 900;
         text-transform: uppercase;
@@ -194,29 +177,29 @@
         margin-top: 5px;
     }
 
-    &__btn--prev {
+    &__btn_prev {
         display: flex;
         margin-top: 122px;
         margin-left: 175px;
     }
 
-    &__prev--arrow {
+    &__prev_arrow {
         margin-top: 10px;
     }
 
     #btn-previous {
         margin-top: 14px;
-        margin-left: 0px;
+        margin-left: 0;
     }
 
-    &__slide--fifth {
-        background-image: url(../img/page6/contactPage.png);
+    &__slide_fifth {
+        background-image: url("../../img/page6/contactPage.png");
     }
 
     &__contactTitle {
         height: 24px;
         color: #000000;
-        font-family: "Helvetica", sans-serif;
+        font-family: $font-family-sans-serif;
         font-size: 22px;
         font-weight: 700;
         margin-left: 115px;
@@ -227,7 +210,7 @@
     &__phone,
     &__email {
         color: #767676;
-        font-family: "PT Sans Caption";
+        font-family: "PT Sans Caption", sans-serif;
         font-size: 14px;
         font-weight: 700;
         letter-spacing: 0.26px;
@@ -248,14 +231,14 @@
         text-transform: lowercase;
     }
 
-    &__slide--sixth {
-        background-image: url(../img/page7/Path_2.png);
+    &__slide_sixth {
+        background-image: url("../../img/page7/Path_2.png");
     }
 
     &__payTitle {
         height: 24px;
         color: #000000;
-        font-family: "Helvetica", sans-serif;
+        font-family: $font-family-sans-serif;
         font-size: 22px;
         font-weight: 700;
         padding-top: 140px;
@@ -265,53 +248,51 @@
     &__paySubtitle {
         height: 18px;
         color: #000000;
-        font-family: "Helvetica", sans-serif;
+        font-family: $font-family-sans-serif;
         font-size: 16px;
         margin-top: 100px;
         margin-left: 120px;
     }
 
-    // Bem modifiers
-    // TODO: add code
-    .slick-next--first {
+    .slick-next__first {
         left: 200px;
         top: -100px;
     }
 
-    .slick-next--second {
+    .slick-next_second {
         top: 400px;
         left: 200px;
     }
 
-    .slick-next--third {
+    .slick-next_third {
         top: 300px;
         left: 200px;
     }
 
-    .btn-pass--third {
+    .btn-pass_third {
         left: 26px;
         top: 365px;
     }
 
-    &__btn--prev--third {
+    &__btn_prev_third {
         margin-top: 54px;
     }
 
-    .slick-next--fourth {
+    .slick-next_fourth {
         top: 360px;
         left: 200px;
     }
 
-    .info__btn--fourth {
+    .info__btn_fourth {
         margin-top: 15px;
     }
 
-    .slick-next--fifth {
+    .slick-next_fifth {
         top: 340px;
         left: 140px;
     }
 
-    .slick-next--sixth {
+    .slick-next_sixth {
         top: 400px;
         left: 280px;
     }
