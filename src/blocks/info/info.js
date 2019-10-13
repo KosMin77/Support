@@ -1,62 +1,73 @@
-/**
- * @file Implementation of the info block
- */
-
-// -------------------------- BEGIN MODULE VARIABLES --------------------------
-
-// TODO: add code here
-
-// --------------------------- END MODULE VARIABLES ---------------------------
-
-// -------------------------- BEGIN UTILITY FUNCTIONS -------------------------
-
-// TODO: add code here
-
-// --------------------------- END UTILITY FUNCTIONS --------------------------
-
-// ----------------------------- BEGIN DOM METHODS ----------------------------
-
-// TODO: add code here
-
-// ------------------------------ END DOM METHODS -----------------------------
-
-// --------------------------- BEGIN EVENT HANDLERS ---------------------------
-
-// TODO: add code here
-
-// ---------------------------- END EVENT HANDLERS ----------------------------
-
-// --------------------------- BEGIN PUBLIC METHODS ---------------------------
-
-/**
- * Initialize the info block.
- * @return true if the block is present on the page, false otherwise
- */
 function initBlock() {
-    // TODO: add code here
+    const toggleSlides = () => {
+        const btns = document.querySelectorAll('.js-btn');
+        const classHidden = 'is-hidden';
+        const classError = 'box-error';
 
-    $('#info__name').mask('SSSSSSSSSSSSSS', {
-        'translation': {
-            S: {
-                pattern: /[А-Яа-я]/
-            }
-        }
-    });
+        Array.from(btns).forEach((btn) => {
+            btn.addEventListener('click', function() {
+                const currentSlide = document.querySelector(`[data-slide="${btn.dataset.current}"]`);
+                const nextSlide = document.querySelector(`[data-slide="${btn.dataset.next}"]`);
+                const action = btn.dataset.action;
 
-    $('#info__lastName').mask('SSSSSSSSSSSSSS', {
-        'translation': {
-            S: {
-                pattern: /[А-Яа-я-]/
-            }
-        }
-    });
-    $('#info__middleName').mask('SSSSSSSSSSSSSS', {
-        'translation': {
-            S: {
-                pattern: /[А-Яа-я]/
-            }
-        }
-    });
+                const changeSlide = () => {
+                    currentSlide.classList.add(classHidden);
+                    nextSlide.classList.remove(classHidden);
+                };
+
+                const addErrorBox = () => {
+                    const boxError = document.createElement('div');
+
+                    boxError.className = classError;
+                    boxError.innerText = 'Пожалуйста заполните все поля';
+                    currentSlide.append(boxError);
+                };
+
+                const removeErrorBox = () => {
+                    const boxError = currentSlide.querySelector(`.${classError}`);
+
+                    if (boxError) {
+                        boxError.remove();
+                    }
+                };
+
+                if (action === 'check') {
+                    const inputs = currentSlide.querySelectorAll('input');
+                    const statusArray = [];
+
+                    Array.from(inputs).forEach((input) => {
+                        const type = input.dataset.type;
+                        const control = input.dataset.control;
+                        const minValue = input.dataset.min ? input.dataset.min : 1;
+                        const maxValue = input.dataset.max ? input.dataset.max : 100;
+
+                        if (type === 'text') {
+                            if (control === 'length') {
+                                if (input.value.length >= minValue && input.value.length <= maxValue) {
+                                    statusArray.push('true');
+                                } else {
+                                    statusArray.push('false');
+                                }
+                            }
+                        }
+                    });
+
+                    if (statusArray.length && !statusArray.includes('false')) {
+                        removeErrorBox();
+                        changeSlide();
+                    } else {
+                        addErrorBox();
+                    }
+
+                } else {
+                    removeErrorBox();
+                    changeSlide();
+                }
+            });
+        });
+    };
+
+    toggleSlides();
 
     $('#info__series').mask('SS', {
         'translation': {
@@ -107,27 +118,10 @@ function initBlock() {
     });
 
     $('#phone').mask('+38 (000) 000 00 00');
-
-    $('#email').on('blur', function () {
-
-        const email = $(this).val();
-
-        if (email.length && (email.match('@') || []).length !== 1) {
-            if ($('.info__slider').slick('slickCurrentSlide') === 5) {
-                $('.slick-next').css('display', 'none');
-            }
-
-        } else {
-            $('.slick-next').css('display', 'block');
-        }
-
-    });
-
-    return true;
 }
 
 // ---------------------------- END PUBLIC METHODS ----------------------------
 
 export default {
-    initBlock,
+    initBlock
 };
