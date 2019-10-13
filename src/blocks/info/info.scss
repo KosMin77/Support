@@ -7,7 +7,13 @@
 
     // @media queries
     // TODO: add code
-    @media screen and (min-width : 1200px) {}
+    @media only screen and (min-width: 1200px) {
+        .info {
+            &__slider {
+                margin-top: 70px;
+            }
+        }
+    }
 
     // Pseudo-classes and pseudo-elements
     // TODO: add code
@@ -17,20 +23,27 @@
 
     // BEM elements
     // TODO: add code
-    &__firstSlide {
+    &__logo {
+        margin-top: 33px;
+        margin-left: 33px;
+        margin-bottom: 30px;
+    }
+
+    &__slide--first {
         background-color: #fff;
     }
 
+
     &__pic--woman {
         position: relative;
-        top: -18px;
+        top: 36px;
         left: 250px;
     }
 
     &__path--two {
         position: relative;
-        left: 560px;
-        top: 140px;
+        left: 420px;
+        top: -105px;
     }
 
     &__radio {
@@ -41,11 +54,13 @@
 
     &__upperChoice {
         margin-top: 105px;
+        margin-left: 168px;
         display: flex;
     }
 
     &__lowerChoice {
         margin-top: 30px;
+        margin-left: 168px;
         display: flex;
     }
 
@@ -67,7 +82,7 @@
         margin-top: 0;
     }
 
-    &__secondSlide {
+    &__slide--second {
         background-image: url(../img/page3/thirdPage.png);
         position: relative;
     }
@@ -77,22 +92,29 @@
         font-family: "Helvetica", sans-serif;
         font-size: 12px;
         font-weight: 900;
-        margin-left: 140px;
+        margin-left: 153px;
         margin-top: 62px;
         margin-bottom: 10px;
     }
 
     &__fio--fields {
-        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 152px;
     }
 
     &__descr--fio {
-        margin-left: 105px;
+        margin-left: 0px;
         margin-top: 10px;
     }
 
+    &__btn--next {
+        display: flex;
+        flex-direction: column;
+    }
 
-    &__thirdSlide {
+
+    &__slide--third {
         background-image: url(../img/page4/2-layers.png);
     }
 
@@ -108,7 +130,7 @@
 
     &__idPass {
         margin-top: 15px;
-        margin-bottom: 15px;
+        margin-bottom: 5px;
         margin-left: 152px;
         font-weight: 900;
         color: #030000;
@@ -118,8 +140,8 @@
     }
 
     &__upper {
-        margin-left: 135px;
-        margin-top: 5px;
+        margin-left: 152px;
+        margin-top: 10px;
         display: flex;
     }
 
@@ -153,7 +175,7 @@
         margin-left: 100px;
     }
 
-    &__fourthSlide {
+    &__slide--fourth {
         background-image: url(../img/page5/5-layers.png);
     }
 
@@ -168,30 +190,26 @@
     }
 
     .location {
-        margin-left: 33px;
+        margin-left: 150px;
         margin-top: 5px;
     }
 
     &__btn--prev {
         display: flex;
-        margin-top: 15px;
-        margin-left: 160px;
+        margin-top: 122px;
+        margin-left: 175px;
     }
 
     &__prev--arrow {
         margin-top: 10px;
     }
 
-    .btn-next {
-        margin-top: 50px;
-    }
-
     #btn-previous {
-        margin-top: 61px;
-        margin-left: 15px;
+        margin-top: 14px;
+        margin-left: 0px;
     }
 
-    &__fifthSlide {
+    &__slide--fifth {
         background-image: url(../img/page6/contactPage.png);
     }
 
@@ -230,7 +248,7 @@
         text-transform: lowercase;
     }
 
-    &__sixthSlide {
+    &__slide--sixth {
         background-image: url(../img/page7/Path_2.png);
     }
 
@@ -253,24 +271,49 @@
         margin-left: 120px;
     }
 
-    // &__wait {
-    //     width: 181px;
-    //     height: 39px;
-    //     color: #000000;
-    //     font-family: "Helvetica", sans-serif;
-    //     font-size: 36px;
-    //     font-weight: 700;
-    // }
-
-    // &__lastPageDescr {
-    //     width: 570px;
-    //     height: 184px;
-    //     color: #000000;
-    //     font-family: "Helvetica", sans-serif;
-    //     font-size: 36px;
-    //     line-height: 46px;
-    // }
-
     // Bem modifiers
     // TODO: add code
+    .slick-next--first {
+        left: 200px;
+        top: -100px;
+    }
+
+    .slick-next--second {
+        top: 400px;
+        left: 200px;
+    }
+
+    .slick-next--third {
+        top: 300px;
+        left: 200px;
+    }
+
+    .btn-pass--third {
+        left: 26px;
+        top: 365px;
+    }
+
+    &__btn--prev--third {
+        margin-top: 54px;
+    }
+
+    .slick-next--fourth {
+        top: 360px;
+        left: 200px;
+    }
+
+    .info__btn--fourth {
+        margin-top: 15px;
+    }
+
+    .slick-next--fifth {
+        top: 340px;
+        left: 140px;
+    }
+
+    .slick-next--sixth {
+        top: 400px;
+        left: 280px;
+    }
+
 }

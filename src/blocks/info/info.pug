@@ -6,60 +6,68 @@
 
 mixin info(data = {})
     .info&attributes(attributes)
+        p.info__logo=data.logo
         .container
-            form.info__mainForm(action="mailto:help.dovidka.in.ua@gmail.com", enctype="text/plain",name="infoForm" onsubmit="return validateForm()", method="post")
-                .info__slider
-                    #info__slide.info__firstSlide
-                        h1.info__title=data.title
-                            .col-md-6.info__upperChoice
-                                input(type="radio", id="first", name="rad", value="1" checked="checked" data-waschecked="true")
-                                label.info__choice(for="first" )=data.first
-                            .col-md-6.info__lowerChoice
-                                input(type="radio",id="second" name="rad", value="2")
-                                label.info__choice(for="second" )=data.second
-                        img.info__path--two(src="../../img/page2/3-layers.png", alt="")
-                        button(type="button", class="slick-next btn-next") ДАЛІ
-                        img.info__pic--woman(src="../../img/page2/woman.png", alt="")
-                    
-                    #info__slide.info__secondSlide
-                        h1.info__title=data.fillTitle
+            form.info__mainForm(action="mailto:help.dovidka.in.ua@gmail.com", enctype="text/plain", method="post")
+                section.info__slide.info__slide--first
+                    h1.info__title=data.title
+                    .info__upperChoice
+                        input(type="radio", id="first", name="rad", value="1" checked="checked" data-waschecked="true")
+                        label.info__choice(for="first" )=data.first
+                    .info__lowerChoice
+                        input(type="radio",id="second" name="rad", value="2")
+                        label.info__choice(for="second" )=data.second
+                    img.info__pic--woman(src="../../img/page2/woman.png", alt="")
+                    img.info__path--two(src="../../img/page2/3-layers.png", alt="")
+                    button(type="button", class="slick-next slick-next--first btn-next", onclick='changeClass' ) ДАЛІ
+                
+                section.info__slide.info__slide--second
+                    h1.info__title=data.fillTitle
+                    .row
                         .col-md-6
                             p.info__fio=data.fio
-                            .col-md-4.info__fio--fields
-                                input(type="name", id="info__name", placeholder=data.name, required)
-                                input(type="name", id="info__lastName", placeholder=data.lastName, required)
-                                input(type="name", id="info__middleName", placeholder=data.middleName, required)
+                            .info__fio--fields
+                                input(type="name", id="info__name", placeholder=data.name)
+                                input(type="name", id="info__lastName", placeholder=data.lastName)
+                                input(type="name", id="info__middleName", placeholder=data.middleName)
                                 p.info__descr.info__descr--fio=data.descr
-                                .col-md-8
                         .col-md-6
-                            button.btn(type="submit", class="slick-next btn-next") ДАЛІ
-                            button.btn(type="button", class="slick-next btn-pass") ПРОПУСТИТИ
-                            button.btn(type="button", class="slick-prev") &larr;Назад
+                            .info__btn.info__btn--next
+                                button.btn(type="submit", class="slick-next slick-next--second btn-next") ДАЛІ
+                                button.btn(type="button", class="slick-next btn-pass") ПРОПУСТИТИ
+                        .info__btn--prev
+                            label(for="btn-previous", class="info__prev--arrow")!=data.arrow
+                            button(class="btn slick-prev", id="btn-previous", type="submit") Назад
 
 
 
-                    #info__slide.info__thirdSlide
-                        h1.info__title=data.fillTitle
-                        p.info__passport=data.passport
-                        .col-md-4.info__upper
-                            input(type="name", id="info__series", placeholder=data.series required)
-                            input(type="name", id="info__numb", placeholder=data.numb required)
-                        input(type="name", id="info__ssn", placeholder=data.ssn required)
-                        p.info__idPass=data.idPass
-                        input(type="name", id="info__pasNumb", placeholder=data.passNumb required)
-                        p.info__descr=data.descr
-                        .col-md-8
-                        button.btn(type="submit", class="slick-next btn-next") ДАЛІ
-                        button.btn(type="button", class="slick-next btn-pass") ПРОПУСТИТИ
-                        button.btn(type="button", class="slick-prev") &larr;Назад
+                section.info__slide.info__slide--third
+                    h1.info__title=data.fillTitle
+                    p.info__passport=data.passport
+                    .row
+                        .col-md-6
+                            .info__upper
+                                input(type="name", id="info__series", placeholder=data.series)
+                                input(type="name", id="info__numb", placeholder=data.numb)
+                            input(type="name", id="info__ssn", placeholder=data.ssn)
+                            p.info__idPass=data.idPass
+                            input(type="name", id="info__pasNumb", placeholder=data.passNumb)
+                            p.info__descr=data.descr
+                        .col-md-6
+                            button.btn(type="submit", class="slick-next slick-next--third btn-next") ДАЛІ
+                            button.btn(type="button", class="slick-next btn-pass btn-pass--third ") ПРОПУСТИТИ
+                        .info__btn--prev.info__btn--prev--third
+                            label(for="btn-previous", class="info__prev--arrow")!=data.arrow
+                            button(class="btn slick-prev", id="btn-previous", type="submit") Назад
 
 
 
-                        
-                    #info__slide.info__fourthSlide
-                        h1.info__title=data.fillTitle
-                        p.info__adress=data.adress
-                        .col-md-4
+                    
+                section.info__slide.info__slide--fourth
+                    h1.info__title=data.fillTitle
+                    p.info__adress=data.adress
+                    .row
+                        .col-md-6
                             .location
                                 input(type="name", id="info__city", placeholder=data.city required)
                                 input(type="name", id="info__region", placeholder=data.region required)
@@ -67,30 +75,33 @@ mixin info(data = {})
                                 input(type="name", id="info__street", placeholder=data.street required)
                                 input(type="name", id="info__houseNumb", placeholder=data.houseNumb required)
                                 input(type="name", id="info__houseblock", placeholder=data.houseblock required)
-                        p.info__descr=data.descr
-                        .col-md-4
-                        .col-md-4
-                        button.btn(type="submit", class="slick-next btn-next") ДАЛІ
-                        .info__btn--prev
+                            p.info__descr=data.descr
+                        .col-md-6
+                            button.btn(type="submit", class="slick-next slick-next--fourth btn-next") ДАЛІ
+                        .info__btn--prev.info__btn--fourth
                             label(for="btn-previous", class="info__prev--arrow")!=data.arrow
                             button(class="btn slick-prev", id="btn-previous", type="submit") Назад
 
 
 
 
-                    #info__slide.info__fifthSlide
-                        h1.info__contactTitle=data.contactTitle
-                        .row
-                            .col-md-6.info__contact
+                section.info__slide.info__slide--fifth
+                    h1.info__contactTitle=data.contactTitle
+                    .row
+                        .col-md-6
+                            .info__contact
                                 p.info__phone=data.phone
                                 input(type="text", id="phone", placeholder=data.number, required)
                                 p.info__email=data.email
                                 input(type="email", id="email", placeholder=data.examp required)
-                            .col-md-6
-                                button.btn(type="submit", class="slick-next btn-next") ОТРИМАТИ
+                        .col-md-6
+                            button.btn(type="submit", class="slick-next slick-next--fifth btn-next") ОТРИМАТИ
 
 
-                    #info__slide.info__sixthSlide
+                section.info__slide.info__slide--sixth
+                    .row
+                        .col-md-6
                         h1.info__payTitle=data.payTitle
                         p.info__paySubtitle=data.paySubtitle
-                        a(href="./lastPage.html", class="slick-next btn-next btn-link") ОПЛАТИТИ
+                        .col-md-6
+                            a(href="./lastPage.html", class="slick-next slick-next--sixth btn-link") ОПЛАТИТИ

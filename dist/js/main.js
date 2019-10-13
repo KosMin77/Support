@@ -219,51 +219,39 @@ __webpack_require__.r(__webpack_exports__);
  */
 function initBlock() {
   // TODO: add code here
-  $('.info__slider').slick({
-    dots: true,
-    infinite: false,
-    speed: 500,
-    fade: true,
-    cssEase: 'linear',
-    draggable: false,
-    nextArrow: '.slick-next',
-    prevArrow: '.slick-prev'
-  });
-  $('.slick-prev').css('display', 'none');
-  $('.info__slider').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-    $('.slick-prev').css('display', nextSlide ? 'block' : 'none');
+  var changeClass = function changeClass() {
+    var slide = document.querySelectorAll('.info__slide');
+    Array.from(slide).forEach(function (slide) {
+      slide.classList.add('.is-hiden');
+    });
+    window.addEventListener('load', changeClass);
+  };
 
-    if ($('#email').val().length > 0 || ($('#email').val().match(/.+?\@.+/g) || []).length !== 1 && nextSlide == 4) {
-      $('.slick-next').css('display', 'none');
-    } else {
-      $('.slick-next').css('display', 'block');
-    }
-  });
   $('#info__name').mask('SSSSSSSSSSSSSS', {
     'translation': {
       S: {
-        pattern: /[A-Za-z]/
+        pattern: /[А-Яа-я]/
       }
     }
   });
   $('#info__lastName').mask('SSSSSSSSSSSSSS', {
     'translation': {
       S: {
-        pattern: /[A-Za-z-]/
+        pattern: /[А-Яа-я-]/
       }
     }
   });
   $('#info__middleName').mask('SSSSSSSSSSSSSS', {
     'translation': {
       S: {
-        pattern: /[A-Za-z]/
+        pattern: /[А-Яа-я]/
       }
     }
   });
   $('#info__series').mask('SS', {
     'translation': {
       S: {
-        pattern: /[A-Za-z]/
+        pattern: /[А-Яа-я]/
       }
     }
   });
@@ -273,28 +261,28 @@ function initBlock() {
   $('#info__city').mask('SSSSSSSSSSSSSSSSSSSSSSSS', {
     'translation': {
       S: {
-        pattern: /[A-Za-z-]/
+        pattern: /[А-Яа-я]/
       }
     }
   });
   $('#info__region').mask('SSSSSSSSSSSSSSSSSSSSSSSS', {
     'translation': {
       S: {
-        pattern: /[A-Za-z-]/
+        pattern: /[А-Яа-я-]/
       }
     }
   });
   $('#info__locality').mask('SSSSSSSSSSSSSSSSSSSSSSSS', {
     'translation': {
       S: {
-        pattern: /[A-Za-z-]/
+        pattern: /[А-Яа-я-]/
       }
     }
   });
   $('#info__street').mask('SSSSSSSSSSSSSSSSSSSSSSSS', {
     'translation': {
       S: {
-        pattern: /[A-Za-z-]/
+        pattern: /[А-Яа-я-]/
       }
     }
   });

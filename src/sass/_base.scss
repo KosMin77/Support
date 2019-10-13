@@ -112,7 +112,7 @@ body {
     box-sizing: border-box;
     line-height: 1;
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-image: linear-gradient(-63deg, #c2e9fb 0%, #a1c4fd 100%);
 
 }
@@ -159,11 +159,11 @@ img {
 }
 
 
-#info__slide {
+.info__slide {
     display: block;
     background-position: center;
     width: 100%;
-    height: 711px;
+    height: 700px;
     margin-top: 5px;
     margin-bottom: 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
@@ -198,7 +198,6 @@ label {
 }
 
 input {
-    margin-left: 103px;
     margin-bottom: 15px;
     padding-left: 10px;
     width: 236px;
@@ -224,6 +223,9 @@ input {
 }
 
 .slick-next {
+    position: relative;
+    padding-right: 10px;
+    padding-top: 3px;
     width: 171px;
     height: 40px;
     border-radius: 27px;
@@ -236,43 +238,32 @@ input {
     text-decoration: none;
 }
 
-.btn-next {
-    position: fixed;
-    left: 800px;
-    top: 550px;
-    padding-right: 10px;
-    padding-top: 3px;
-}
-
 .btn-link {
     margin-top: 0px;
     padding-left: 30px;
-    padding-top: 7px;
+    padding-top: 8px;
+    padding-right: 30px;
+    padding-bottom: 7px;
 
 }
 
 .btn-pass {
-    position: fixed;
-    left: 600px;
-    top: 620px;
+    position: relative;
+    left: 200px;
+    top: 420px;
     padding-right: 10px;
     padding-top: 3px;
 }
 
 .slick-prev {
-    position: fixed;
-    left: 152px;
-    top: 560px;
     width: 65px;
-    z-index: 1;
-    background-color: transparent;
     outline: none;
     border: none;
     color: #000000;
     font-family: "Helvetica", sans-serif;
     font-size: 13px;
     font-weight: 300;
-    letter-spacing: 0.81px;
+    letter-spacing: 0.81p
 }
 
 .slick-dots {
@@ -313,4 +304,8 @@ button {
     text-indent: -9999px;
     height: 8px;
     width: 8px;
+}
+
+.is-hiden {
+    display: none;
 }

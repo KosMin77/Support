@@ -35,37 +35,19 @@
 function initBlock() {
     // TODO: add code here
 
-    $('.info__slider').slick({
-        dots: true,
-        infinite: false,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear',
-        draggable: false,
-        nextArrow: '.slick-next',
-        prevArrow: '.slick-prev'
-    });
+    const changeClass = () => {
+        const slide = document.querySelectorAll('.info__slide');
 
-    $('.slick-prev').css('display', 'none');
-
-    $('.info__slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-        $('.slick-prev').css('display', nextSlide ? 'block' : 'none');
-
-        if ($('#email').val().length > 0 || ($('#email').val().match(/.+?\@.+/g) || []).length !== 1 && nextSlide == 4) {
-
-            $('.slick-next').css('display', 'none');
-
-
-        } else {
-            $('.slick-next').css('display', 'block');
-        }
-
-    });
+        Array.from(slide).forEach(slide => {
+            slide.classList.add('.is-hiden');
+        });
+        window.addEventListener('load', changeClass)
+    }
 
     $('#info__name').mask('SSSSSSSSSSSSSS', {
         'translation': {
             S: {
-                pattern: /[A-Za-z]/
+                pattern: /[А-Яа-я]/
             }
         }
     });
@@ -73,14 +55,14 @@ function initBlock() {
     $('#info__lastName').mask('SSSSSSSSSSSSSS', {
         'translation': {
             S: {
-                pattern: /[A-Za-z-]/
+                pattern: /[А-Яа-я-]/
             }
         }
     });
     $('#info__middleName').mask('SSSSSSSSSSSSSS', {
         'translation': {
             S: {
-                pattern: /[A-Za-z]/
+                pattern: /[А-Яа-я]/
             }
         }
     });
@@ -88,7 +70,7 @@ function initBlock() {
     $('#info__series').mask('SS', {
         'translation': {
             S: {
-                pattern: /[A-Za-z]/
+                pattern: /[А-Яа-я]/
             }
         }
     });
@@ -100,28 +82,28 @@ function initBlock() {
     $('#info__city').mask('SSSSSSSSSSSSSSSSSSSSSSSS', {
         'translation': {
             S: {
-                pattern: /[A-Za-z-]/
+                pattern: /[А-Яа-я]/
             }
         }
     });
     $('#info__region').mask('SSSSSSSSSSSSSSSSSSSSSSSS', {
         'translation': {
             S: {
-                pattern: /[A-Za-z-]/
+                pattern: /[А-Яа-я-]/
             }
         }
     });
     $('#info__locality').mask('SSSSSSSSSSSSSSSSSSSSSSSS', {
         'translation': {
             S: {
-                pattern: /[A-Za-z-]/
+                pattern: /[А-Яа-я-]/
             }
         }
     });
     $('#info__street').mask('SSSSSSSSSSSSSSSSSSSSSSSS', {
         'translation': {
             S: {
-                pattern: /[A-Za-z-]/
+                pattern: /[А-Яа-я-]/
             }
         }
     });
