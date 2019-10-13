@@ -2,13 +2,7 @@
  * Styles for the home block.
  */
 .home {
-    // Selector styles
-    // TODO: add code
-
-    // @media queries
-    // TODO: add code
-    @media screen and (max-width : 767px) {
-
+    @media screen and (max-width: 767px) {
         .home {
             &__title {
                 text-align: center;
@@ -42,84 +36,22 @@
             }
         }
     }
-
-    // @media only screen and (min-width : 768px) and (max-width : 1199px) {
-    //     .home {
-    //         &__title {
-    //             text-align: center;
-    //             margin-top: 25px;
-    //         }
-
-    //         &__subtitle {
-    //             font-size: 18px;
-    //             margin-left: 20px;
-    //             text-align: center;
-    //         }
-
-    //         .btn__descr {
-    //             margin-top: 0;
-    //             text-align: center;
-    //         }
-
-    //         &__man,
-    //         &__path,
-    //         &__plane,
-    //         &__build,
-    //         &__dot {
-    //             display: none;
-    //         }
-
-    //         &__price {
-    //             margin-left: 15px;
-    //             margin-top: 55px;
-    //             text-align: center;
-    //         }
-    //     }
-    // }
-
-    // @media screen and (min-width: 1200px) and (max-width : 1823px) {
-    //     .home {
-    //         &__title {
-    //             margin-top: 225px;
-    //         }
-
-    //         &__plane {
-    //             margin-top: 195px;
-    //         }
-
-    //         &__path {
-    //             margin-top: 215px;
-    //         }
-
-    //     }
-    // }
-
-    @media only screen and (min-width : 1824px) {}
-
-    // Pseudo-classes and pseudo-elements
-    // TODO: add code
-
-    // Nested selectors
-    // TODO: add code
-
-    // BEM elements
-    // TODO: add code
     &__title {
         height: 48px;
         color: #000000;
-        font-family: Helvetica;
+        font-family: $font-family-sans-serif;
         font-size: 46px;
         font-weight: 700;
         text-transform: uppercase;
         margin-top: 100px;
-        margin-left: 0px;
+        margin-left: 0;
     }
 
     &__subtitle {
         display: flex;
         width: 700px;
         color: #000000;
-        font-family: Helvetica;
+        font-family: $font-family-sans-serif;
         font-size: 36px;
         font-weight: 300;
         line-height: 46px;
@@ -132,7 +64,7 @@
 
     &__price {
         color: #000000;
-        font-family: "Helvetica";
+        font-family: $font-family-sans-serif;
         font-size: 18px;
         font-weight: 700;
         margin-top: 100px;
@@ -141,7 +73,7 @@
     &__man {
         position: absolute;
         top: -150px;
-        left: 0px;
+        left: 0;
     }
 
     &__plane {
@@ -168,11 +100,9 @@
         margin-top: -127px;
     }
 
-    // Bem modifiers
-    // TODO: add code
     .btn__descr {
         color: #ffffff;
-        font-family: "Helvetica";
+        font-family: $font-family-sans-serif;
         font-size: 18px;
         letter-spacing: 1px;
         padding-left: 45px;
@@ -184,7 +114,7 @@
         background-color: #3a9acd;
     }
 
-    .home__subtitle--dots {
+    .home__subtitle_dots {
         font-size: 14px;
         margin-left: -35px;
         padding-right: 25px;

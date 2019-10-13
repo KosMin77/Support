@@ -94,7 +94,7 @@ if (Object.keys(opts).length > 1) {
                 pug: true,
                 scss: true,
                 js: true,
-            }
+            };
             break;
         case 'h':
         case 'html':

@@ -9,8 +9,8 @@ mixin info(data = {})
         p.info__logo=data.logo
         .container
             form.info__mainForm(action="mailto:help.dovidka.in.ua@gmail.com", enctype="text/plain", method="post")
-                section.info__slide.info__slide--first
-                    h1.info__title=data.title
+                .info__slide.info__slide--first
+                    .info__title=data.title
                     .info__upperChoice
                         input(type="radio", id="first", name="rad", value="1" checked="checked" data-waschecked="true")
                         label.info__choice(for="first" )=data.first
@@ -21,8 +21,8 @@ mixin info(data = {})
                     img.info__path--two(src="../../img/page2/3-layers.png", alt="")
                     button(type="button", class="slick-next slick-next--first btn-next", onclick='changeClass' ) ДАЛІ
                 
-                section.info__slide.info__slide--second
-                    h1.info__title=data.fillTitle
+                .info__slide.info__slide--second.is-hidden
+                    .info__title=data.fillTitle
                     .row
                         .col-md-6
                             p.info__fio=data.fio
@@ -41,8 +41,8 @@ mixin info(data = {})
 
 
 
-                section.info__slide.info__slide--third
-                    h1.info__title=data.fillTitle
+                .info__slide.info__slide--third.is-hidden
+                    .info__title=data.fillTitle
                     p.info__passport=data.passport
                     .row
                         .col-md-6
@@ -63,8 +63,8 @@ mixin info(data = {})
 
 
                     
-                section.info__slide.info__slide--fourth
-                    h1.info__title=data.fillTitle
+                .info__slide.info__slide--fourth.is-hidden
+                    .info__title=data.fillTitle
                     p.info__adress=data.adress
                     .row
                         .col-md-6
@@ -85,8 +85,8 @@ mixin info(data = {})
 
 
 
-                section.info__slide.info__slide--fifth
-                    h1.info__contactTitle=data.contactTitle
+                .info__slide.info__slide--fifth.is-hidden
+                    .info__contactTitle=data.contactTitle
                     .row
                         .col-md-6
                             .info__contact
@@ -98,7 +98,7 @@ mixin info(data = {})
                             button.btn(type="submit", class="slick-next slick-next--fifth btn-next") ОТРИМАТИ
 
 
-                section.info__slide.info__slide--sixth
+                .info__slide.info__slide--sixth.is-hidden
                     .row
                         .col-md-6
                         h1.info__payTitle=data.payTitle

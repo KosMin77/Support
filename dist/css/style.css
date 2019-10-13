@@ -1,11 +1,13 @@
 @font-face {
   font-family: "Helvetica";
-  src: local("Helvetica"), url(../fonts/HelveticaRegular.woff) format("woff");
+  src: url("../fonts/HelveticaRegular.woff") format("woff");
+  font-weight: 400;
 }
 
 @font-face {
   font-family: "Helvetica";
-  src: local("Helvetica"), url(../fonts/HelveticaLight.woff) format("woff");
+  src: url("../fonts/HelveticaLight.woff") format("woff");
+  font-weight: 300;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -148,7 +150,6 @@ table {
 }
 
 /* box-sizing fix */
-/* stylelint-disable-next-line no-duplicate-selectors */
 *,
 *:before,
 *:after {
@@ -178,7 +179,7 @@ img {
 .info__title {
   height: 24px;
   color: #000000;
-  font-family: Helvetica;
+  font-family: "Helvetica", sans-serif;
   font-size: 22px;
   font-weight: 900;
   padding-top: 160px;
@@ -276,11 +277,8 @@ input {
 }
 
 .btn-link {
-  margin-top: 0px;
-  padding-left: 30px;
-  padding-top: 8px;
-  padding-right: 30px;
-  padding-bottom: 7px;
+  margin-top: 0;
+  padding: 8px 30px 7px;
 }
 
 .btn-pass {
@@ -299,7 +297,7 @@ input {
   font-family: "Helvetica", sans-serif;
   font-size: 13px;
   font-weight: 300;
-  letter-spacing: 0.81p;
+  letter-spacing: 0.81px;
 }
 
 .slick-dots {
@@ -323,8 +321,8 @@ button {
   height: 12px;
   width: 12px;
   font-size: 3px;
-  padding-right: 0px;
-  border: 1px solid black;
+  padding-right: 0;
+  border: 1px solid #000;
   outline: none;
   color: #fff;
   background-color: #fff;
@@ -332,7 +330,7 @@ button {
 }
 
 .slick-active > button {
-  background-color: black;
+  background-color: #000;
 }
 
 .slick-dots li button {
@@ -341,7 +339,7 @@ button {
   width: 8px;
 }
 
-.is-hiden {
+.is-hidden {
   display: none;
 }
 
@@ -7125,7 +7123,7 @@ a.text-dark:hover, a.text-dark:focus {
  * Styles for the page block
  */
 .page {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -7184,19 +7182,19 @@ a.text-dark:hover, a.text-dark:focus {
 .home__title {
   height: 48px;
   color: #000000;
-  font-family: Helvetica;
+  font-family: "Helvetica", sans-serif;
   font-size: 46px;
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 100px;
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 .home__subtitle {
   display: flex;
   width: 700px;
   color: #000000;
-  font-family: Helvetica;
+  font-family: "Helvetica", sans-serif;
   font-size: 36px;
   font-weight: 300;
   line-height: 46px;
@@ -7209,7 +7207,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .home__price {
   color: #000000;
-  font-family: "Helvetica";
+  font-family: "Helvetica", sans-serif;
   font-size: 18px;
   font-weight: 700;
   margin-top: 100px;
@@ -7218,7 +7216,7 @@ a.text-dark:hover, a.text-dark:focus {
 .home__man {
   position: absolute;
   top: -150px;
-  left: 0px;
+  left: 0;
 }
 
 .home__plane {
@@ -7247,7 +7245,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .home .btn__descr {
   color: #ffffff;
-  font-family: "Helvetica";
+  font-family: "Helvetica", sans-serif;
   font-size: 18px;
   letter-spacing: 1px;
   padding-left: 45px;
@@ -7259,16 +7257,13 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: #3a9acd;
 }
 
-.home .home__subtitle--dots {
+.home .home__subtitle_dots {
   font-size: 14px;
   margin-left: -35px;
   padding-right: 25px;
   margin-top: 3px;
 }
 
-/**
- * Styles for the info block.
- */
 @media only screen and (min-width: 1200px) {
   .info .info__slider {
     margin-top: 70px;
@@ -7281,17 +7276,17 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 30px;
 }
 
-.info__slide--first {
+.info__slide_first {
   background-color: #fff;
 }
 
-.info__pic--woman {
+.info__pic_woman {
   position: relative;
   top: 36px;
   left: 250px;
 }
 
-.info__path--two {
+.info__path_two {
   position: relative;
   left: 420px;
   top: -105px;
@@ -7333,8 +7328,8 @@ a.text-dark:hover, a.text-dark:focus {
   margin-top: 0;
 }
 
-.info__slide--second {
-  background-image: url(../img/page3/thirdPage.png);
+.info__slide_second {
+  background-image: url("../../img/page3/thirdPage.png");
   position: relative;
 }
 
@@ -7348,24 +7343,24 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 10px;
 }
 
-.info__fio--fields {
+.info__fio_fields {
   display: flex;
   flex-direction: column;
   margin-left: 152px;
 }
 
-.info__descr--fio {
-  margin-left: 0px;
+.info__descr_fio {
+  margin-left: 0;
   margin-top: 10px;
 }
 
-.info__btn--next {
+.info__btn_next {
   display: flex;
   flex-direction: column;
 }
 
-.info__slide--third {
-  background-image: url(../img/page4/2-layers.png);
+.info__slide_third {
+  background-image: url("../../img/page4/2-layers.png");
 }
 
 .info__passport {
@@ -7402,27 +7397,27 @@ a.text-dark:hover, a.text-dark:focus {
 .info #info__series {
   width: 70px;
   height: 40px;
-  margin-left: 0px;
+  margin-left: 0;
   text-transform: uppercase;
 }
 
-.info #info__series > ::-webkit-input-placeholder {
+.info #info__series::-webkit-input-placeholder {
   text-transform: capitalize;
 }
 
-.info #info__series > ::-moz-placeholder {
+.info #info__series::-moz-placeholder {
   text-transform: capitalize;
 }
 
-.info #info__series > :-ms-input-placeholder {
+.info #info__series:-ms-input-placeholder {
   text-transform: capitalize;
 }
 
-.info #info__series > ::-ms-input-placeholder {
+.info #info__series::-ms-input-placeholder {
   text-transform: capitalize;
 }
 
-.info #info__series > ::placeholder {
+.info #info__series::placeholder {
   text-transform: capitalize;
 }
 
@@ -7441,8 +7436,8 @@ a.text-dark:hover, a.text-dark:focus {
   margin-left: 100px;
 }
 
-.info__slide--fourth {
-  background-image: url(../img/page5/5-layers.png);
+.info__slide_fourth {
+  background-image: url("../../img/page5/5-layers.png");
 }
 
 .info__adress {
@@ -7460,23 +7455,23 @@ a.text-dark:hover, a.text-dark:focus {
   margin-top: 5px;
 }
 
-.info__btn--prev {
+.info__btn_prev {
   display: flex;
   margin-top: 122px;
   margin-left: 175px;
 }
 
-.info__prev--arrow {
+.info__prev_arrow {
   margin-top: 10px;
 }
 
 .info #btn-previous {
   margin-top: 14px;
-  margin-left: 0px;
+  margin-left: 0;
 }
 
-.info__slide--fifth {
-  background-image: url(../img/page6/contactPage.png);
+.info__slide_fifth {
+  background-image: url("../../img/page6/contactPage.png");
 }
 
 .info__contactTitle {
@@ -7492,7 +7487,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .info__phone, .info__email {
   color: #767676;
-  font-family: "PT Sans Caption";
+  font-family: "PT Sans Caption", sans-serif;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.26px;
@@ -7513,8 +7508,8 @@ a.text-dark:hover, a.text-dark:focus {
   text-transform: lowercase;
 }
 
-.info__slide--sixth {
-  background-image: url(../img/page7/Path_2.png);
+.info__slide_sixth {
+  background-image: url("../../img/page7/Path_2.png");
 }
 
 .info__payTitle {
@@ -7536,56 +7531,53 @@ a.text-dark:hover, a.text-dark:focus {
   margin-left: 120px;
 }
 
-.info .slick-next--first {
+.info .slick-next__first {
   left: 200px;
   top: -100px;
 }
 
-.info .slick-next--second {
+.info .slick-next_second {
   top: 400px;
   left: 200px;
 }
 
-.info .slick-next--third {
+.info .slick-next_third {
   top: 300px;
   left: 200px;
 }
 
-.info .btn-pass--third {
+.info .btn-pass_third {
   left: 26px;
   top: 365px;
 }
 
-.info__btn--prev--third {
+.info__btn_prev_third {
   margin-top: 54px;
 }
 
-.info .slick-next--fourth {
+.info .slick-next_fourth {
   top: 360px;
   left: 200px;
 }
 
-.info .info__btn--fourth {
+.info .info__btn_fourth {
   margin-top: 15px;
 }
 
-.info .slick-next--fifth {
+.info .slick-next_fifth {
   top: 340px;
   left: 140px;
 }
 
-.info .slick-next--sixth {
+.info .slick-next_sixth {
   top: 400px;
   left: 280px;
 }
 
-/**
- * Styles for the last block.
- */
 .last__lastPageDescr {
   width: 60%;
   color: #000000;
-  font-family: Helvetica;
+  font-family: "Helvetica", sans-serif;
   font-size: 36px;
   line-height: 46px;
   margin-top: 80px;
@@ -7594,7 +7586,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .last__wait {
   color: #000000;
-  font-family: Helvetica;
+  font-family: "Helvetica", sans-serif;
   font-size: 36px;
   font-weight: 700;
   margin-top: 80px;
@@ -7604,7 +7596,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .last__advice {
   color: #000000;
-  font-family: Helvetica;
+  font-family: "Helvetica", sans-serif;
   font-size: 20px;
 }
 
@@ -7618,7 +7610,7 @@ a.text-dark:hover, a.text-dark:focus {
   width: 293px;
   height: 22px;
   color: #000000;
-  font-family: Helvetica;
+  font-family: "Helvetica", sans-serif;
   font-size: 20px;
   font-weight: 700;
   margin-left: 20px;
@@ -7627,7 +7619,7 @@ a.text-dark:hover, a.text-dark:focus {
 .last__rocket {
   position: absolute;
   top: 228px;
-  left: 0px;
+  left: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
