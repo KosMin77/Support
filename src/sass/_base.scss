@@ -107,12 +107,16 @@ section {
     display: block;
 }
 
+.container {
+    max-width: 1126px;
+}
+
 body {
     overflow: hidden;
     box-sizing: border-box;
     line-height: 1;
     width: 100%;
-    height: auto;
+    height: 100%;
     background-image: linear-gradient(-63deg, #c2e9fb 0%, #a1c4fd 100%);
 
 }
@@ -158,20 +162,23 @@ img {
 
 
 .info__slide {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    transform: translate(0, -50%);
     display: block;
-    background-color: #fff;
     background-position: center;
-    width: 100%;
-    height: 700px;
-    margin-top: 5px;
-    margin-bottom: 0;
-    background-color: #fff;
+    max-width: 1126px;
+    height: auto;
+    background-color: $color-white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .info__title {
     height: 24px;
-    color: #000000;
+    color: $color-black;
     font-family: $font-family-sans-serif;
     font-size: 22px;
     font-weight: 900;
@@ -216,26 +223,25 @@ input {
     letter-spacing: 0.5px;
 }
 
-.slick-slide {
-    width: 1440px;
-    height: 711px;
-    background-position: center;
-}
-
-.slick-next {
-    position: relative;
-    padding-right: 10px;
-    padding-top: 3px;
+.btn-next {
     width: 171px;
     height: 40px;
+    position: relative;
+    padding-right: 59px;
+    padding-left: 59px;
+    padding-top: 7px;
+    padding-bottom: 10px;
     border-radius: 27px;
     border: 1px solid transparent;
     background-color: #3a9acd;
-    color: #ffffff;
+    color: $color-white;
     font-size: 18px;
     letter-spacing: 1px;
     outline: none;
     text-decoration: none;
+    cursor: pointer;
+    left: 270px;
+    top: -145px;
 }
 
 .btn-link {
@@ -243,12 +249,13 @@ input {
     padding: 8px 30px 7px;
 }
 
-.btn-pass {
+.btn-next_skip {
     position: relative;
     left: 200px;
-    top: 420px;
+    top: 320px;
     padding-right: 10px;
-    padding-top: 3px;
+    padding-top: 7px;
+    padding-left: 17px;
 }
 
 .slick-prev {
@@ -286,13 +293,13 @@ li {
     padding-right: 0;
     border: 1px solid #000;
     outline: none;
-    color: #fff;
-    background-color: #fff;
-    cursor: pointer;
+    color: $color-white;
+    background-color: $color-white;
+
 }
 
 .slick-active>button {
-    background-color: #000;
+    background-color: $color-black;
 }
 
 .slick-dots li button {

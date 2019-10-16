@@ -9,27 +9,21 @@ $screen-sm-min: 480px;
 $screen-xs-max: ($screen-sm-min - 1);
 
 // Breakpoints based on minimum screen width
-$breakpoints-up: (
-    sm: $screen-sm-min,
+$breakpoints-up: (sm: $screen-sm-min,
     md: $screen-md-min,
     lg: $screen-lg-min,
-    xl: $screen-xl-min
-);
+    xl: $screen-xl-min);
 
 // Breakpoints based on maximum screen width
-$breakpoints-down: (
-    xs: $screen-xs-max,
+$breakpoints-down: (xs: $screen-xs-max,
     sm: $screen-sm-max,
     md: $screen-md-max,
-    lg: $screen-lg-max
-);
+    lg: $screen-lg-max);
 
 // Breakpoints based on minimum and maximum screen widths
-$breakpoints-only: (
-    sm: ($screen-sm-min, $screen-sm-max),
+$breakpoints-only: (sm: ($screen-sm-min, $screen-sm-max),
     md: ($screen-md-min, $screen-md-max),
-    lg: ($screen-lg-min, $screen-lg-max)
-);
+    lg: ($screen-lg-min, $screen-lg-max));
 
 // Container width
 $container-xl: 1170px;
@@ -40,7 +34,8 @@ $container-md: 750px;
 $gutter: 15px;
 
 // Fonts
-$font-family-sans-serif: "Helvetica", sans-serif;
+$font-family-sans-serif: "Helvetica",
+sans-serif;
 
 // Font sizes
 $font-size-default: 16px;

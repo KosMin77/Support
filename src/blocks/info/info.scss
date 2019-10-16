@@ -1,13 +1,14 @@
 .info {
-    @media only screen and (min-width: 1200px) {
-        .info {
-            &__slider {
-                margin-top: 70px;
-            }
-        }
-    }
+    // @media only screen and (min-width: 1200px) {
+    //     .info {
+    //         &__slider {
+    //             // margin-top: 70px;
+    //         }
+    //     }
+    // }
 
     &__logo {
+        position: absolute;
         margin-top: 33px;
         margin-left: 33px;
         margin-bottom: 30px;
@@ -15,14 +16,14 @@
 
     &__pic_woman {
         position: relative;
-        top: 36px;
+        top: 5px;
         left: 250px;
     }
 
     &__path_two {
         position: relative;
-        left: 420px;
-        top: -105px;
+        left: 445px;
+        top: -115px;
     }
 
     &__radio {
@@ -63,7 +64,6 @@
 
     &__slide_second {
         background-image: url("./img/page3/thirdPage.png");
-        position: relative;
     }
 
     &__fio {

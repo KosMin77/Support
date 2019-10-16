@@ -36,6 +36,14 @@
             }
         }
     }
+
+    &__logo {
+        position: absolute;
+        margin-top: 33px;
+        margin-left: 33px;
+        margin-bottom: 30px;
+    }
+
     &__title {
         height: 48px;
         color: #000000;
@@ -43,8 +51,7 @@
         font-size: 46px;
         font-weight: 700;
         text-transform: uppercase;
-        margin-top: 100px;
-        margin-left: 0;
+        margin-top: 140px;
     }
 
     &__subtitle {
@@ -58,8 +65,15 @@
         margin-top: 50px;
     }
 
+    &__subtitle--dots {
+        margin-top: 3px;
+        font-size: 14px;
+        margin-right: 15px;
+    }
+
     &__btn {
         text-decoration: none;
+
     }
 
     &__price {
@@ -72,13 +86,15 @@
 
     &__man {
         position: absolute;
-        top: -150px;
+        top: -130px;
         left: 0;
+        height: auto;
+        width: 200px;
     }
 
     &__plane {
-        margin-top: 90px;
-        margin-left: 20px;
+        margin-top: 105px;
+        margin-left: -20px;
     }
 
     &__path {
@@ -90,14 +106,14 @@
 
     &__build {
         position: absolute;
-        margin-left: 5px;
-        margin-top: -240px;
+        margin-left: 70px;
+        margin-top: -155px;
     }
 
     &__dot {
         position: absolute;
-        margin-left: 50px;
-        margin-top: -127px;
+        margin-left: 115px;
+        margin-top: -40px;
     }
 
     .btn__descr {

@@ -62,7 +62,7 @@ mixin info(data = {})
 
 
                     
-                .info__slide.info__slide_fourth.is-hidden
+                .info__slide.info__slide_fourth.is-hidden(data-slide="fourth")
                     .info__title=data.fillTitle
                     p.info__adress=data.adress
                     .row
@@ -84,7 +84,7 @@ mixin info(data = {})
 
 
 
-                .info__slide.info__slide_fifth.is-hidden
+                .info__slide.info__slide_fifth.is-hidden(data-slide="fifth")
                     .info__contactTitle=data.contactTitle
                     .row
                         .col-md-6
@@ -97,7 +97,7 @@ mixin info(data = {})
                             button.btn(type="submit", class="slick-next slick-next_fifth btn-next") ОТРИМАТИ
 
 
-                .info__slide.info__slide_sixth.is-hidden
+                .info__slide.info__slide_sixth.is-hidden(data-slide="sixth")
                     .row
                         .col-md-6
                         h1.info__payTitle=data.payTitle
