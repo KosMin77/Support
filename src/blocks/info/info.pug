@@ -36,6 +36,7 @@ mixin info(data = {})
                                 a(class="js-btn btn-next", data-action="check", data-current="second", data-next="third") ДАЛІ
                                 a(class="js-btn btn-next btn-next_skip", data-current="second", data-next="third") ПРОПУСТИТИ
                         .info__btn_prev
+                            label(for="btn-previous", class="info__prev_arrow")!=data.arrow
                             a(class="js-btn btn-prev", data-current="second", data-next="first") Назад
 
 
@@ -57,7 +58,7 @@ mixin info(data = {})
                             a(class="js-btn btn-next btn-next_skip", data-current="second", data-next="third") ПРОПУСТИТИ
                         .info__btn_prev.info__btn_prev_third
                             label(for="btn-previous", class="info__prev_arrow")!=data.arrow
-                            button(class="btn slick-prev", id="btn-previous", type="submit") Назад
+                            a(class="js-btn btn-prev", id="btn-previous", data-current="third", data-next="second") Назад
 
 
 
@@ -79,7 +80,7 @@ mixin info(data = {})
                             a(class="js-btn btn-next", data-action="check", data-current="second", data-next="third") ДАЛІ
                         .info__btn_prev.info__btn_fourth
                             label(for="btn-previous", class="info__prev_arrow")!=data.arrow
-                            button(class="btn slick-prev", id="btn-previous", type="submit") Назад
+                            a(class="js-btn btn-prev", id="btn-previous", data-current="fourth", data-next="third") Назад
 
 
 
@@ -94,7 +95,7 @@ mixin info(data = {})
                                 p.info__email=data.email
                                 input(type="email", id="email", placeholder=data.examp required)
                         .col-md-6
-                            a(class="js-btn btn-next", data-action="check", data-current="second", data-next="third") ОТРИМАТИ
+                            a(class="js-btn btn-next", data-action="check", data-current="second", data-next="fourth") ОТРИМАТИ
 
 
                 .info__slide.info__slide_sixth.is-hidden(data-slide="sixth")
