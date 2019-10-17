@@ -16,11 +16,15 @@ function initBlock() {
                 };
 
                 const addErrorBox = () => {
-                    const boxError = document.createElement('div');
+                    const boxError = currentSlide.querySelector(`.${classError}`);
 
-                    boxError.className = classError;
-                    boxError.innerText = 'Пожалуйста заполните все поля';
-                    currentSlide.append(boxError);
+                    if (!boxError) {
+                        const boxError = document.createElement('div');
+
+                        boxError.className = classError;
+                        boxError.innerText = 'Пожалуйста, заполните все поля.';
+                        currentSlide.append(boxError);
+                    }
                 };
 
                 const removeErrorBox = () => {

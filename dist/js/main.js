@@ -213,10 +213,15 @@ function initBlock() {
         };
 
         var addErrorBox = function addErrorBox() {
-          var boxError = document.createElement('div');
-          boxError.className = classError;
-          boxError.innerText = 'Пожалуйста заполните все поля';
-          currentSlide.append(boxError);
+          var boxError = currentSlide.querySelector(".".concat(classError));
+
+          if (!boxError) {
+            var _boxError = document.createElement('div');
+
+            _boxError.className = classError;
+            _boxError.innerText = 'Пожалуйста, заполните все поля.';
+            currentSlide.append(_boxError);
+          }
         };
 
         var removeErrorBox = function removeErrorBox() {

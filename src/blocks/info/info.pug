@@ -53,8 +53,8 @@ mixin info(data = {})
                             input(type="name", id="info__pasNumb", placeholder=data.passNumb)
                             p.info__descr=data.descr
                         .col-md-6
-                            button.btn(type="submit", class="slick-next slick-next_third btn-next") ДАЛІ
-                            button.btn(type="button", class="slick-next btn-pass btn-pass_third ") ПРОПУСТИТИ
+                            a(class="js-btn btn-next", data-action="check", data-current="second", data-next="third") ДАЛІ
+                            a(class="js-btn btn-next btn-next_skip", data-current="second", data-next="third") ПРОПУСТИТИ
                         .info__btn_prev.info__btn_prev_third
                             label(for="btn-previous", class="info__prev_arrow")!=data.arrow
                             button(class="btn slick-prev", id="btn-previous", type="submit") Назад
@@ -76,7 +76,7 @@ mixin info(data = {})
                                 input(type="name", id="info__houseblock", placeholder=data.houseblock required)
                             p.info__descr=data.descr
                         .col-md-6
-                            button.btn(type="submit", class="slick-next slick-next_fourth btn-next") ДАЛІ
+                            a(class="js-btn btn-next", data-action="check", data-current="second", data-next="third") ДАЛІ
                         .info__btn_prev.info__btn_fourth
                             label(for="btn-previous", class="info__prev_arrow")!=data.arrow
                             button(class="btn slick-prev", id="btn-previous", type="submit") Назад
@@ -94,7 +94,7 @@ mixin info(data = {})
                                 p.info__email=data.email
                                 input(type="email", id="email", placeholder=data.examp required)
                         .col-md-6
-                            button.btn(type="submit", class="slick-next slick-next_fifth btn-next") ОТРИМАТИ
+                            a(class="js-btn btn-next", data-action="check", data-current="second", data-next="third") ОТРИМАТИ
 
 
                 .info__slide.info__slide_sixth.is-hidden(data-slide="sixth")
@@ -103,4 +103,4 @@ mixin info(data = {})
                         h1.info__payTitle=data.payTitle
                         p.info__paySubtitle=data.paySubtitle
                         .col-md-6
-                            a(href="./lastPage.html", class="slick-next slick-next_sixth btn-link") ОПЛАТИТИ
+                            a(class="js-btn btn-next", data-action="check", data-current="second", data-next="third") ОПЛАТИТИ

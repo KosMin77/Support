@@ -1,10 +1,6 @@
 .info {
     // @media only screen and (min-width: 1200px) {
-    //     .info {
-    //         &__slider {
-    //             // margin-top: 70px;
-    //         }
-    //     }
+    //  
     // }
 
     &__logo {
@@ -62,8 +58,9 @@
         margin-top: 0;
     }
 
-    &__slide_second {
-        background-image: url("./img/page3/thirdPage.png");
+    &__man {
+        position: absolute;
+        left: 500px;
     }
 
     &__fio {

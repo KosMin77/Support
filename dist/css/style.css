@@ -309,42 +309,8 @@ input {
   letter-spacing: 0.81px;
 }
 
-.slick-dots {
-  display: flex;
-  position: absolute;
-  top: 60px;
-  left: 470px;
-  pointer-events: none;
-}
-
-ul {
-  margin-left: 30px;
-}
-
-li {
-  margin-left: 5px;
-}
-
-.btn-dot {
-  border-radius: 50%;
-  height: 12px;
-  width: 12px;
-  font-size: 3px;
-  padding-right: 0;
-  border: 1px solid #000;
-  outline: none;
-  color: #fff;
-  background-color: #fff;
-}
-
-.slick-active > button {
-  background-color: #000;
-}
-
-.slick-dots li button {
-  text-indent: -9999px;
-  height: 8px;
-  width: 8px;
+.js-btn {
+  cursor: pointer;
 }
 
 .is-hidden {
@@ -7216,7 +7182,8 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 36px;
   font-weight: 300;
   line-height: 46px;
-  margin-top: 50px;
+  margin-top: 47px;
+  margin-left: -25px;
 }
 
 .home__subtitle--dots {
@@ -7234,7 +7201,7 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: "Helvetica", sans-serif;
   font-size: 18px;
   font-weight: 700;
-  margin-top: 100px;
+  margin-top: 90px;
 }
 
 .home__man {
@@ -7345,8 +7312,9 @@ a.text-dark:hover, a.text-dark:focus {
   margin-top: 0;
 }
 
-.info__slide_second {
-  background-image: url("./img/page3/thirdPage.png");
+.info__man {
+  position: absolute;
+  left: 500px;
 }
 
 .info__fio {

@@ -269,43 +269,8 @@ input {
     letter-spacing: 0.81px;
 }
 
-.slick-dots {
-    display: flex;
-    position: absolute;
-    top: 60px;
-    left: 470px;
-    pointer-events: none;
-}
-
-ul {
-    margin-left: 30px;
-}
-
-li {
-    margin-left: 5px;
-}
-
-.btn-dot {
-    border-radius: 50%;
-    height: 12px;
-    width: 12px;
-    font-size: 3px;
-    padding-right: 0;
-    border: 1px solid #000;
-    outline: none;
-    color: $color-white;
-    background-color: $color-white;
-
-}
-
-.slick-active>button {
-    background-color: $color-black;
-}
-
-.slick-dots li button {
-    text-indent: -9999px;
-    height: 8px;
-    width: 8px;
+.js-btn {
+    cursor: pointer;
 }
 
 .is-hidden {
