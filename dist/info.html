@@ -17,12 +17,12 @@
                 <div class="info__slide" data-slide="first">
                     <div class="info__title">Оберіть яка саме довідка вам потрібна на рухоме / нерухоме майно:</div>
                     <div class="info__upperChoice">
-                        <input type="radio" id="first" name="rad" value="1" checked="checked" data-waschecked="true" />
-                        <label class="info__choice" for="first">Довідка з державного реєстру нерухомого майна</label>
+                        <input class="radio" type="radio" id="type1" name="rad" value="type1" checked="checked" data-waschecked="true" />
+                        <label class="info__choice" for="type1">Довідка з державного реєстру нерухомого майна</label>
                     </div>
                     <div class="info__lowerChoice">
-                        <input type="radio" id="second" name="rad" value="2" />
-                        <label class="info__choice" for="second">Довідка з державного реєстру рухомого майна</label>
+                        <input class="radio" type="radio" id="type1" name="rad" value="type2" />
+                        <label class="info__choice" for="type2">Довідка з державного реєстру рухомого майна</label>
                     </div>
                     <img class="info__pic_woman" src="../../img/page2/woman.png" alt="" />
                     <img class="info__path_two" src="../../img/page2/3-layers.png" alt="" />
@@ -120,15 +120,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="info__slide info__slide_fifth is-hidden" data-slide="fifth">
+                <div class="info__slide info__slide_fifth" data-slide="fifth">
                     <div class="info__contactTitle">Оберіть спосіб отримання довідки:</div>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="info__contact">
                                 <p class="info__phone">Telegram / Viber</p>
-                                <input type="text" data-type="text" data-control="length" data-min="2" id="phone" placeholder="+38 (ххх) ххх хх хх" required="required" />
+                                <input type="number" data-type="phone" data-control="length" data-min="6" data-max="12" id="phone" placeholder="+38 (ххх) ххх хх хх" required="required" />
                                 <p class="info__email">Адреса електронної пошти</p>
-                                <input type="email" data-type="text" data-control="length" data-min="2" id="email" placeholder="@example.com" required="required" />
+                                <input type="email" data-type="text" data-control="length" data-min="2" data-max="8" id="email" placeholder="@example.com" required="required" />
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -140,8 +140,7 @@
                     <div class="row">
                         <div class="col-md-6"></div>
                         <h1 class="info__payTitle">Оплатіть замовлення довідки та отримайте її на вашу пошту:</h1>
-                        <label class="info__choice" for="first">Довідка з державного реєстру нерухомого майна</label>
-                        <label class="info__choice" for="second">Довідка з державного реєстру рухомого майна</label>
+                        <h2 class="js-label-type info__pay-subtitle"></h2>
                         <div class="col-md-6">
                             <a class="js-btn btn-next" data-action="check" data-current="sixth" data-next="#">ОПЛАТИТИ</a>
                         </div>
