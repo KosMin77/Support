@@ -3,8 +3,9 @@ function initBlock() {
         const btns = document.querySelectorAll('.js-btn');
         const classHidden = 'is-hidden';
         const classError = 'box-error';
-        const maskBefore = /[/!@#$%^&*/|_=`.~;":'a-zA-Zа-яА-Я]/;
-        const maskAfter = /[/!@#$%^&*+()/|_=`.~;":'a-zA-Zа-яА-Я]/;
+        const maskPhoneBefore = /[/!@#$%^&*/|_=`.~;":'a-zA-Zа-яА-Я]/;
+        const maskPhoneAfter = /[/!@#$%^&*+()/|_=`.~;":'a-zA-Zа-яА-Я]/;
+        const maskEmail = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 
         Array.from(btns).forEach((btn) => {
             btn.addEventListener('click', function() {
@@ -77,7 +78,7 @@ function initBlock() {
                             }
                         } else if (type === 'phone') {
                             if (control === 'length') {
-                                thisValue.replace(maskAfter, '');
+                                thisValue.replace(maskPhoneAfter, '');
 
                                 if (thisValue.length >= minValuePhone && thisValue.length <= maxValuePhone) {
                                     statusArray.push('true');
@@ -110,7 +111,7 @@ function initBlock() {
                 const control = input.dataset.control;
 
                 if (type === 'phone' && control === 'length') {
-                    input.value = input.value.replace(maskBefore, '');
+                    input.value = input.value.replace(maskPhoneBefore, '');
                 }
             };
 
