@@ -22,7 +22,7 @@ function initBlock() {
                         const boxError = document.createElement('div');
 
                         boxError.className = classError;
-                        boxError.innerText = 'Пожалуйста, заполните все поля.';
+                        boxError.innerText = 'Будьласка, заповніть усі форми.';
                         currentSlide.append(boxError);
                     }
                 };

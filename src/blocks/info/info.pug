@@ -19,7 +19,10 @@ mixin info(data = {})
                         label.info__choice(for="second" )=data.second
                     img.info__pic_woman(src="../../img/page2/woman.png", alt="")
                     img.info__path_two(src="../../img/page2/3-layers.png", alt="")
-                    a(class="js-btn btn-next", data-current="first", data-next="second") ДАЛІ
+                    .row
+                        .col-md-6
+                        .col-md-6
+                            a(class="js-btn btn-next", data-current="first", data-next="second") ДАЛІ
                 
                 .info__slide.info__slide_second.is-hidden(data-slide="second")
                     .info__title=data.fillTitle
@@ -32,12 +35,15 @@ mixin info(data = {})
                                 input(type="text", id="middle_name", data-type="text", data-control="length", data-min="2", placeholder=data.middleName)
                                 p.info__descr.info__descr_fio=data.descr
                         .col-md-6
+                    .row
+                        .col-md-6
+                            .info__btn_prev
+                                label(for="btn-previous", class="info__prev_arrow")!=data.arrow
+                                a(class="js-btn btn-prev", data-current="second", data-next="first") Назад
+                        .col-md-6
                             .info__btn.info__btn_next
                                 a(class="js-btn btn-next", data-action="check", data-current="second", data-next="third") ДАЛІ
                                 a(class="js-btn btn-next btn-next_skip", data-current="second", data-next="third") ПРОПУСТИТИ
-                        .info__btn_prev
-                            label(for="btn-previous", class="info__prev_arrow")!=data.arrow
-                            a(class="js-btn btn-prev", data-current="second", data-next="first") Назад
 
 
 
@@ -54,11 +60,14 @@ mixin info(data = {})
                             input(type="name", id="info__pasNumb", placeholder=data.passNumb)
                             p.info__descr=data.descr
                         .col-md-6
-                            a(class="js-btn btn-next", data-action="check", data-current="second", data-next="third") ДАЛІ
-                            a(class="js-btn btn-next btn-next_skip", data-current="second", data-next="third") ПРОПУСТИТИ
-                        .info__btn_prev.info__btn_prev_third
-                            label(for="btn-previous", class="info__prev_arrow")!=data.arrow
-                            a(class="js-btn btn-prev", id="btn-previous", data-current="third", data-next="second") Назад
+                    .row
+                        .col-md-6
+                            .info__btn_prev.info__btn_prev_third
+                                label(for="btn-previous", class="info__prev_arrow")!=data.arrow
+                                a(class="js-btn btn-prev", id="btn-previous", data-current="third", data-next="second") Назад
+                        .col-md-6
+                            a(class="js-btn btn-next", data-action="check", data-current="third", data-next="fourth") ДАЛІ
+                            a(class="js-btn btn-next btn-next_skip", data-current="third", data-next="fourth") ПРОПУСТИТИ
 
 
 
@@ -77,10 +86,13 @@ mixin info(data = {})
                                 input(type="name", id="info__houseblock", placeholder=data.houseblock required)
                             p.info__descr=data.descr
                         .col-md-6
-                            a(class="js-btn btn-next", data-action="check", data-current="second", data-next="third") ДАЛІ
-                        .info__btn_prev.info__btn_fourth
-                            label(for="btn-previous", class="info__prev_arrow")!=data.arrow
-                            a(class="js-btn btn-prev", id="btn-previous", data-current="fourth", data-next="third") Назад
+                    .row
+                        .col-md-6
+                            .info__btn_prev.info__btn_fourth
+                                label(for="btn-previous", class="info__prev_arrow")!=data.arrow
+                                a(class="js-btn btn-prev", id="btn-previous", data-current="fourth", data-next="third") Назад
+                        .col-md-6
+                            a(class="js-btn btn-next", data-action="check", data-current="fourth", data-next="fifth") ДАЛІ
 
 
 
@@ -95,7 +107,7 @@ mixin info(data = {})
                                 p.info__email=data.email
                                 input(type="email", id="email", placeholder=data.examp required)
                         .col-md-6
-                            a(class="js-btn btn-next", data-action="check", data-current="second", data-next="fourth") ОТРИМАТИ
+                            a(class="js-btn btn-next", data-action="check", data-current="fifth", data-next="sixth") ОТРИМАТИ
 
 
                 .info__slide.info__slide_sixth.is-hidden(data-slide="sixth")
@@ -104,4 +116,4 @@ mixin info(data = {})
                         h1.info__payTitle=data.payTitle
                         p.info__paySubtitle=data.paySubtitle
                         .col-md-6
-                            a(class="js-btn btn-next", data-action="check", data-current="second", data-next="third") ОПЛАТИТИ
+                            a(class="js-btn btn-next", data-action="check", data-current="sixth", data-next="#") ОПЛАТИТИ

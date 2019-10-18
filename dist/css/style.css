@@ -180,7 +180,7 @@ img {
   display: block;
   background-position: center;
   max-width: 1126px;
-  height: auto;
+  height: 711px;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -192,7 +192,7 @@ img {
   font-size: 22px;
   font-weight: 900;
   padding-top: 160px;
-  margin-left: 153px;
+  margin-left: 120px;
 }
 
 .info__descr {
@@ -203,7 +203,7 @@ img {
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.5px;
-  margin-left: 152px;
+  margin-left: 120px;
 }
 
 input,
@@ -280,8 +280,6 @@ input {
   outline: none;
   text-decoration: none;
   cursor: pointer;
-  left: 270px;
-  top: -145px;
 }
 
 .btn-link {
@@ -291,8 +289,6 @@ input {
 
 .btn-next_skip {
   position: relative;
-  left: 200px;
-  top: 320px;
   padding-right: 10px;
   padding-top: 7px;
   padding-left: 17px;
@@ -315,6 +311,12 @@ input {
 
 .is-hidden {
   display: none;
+}
+
+.box-error {
+  position: absolute;
+  top: 30px;
+  left: 30px;
 }
 
 /*!
