@@ -267,10 +267,7 @@ input {
   width: 171px;
   height: 40px;
   position: relative;
-  padding-right: 59px;
-  padding-left: 59px;
-  padding-top: 7px;
-  padding-bottom: 10px;
+  padding: 7px 59px 10px;
   border-radius: 27px;
   border: 1px solid transparent;
   background-color: #3a9acd;
@@ -7296,8 +7293,7 @@ a.text-dark:hover, a.text-dark:focus {
   display: flex;
 }
 
-.info #first,
-.info #second {
+.info .radio {
   width: 20px;
   height: 20px;
   margin-right: 20px;

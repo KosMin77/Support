@@ -201,11 +201,28 @@ function initBlock() {
     var btns = document.querySelectorAll('.js-btn');
     var classHidden = 'is-hidden';
     var classError = 'box-error';
+    var maskBefore = /[/!@#$%^&*/|_=`.~;":'a-zA-Zа-яА-Я]/;
+    var maskAfter = /[/!@#$%^&*+()/|_=`.~;":'a-zA-Zа-яА-Я]/;
     Array.from(btns).forEach(function (btn) {
       btn.addEventListener('click', function () {
         var currentSlide = document.querySelector("[data-slide=\"".concat(btn.dataset.current, "\"]"));
         var nextSlide = document.querySelector("[data-slide=\"".concat(btn.dataset.next, "\"]"));
         var action = btn.dataset.action;
+
+        var getTypeLabel = function getTypeLabel() {
+          if (btn.dataset.current === 'first') {
+            var radioBtns = currentSlide.querySelectorAll('input[type="radio"]');
+            Array.from(radioBtns).forEach(function (radioBtn) {
+              if (radioBtn.checked) {
+                var lastSlide = document.querySelector('[data-slide="sixth"]');
+                var typeLabel = lastSlide.querySelector('.js-label-type');
+                typeLabel.innerText = radioBtn.parentElement.querySelector('.info__choice').innerText;
+              }
+            });
+          }
+        };
+
+        getTypeLabel();
 
         var changeSlide = function changeSlide() {
           currentSlide.classList.add(classHidden);
@@ -236,14 +253,27 @@ function initBlock() {
           var inputs = currentSlide.querySelectorAll('input');
           var statusArray = [];
           Array.from(inputs).forEach(function (input) {
+            var thisValue = input.value;
             var type = input.dataset.type;
             var control = input.dataset.control;
             var minValue = input.dataset.min ? input.dataset.min : 1;
             var maxValue = input.dataset.max ? input.dataset.max : 100;
+            var minValuePhone = input.dataset.min ? input.dataset.min : 6;
+            var maxValuePhone = input.dataset.max ? input.dataset.max : 12;
 
             if (type === 'text') {
               if (control === 'length') {
                 if (input.value.length >= minValue && input.value.length <= maxValue) {
+                  statusArray.push('true');
+                } else {
+                  statusArray.push('false');
+                }
+              }
+            } else if (type === 'phone') {
+              if (control === 'length') {
+                thisValue.replace(maskAfter, '');
+
+                if (thisValue.length >= minValuePhone && thisValue.length <= maxValuePhone) {
                   statusArray.push('true');
                 } else {
                   statusArray.push('false');
@@ -262,6 +292,24 @@ function initBlock() {
           removeErrorBox();
           changeSlide();
         }
+      });
+    });
+    var inputsPhone = document.querySelectorAll('input[data-type="phone"]');
+    Array.from(inputsPhone).forEach(function (input) {
+      var checkPhone = function checkPhone(input) {
+        var type = input.dataset.type;
+        var control = input.dataset.control;
+
+        if (type === 'phone' && control === 'length') {
+          input.value = input.value.replace(maskBefore, '');
+        }
+      };
+
+      input.addEventListener('keyup', function () {
+        checkPhone(this);
+      });
+      input.addEventListener('change', function () {
+        checkPhone(this);
       });
     });
   };
@@ -312,7 +360,6 @@ function initBlock() {
       }
     }
   });
-  $('#phone').mask('+38 (000) 000 00 00');
 } // ---------------------------- END PUBLIC METHODS ----------------------------
 
 
@@ -434,7 +481,7 @@ function scanImages() {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! E:\Support\src\js\main.js */"./src/js/main.js");
+module.exports = __webpack_require__(/*! /home/inevix/projects/Support/src/js/main.js */"./src/js/main.js");
 
 
 /***/ })

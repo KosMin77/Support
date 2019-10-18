@@ -12,11 +12,11 @@ mixin info(data = {})
                 .info__slide(data-slide="first")
                     .info__title=data.title
                     .info__upperChoice
-                        input(type="radio", id="first", name="rad", value="1" checked="checked" data-waschecked="true")
-                        label.info__choice(for="first" )=data.first
+                        input(type="radio", id="type1", name="rad", value="type1" checked="checked" data-waschecked="true", class="radio")
+                        label.info__choice(for="type1" )=data.first
                     .info__lowerChoice
-                        input(type="radio",id="second" name="rad", value="2")
-                        label.info__choice(for="second" )=data.second
+                        input(type="radio", id="type1" name="rad", value="type2", class="radio")
+                        label.info__choice(for="type2")=data.second
                     img.info__pic_woman(src="../../img/page2/woman.png", alt="")
                     img.info__path_two(src="../../img/page2/3-layers.png", alt="")
                     .row
@@ -97,15 +97,15 @@ mixin info(data = {})
 
 
 
-                .info__slide.info__slide_fifth.is-hidden(data-slide="fifth")
+                .info__slide.info__slide_fifth(data-slide="fifth")
                     .info__contactTitle=data.contactTitle
                     .row
                         .col-md-6
                             .info__contact
                                 p.info__phone=data.phone
-                                input(type="text",  data-type="text", data-control="length", data-min="2", id="phone", placeholder=data.number, required)
+                                input(type="number",  data-type="phone", data-control="length", data-min="6", data-max="12", id="phone", placeholder=data.number, required)
                                 p.info__email=data.email
-                                input(type="email",  data-type="text", data-control="length", data-min="2", id="email", placeholder=data.examp required)
+                                input(type="email",  data-type="text", data-control="length", data-min="2", data-max="8", id="email", placeholder=data.examp required)
                         .col-md-6
                             a(class="js-btn btn-next", data-action="check", data-current="fifth", data-next="sixth") ОТРИМАТИ
 
@@ -114,7 +114,6 @@ mixin info(data = {})
                     .row
                         .col-md-6
                         h1.info__payTitle=data.payTitle
-                        label.info__choice(for="first" )=data.first
-                        label.info__choice(for="second" )=data.second
+                        h2.js-label-type.info__pay-subtitle
                         .col-md-6
                             a(class="js-btn btn-next", data-action="check", data-current="sixth", data-next="#") ОПЛАТИТИ

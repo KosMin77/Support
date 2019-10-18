@@ -3,12 +3,31 @@ function initBlock() {
         const btns = document.querySelectorAll('.js-btn');
         const classHidden = 'is-hidden';
         const classError = 'box-error';
+        const maskBefore = /[/!@#$%^&*/|_=`.~;":'a-zA-Zа-яА-Я]/;
+        const maskAfter = /[/!@#$%^&*+()/|_=`.~;":'a-zA-Zа-яА-Я]/;
 
         Array.from(btns).forEach((btn) => {
             btn.addEventListener('click', function() {
                 const currentSlide = document.querySelector(`[data-slide="${btn.dataset.current}"]`);
                 const nextSlide = document.querySelector(`[data-slide="${btn.dataset.next}"]`);
                 const action = btn.dataset.action;
+
+                const getTypeLabel = () => {
+                    if (btn.dataset.current === 'first') {
+                        const radioBtns = currentSlide.querySelectorAll('input[type="radio"]');
+
+                        Array.from(radioBtns).forEach((radioBtn) => {
+                            if (radioBtn.checked) {
+                                const lastSlide = document.querySelector('[data-slide="sixth"]');
+                                const typeLabel = lastSlide.querySelector('.js-label-type');
+
+                                typeLabel.innerText = radioBtn.parentElement.querySelector('.info__choice').innerText;
+                            }
+                        });
+                    }
+                };
+
+                getTypeLabel();
 
                 const changeSlide = () => {
                     currentSlide.classList.add(classHidden);
@@ -40,14 +59,27 @@ function initBlock() {
                     const statusArray = [];
 
                     Array.from(inputs).forEach((input) => {
+                        const thisValue = input.value;
                         const type = input.dataset.type;
                         const control = input.dataset.control;
                         const minValue = input.dataset.min ? input.dataset.min : 1;
                         const maxValue = input.dataset.max ? input.dataset.max : 100;
+                        const minValuePhone = input.dataset.min ? input.dataset.min : 6;
+                        const maxValuePhone = input.dataset.max ? input.dataset.max : 12;
 
                         if (type === 'text') {
                             if (control === 'length') {
                                 if (input.value.length >= minValue && input.value.length <= maxValue) {
+                                    statusArray.push('true');
+                                } else {
+                                    statusArray.push('false');
+                                }
+                            }
+                        } else if (type === 'phone') {
+                            if (control === 'length') {
+                                thisValue.replace(maskAfter, '');
+
+                                if (thisValue.length >= minValuePhone && thisValue.length <= maxValuePhone) {
                                     statusArray.push('true');
                                 } else {
                                     statusArray.push('false');
@@ -67,6 +99,27 @@ function initBlock() {
                     removeErrorBox();
                     changeSlide();
                 }
+            });
+        });
+
+        const inputsPhone = document.querySelectorAll('input[data-type="phone"]');
+
+        Array.from(inputsPhone).forEach((input) => {
+            const checkPhone = (input) => {
+                const type = input.dataset.type;
+                const control = input.dataset.control;
+
+                if (type === 'phone' && control === 'length') {
+                    input.value = input.value.replace(maskBefore, '');
+                }
+            };
+
+            input.addEventListener('keyup', function() {
+                checkPhone(this);
+            });
+
+            input.addEventListener('change', function() {
+                checkPhone(this);
             });
         });
     };
@@ -120,8 +173,6 @@ function initBlock() {
             }
         }
     });
-
-    $('#phone').mask('+38 (000) 000 00 00');
 }
 
 // ---------------------------- END PUBLIC METHODS ----------------------------
