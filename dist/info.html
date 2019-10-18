@@ -68,12 +68,12 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="info__upper">
-                                <input type="name" id="info__series" placeholder="Серія" />
+                                <input type="name" data-type="text" data-control="length" data-min="2" id="info__series" placeholder="Серія" />
                                 <input type="name" id="info__numb" placeholder="Номер" />
                             </div>
-                            <input type="name" id="info__ssn" placeholder="ІНН" />
+                            <input type="name" data-type="text" data-control="length" data-min="2" id="info__ssn" placeholder="ІНН" />
                             <p class="info__idPass">ID Паспорт</p>
-                            <input type="name" id="info__pasNumb" placeholder="Номер" />
+                            <input type="name" data-type="text" data-control="length" data-min="2" id="info__pasNumb" placeholder="Номер" />
                             <p class="info__descr">*Дані повині бути введені державною мовою </p>
                         </div>
                         <div class="col-md-6"></div>
@@ -97,12 +97,12 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="location">
-                                <input type="name" id="info__city" placeholder="Місто" required="required" />
-                                <input type="name" id="info__region" placeholder="Область" required="required" />
-                                <input type="name" id="info__locality" placeholder="Населений пункт" required="required" />
-                                <input type="name" id="info__street" placeholder="Вулиця" required="required" />
-                                <input type="name" id="info__houseNumb" placeholder="№ Дім / кв" required="required" />
-                                <input type="name" id="info__houseblock" placeholder="Корпус" required="required" />
+                                <input type="name" data-type="text" data-control="length" data-min="2" id="info__city" placeholder="Місто" required="required" />
+                                <input type="name" data-type="text" data-control="length" data-min="2" id="info__region" placeholder="Область" required="required" />
+                                <input type="name" data-type="text" data-control="length" data-min="2" id="info__locality" placeholder="Населений пункт" required="required" />
+                                <input type="name" data-type="text" data-control="length" data-min="2" id="info__street" placeholder="Вулиця" required="required" />
+                                <input type="name" data-type="text" data-control="length" data-min="2" id="info__houseNumb" placeholder="№ Дім / кв" required="required" />
+                                <input type="name" data-type="text" data-control="length" data-min="2" id="info__houseblock" placeholder="Корпус" required="required" />
                             </div>
                             <p class="info__descr">*Дані повині бути введені державною мовою </p>
                         </div>
@@ -126,9 +126,9 @@
                         <div class="col-md-6">
                             <div class="info__contact">
                                 <p class="info__phone">Telegram / Viber</p>
-                                <input type="text" id="phone" placeholder="+38 (ххх) ххх хх хх" required="required" />
+                                <input type="text" data-type="text" data-control="length" data-min="2" id="phone" placeholder="+38 (ххх) ххх хх хх" required="required" />
                                 <p class="info__email">Адреса електронної пошти</p>
-                                <input type="email" id="email" placeholder="@example.com" required="required" />
+                                <input type="email" data-type="text" data-control="length" data-min="2" id="email" placeholder="@example.com" required="required" />
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -140,7 +140,8 @@
                     <div class="row">
                         <div class="col-md-6"></div>
                         <h1 class="info__payTitle">Оплатіть замовлення довідки та отримайте її на вашу пошту:</h1>
-                        <p class="info__paySubtitle">Довідка з державного реєстру рухомого майна</p>
+                        <label class="info__choice" for="first">Довідка з державного реєстру нерухомого майна</label>
+                        <label class="info__choice" for="second">Довідка з державного реєстру рухомого майна</label>
                         <div class="col-md-6">
                             <a class="js-btn btn-next" data-action="check" data-current="sixth" data-next="#">ОПЛАТИТИ</a>
                         </div>

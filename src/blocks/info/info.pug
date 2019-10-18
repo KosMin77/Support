@@ -53,11 +53,11 @@ mixin info(data = {})
                     .row
                         .col-md-6
                             .info__upper
-                                input(type="name", id="info__series", placeholder=data.series)
+                                input(type="name",  data-type="text", data-control="length", data-min="2", id="info__series", placeholder=data.series)
                                 input(type="name", id="info__numb", placeholder=data.numb)
-                            input(type="name", id="info__ssn", placeholder=data.ssn)
+                            input(type="name",  data-type="text", data-control="length", data-min="2", id="info__ssn", placeholder=data.ssn)
                             p.info__idPass=data.idPass
-                            input(type="name", id="info__pasNumb", placeholder=data.passNumb)
+                            input(type="name",  data-type="text", data-control="length", data-min="2", id="info__pasNumb", placeholder=data.passNumb)
                             p.info__descr=data.descr
                         .col-md-6
                     .row
@@ -78,12 +78,12 @@ mixin info(data = {})
                     .row
                         .col-md-6
                             .location
-                                input(type="name", id="info__city", placeholder=data.city required)
-                                input(type="name", id="info__region", placeholder=data.region required)
-                                input(type="name", id="info__locality", placeholder=data.locality required)
-                                input(type="name", id="info__street", placeholder=data.street required)
-                                input(type="name", id="info__houseNumb", placeholder=data.houseNumb required)
-                                input(type="name", id="info__houseblock", placeholder=data.houseblock required)
+                                input(type="name",  data-type="text", data-control="length", data-min="2", id="info__city", placeholder=data.city required)
+                                input(type="name",  data-type="text", data-control="length", data-min="2", id="info__region", placeholder=data.region required)
+                                input(type="name",  data-type="text", data-control="length", data-min="2", id="info__locality", placeholder=data.locality required)
+                                input(type="name",  data-type="text", data-control="length", data-min="2", id="info__street", placeholder=data.street required)
+                                input(type="name",  data-type="text", data-control="length", data-min="2", id="info__houseNumb", placeholder=data.houseNumb required)
+                                input(type="name",  data-type="text", data-control="length", data-min="2", id="info__houseblock", placeholder=data.houseblock required)
                             p.info__descr=data.descr
                         .col-md-6
                     .row
@@ -103,9 +103,9 @@ mixin info(data = {})
                         .col-md-6
                             .info__contact
                                 p.info__phone=data.phone
-                                input(type="text", id="phone", placeholder=data.number, required)
+                                input(type="text",  data-type="text", data-control="length", data-min="2", id="phone", placeholder=data.number, required)
                                 p.info__email=data.email
-                                input(type="email", id="email", placeholder=data.examp required)
+                                input(type="email",  data-type="text", data-control="length", data-min="2", id="email", placeholder=data.examp required)
                         .col-md-6
                             a(class="js-btn btn-next", data-action="check", data-current="fifth", data-next="sixth") ОТРИМАТИ
 
@@ -114,6 +114,7 @@ mixin info(data = {})
                     .row
                         .col-md-6
                         h1.info__payTitle=data.payTitle
-                        p.info__paySubtitle=data.paySubtitle
+                        label.info__choice(for="first" )=data.first
+                        label.info__choice(for="second" )=data.second
                         .col-md-6
                             a(class="js-btn btn-next", data-action="check", data-current="sixth", data-next="#") ОПЛАТИТИ
