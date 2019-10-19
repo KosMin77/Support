@@ -17,8 +17,8 @@ mixin info(data = {})
                     .info__lowerChoice
                         input(type="radio", id="type1" name="rad", value="type2", class="radio")
                         label.info__choice(for="type2")=data.second
-                    img.info__pic_woman(src="../../img/page2/woman.png", alt="")
-                    img.info__path_two(src="../../img/page2/3-layers.png", alt="")
+                    img.info__pic_woman(src="./img/page2/woman.png", alt="")
+                    img.info__path_two(src="./img/page2/3-layers.png", alt="")
                     .row
                         .col-md-6
                         .col-md-6
@@ -37,7 +37,7 @@ mixin info(data = {})
                                 input(type="text", id="middle_name", data-type="text", data-control="length", data-min="2", placeholder=data.middleName)
                                 p.info__descr.info__descr_fio=data.descr
                         .col-md-6
-                            img(src="../../img/page3/name_path.png", class="info__slide_second_path", alt="")
+                            img(src="./img/page3/name_path.png", class="info__slide_second_path", alt="")
                     .row
                         .col-md-6
                             .info__btn_prev
@@ -52,8 +52,8 @@ mixin info(data = {})
 
                 .info__slide.info__slide_third.is-hidden(data-slide="third")
                     .info__title=data.fillTitle
-                    img(src="../../img/page4/3-layers.png", class="info__slide_third_path", alt="")
-                    img(src="../../img/page4/2-layers.png", class="info__slide_third_man", alt="")
+                    img(src="./img/page4/3-layers.png", class="info__slide_third_path", alt="")
+                    img(src="./img/page4/2-layers.png", class="info__slide_third_man", alt="")
                     p.info__passport=data.passport
                     .row
                         .col-md-6
@@ -81,7 +81,7 @@ mixin info(data = {})
                     
                 .info__slide.info__slide_fourth.is-hidden(data-slide="fourth")
                     .info__title=data.fillTitle
-                    img(src="../../img/page5/man5.png", class="info__slide_fourth_man", alt="")
+                    img(src="./img/page5/man5.png", class="info__slide_fourth_man", alt="")
                     p.info__adress=data.adress
                     .row
                         .col-md-6
@@ -94,7 +94,7 @@ mixin info(data = {})
                                 input(type="name",  data-type="text", data-control="length", data-min="1", id="info__houseblock", placeholder=data.houseblock required)
                             p.info__descr=data.descr
                         .col-md-6
-                            img(src="../../img/page5/path5.png", class="info__slide_fourth_path", alt="")
+                            img(src="./img/page5/path5.png", class="info__slide_fourth_path", alt="")
                     .row
                         .col-md-6
                             .info__btn_prev.info__btn_fourth
@@ -116,9 +116,9 @@ mixin info(data = {})
                                 input(type="number",  data-type="phone", data-control="length", data-min="6", data-max="12", id="phone", placeholder=data.number, required)
                                 p.info__email=data.email
                                 input(type="email",  data-type="text", data-control="length", data-min="2", data-max="8", id="email", placeholder=data.examp required)
-                            img(src="../../img/page6/man6.png", class="info__man_fifth", alt="")
+                            img(src="./img/page6/man6.png", class="info__man_fifth", alt="")
                         .col-md-6
-                            img(src="../../img/page6/path6.png", class="info__path_fifth", alt="")
+                            img(src="./img/page6/path6.png", class="info__path_fifth", alt="")
                             .info__btn_next_fifth
                                 a(class="js-btn btn-next", data-action="check", data-current="fifth", data-next="sixth") ОТРИМАТИ
 
@@ -129,10 +129,10 @@ mixin info(data = {})
                         .col-md-6
                             h2.js-label-type.info__pay-subtitle
                         .col-md-6
-                            img(src="../../img/page7/path7.png", class="info__path_sixth", alt="")    
+                            img(src="./img/page7/path7.png", class="info__path_sixth", alt="")    
                     .row
                         .col-md-6
                         .col-md-6
                             .info__btn_sixth
                                 a(class="js-btn btn-next", data-action="check", data-current="sixth", data-next="#") ОПЛАТИТИ
-                    img(src="../../img/page7/woman7.png", class="info__woman_sixth", alt="")
+                    img(src="./img/page7/woman7.png", class="info__woman_sixth", alt="")
