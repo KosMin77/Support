@@ -277,6 +277,7 @@ input {
   outline: none;
   text-decoration: none;
   cursor: pointer;
+  left: 200px;
 }
 
 .btn-link {
@@ -314,6 +315,15 @@ input {
   position: absolute;
   top: 30px;
   left: 30px;
+}
+
+.info__prev_arrow {
+  margin-top: 13px;
+  margin-right: 10px;
+}
+
+.btn-next_skip {
+  margin-top: 15px;
 }
 
 /*!
@@ -7146,9 +7156,6 @@ a.text-dark:hover, a.text-dark:focus {
     margin-top: 0;
     margin-left: 60px;
   }
-  .home .home__man, .home .home__path, .home .home__plane, .home .home__build, .home .home__dot {
-    display: none;
-  }
   .home .home__price {
     margin-left: 15px;
     margin-top: 55px;
@@ -7217,22 +7224,21 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .home__path {
-  margin-top: 120px;
-  margin-left: -80px;
-  width: 100%;
-  height: auto;
+  margin-top: 130px;
+  margin-left: -125px;
+  max-width: 420px;
 }
 
 .home__build {
   position: absolute;
-  margin-left: 70px;
-  margin-top: -155px;
+  margin-left: 80px;
+  margin-top: -175px;
 }
 
 .home__dot {
   position: absolute;
-  margin-left: 115px;
-  margin-top: -40px;
+  margin-left: 130px;
+  margin-top: -60px;
 }
 
 .home .btn__descr {
@@ -7256,23 +7262,26 @@ a.text-dark:hover, a.text-dark:focus {
   margin-top: 3px;
 }
 
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
 .info__logo {
-  position: absolute;
-  margin-top: 33px;
-  margin-left: 33px;
-  margin-bottom: 30px;
+  position: relative;
+  margin: 25px 0 40px 35px;
 }
 
 .info__pic_woman {
   position: relative;
-  top: 5px;
-  left: 250px;
+  top: 45px;
+  left: 225px;
 }
 
 .info__path_two {
   position: relative;
-  left: 445px;
-  top: -115px;
+  left: 410px;
+  top: -110px;
 }
 
 .info__radio {
@@ -7315,12 +7324,17 @@ a.text-dark:hover, a.text-dark:focus {
   left: 500px;
 }
 
+.info__btn_first {
+  margin-top: -120px;
+  margin-left: 20px;
+}
+
 .info__fio {
   color: #010000;
   font-family: "Helvetica", sans-serif;
   font-size: 12px;
   font-weight: 900;
-  margin-left: 153px;
+  margin-left: 120px;
   margin-top: 62px;
   margin-bottom: 10px;
 }
@@ -7328,7 +7342,7 @@ a.text-dark:hover, a.text-dark:focus {
 .info__fio_fields {
   display: flex;
   flex-direction: column;
-  margin-left: 152px;
+  margin-left: 120px;
 }
 
 .info__descr_fio {
@@ -7341,12 +7355,34 @@ a.text-dark:hover, a.text-dark:focus {
   flex-direction: column;
 }
 
-.info__slide_third {
-  background-image: url("./img/page4/2-layers.png");
+.info__slide_second_man {
+  position: absolute;
+  left: 860px;
+}
+
+.info__slide_second_path {
+  margin-left: -150px;
+  max-width: 700px;
+}
+
+.info__slide_third_path {
+  position: absolute;
+  margin-top: -145px;
+  margin-left: 84px;
+}
+
+.info__slide_third_man {
+  position: absolute;
+  margin-left: 854px;
+  margin-top: 60px;
+}
+
+.info__btn_third {
+  margin-top: 90px;
 }
 
 .info__passport {
-  margin-left: 153px;
+  margin-left: 120px;
   margin-top: 62px;
   font-weight: 900;
   color: #030000;
@@ -7358,7 +7394,7 @@ a.text-dark:hover, a.text-dark:focus {
 .info__idPass {
   margin-top: 15px;
   margin-bottom: 5px;
-  margin-left: 152px;
+  margin-left: 120px;
   font-weight: 900;
   color: #030000;
   font-family: "Helvetica", sans-serif;
@@ -7367,13 +7403,13 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .info__upper {
-  margin-left: 152px;
+  margin-left: 120px;
   margin-top: 10px;
   display: flex;
 }
 
 .info #info__pasNumb {
-  margin-left: 150px;
+  margin-left: 120px;
 }
 
 .info #info__series {
@@ -7410,7 +7446,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .info #info__ssn {
-  margin-left: 150px;
+  margin-left: 120px;
 }
 
 .info #info__form {
@@ -7429,31 +7465,34 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 12px;
   font-weight: 900;
   text-transform: uppercase;
-  margin-left: 152px;
+  margin-left: 120px;
+}
+
+.info__slide_fourth_man {
+  position: absolute;
+  left: 850px;
+  top: 0;
+}
+
+.info__slide_fourth_path {
+  margin-left: -155px;
+  margin-top: 40px;
+  max-width: 700px;
 }
 
 .info .location {
-  margin-left: 150px;
+  margin-left: 120px;
   margin-top: 5px;
 }
 
 .info__btn_prev {
   display: flex;
-  margin-top: 122px;
-  margin-left: 175px;
-}
-
-.info__prev_arrow {
-  margin-top: 10px;
+  margin-left: 130px;
 }
 
 .info #btn-previous {
   margin-top: 14px;
   margin-left: 0;
-}
-
-.info__slide_fifth {
-  background-image: url("./img/page6/contactPage.png");
 }
 
 .info__contactTitle {
@@ -7490,8 +7529,14 @@ a.text-dark:hover, a.text-dark:focus {
   text-transform: lowercase;
 }
 
-.info__slide_sixth {
-  background-image: url("./img/page7/Path_2.png");
+.info__path_fifth {
+  position: absolute;
+  margin-left: -230px;
+  max-width: 710px;
+}
+
+.info__man_fifth {
+  margin-top: 115px;
 }
 
 .info__payTitle {
@@ -7500,7 +7545,7 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: "Helvetica", sans-serif;
   font-size: 22px;
   font-weight: 700;
-  padding-top: 140px;
+  padding-top: 160px;
   margin-left: 120px;
 }
 
@@ -7513,56 +7558,52 @@ a.text-dark:hover, a.text-dark:focus {
   margin-left: 120px;
 }
 
-.info .slick-next__first {
-  left: 200px;
-  top: -100px;
+.info__path_sixth {
+  position: absolute;
+  margin-left: -250px;
+  max-width: 710px;
+  margin-top: 40px;
 }
 
-.info .slick-next_second {
-  top: 400px;
-  left: 200px;
+.info__woman_sixth {
+  position: absolute;
+  bottom: 0;
+  left: 102px;
 }
 
-.info .slick-next_third {
-  top: 300px;
-  left: 200px;
-}
-
-.info .btn-pass_third {
-  left: 26px;
-  top: 365px;
+.info__btn_sixth {
+  margin-top: 400px;
+  margin-left: -70px;
 }
 
 .info__btn_prev_third {
-  margin-top: 54px;
+  margin-top: 84px;
 }
 
-.info .slick-next_fourth {
-  top: 360px;
-  left: 200px;
-}
-
-.info .info__btn_fourth {
+.info__btn_fourth {
   margin-top: 15px;
 }
 
-.info .slick-next_fifth {
-  top: 340px;
-  left: 140px;
+.info__btn_next_fourth {
+  margin-top: 30px;
 }
 
-.info .slick-next_sixth {
-  top: 400px;
-  left: 280px;
+.info__btn_next_fifth {
+  margin-top: 340px;
+  margin-left: -70px;
+}
+
+.last {
+  overflow: hidden;
 }
 
 .last__lastPageDescr {
-  width: 60%;
+  max-width: 600px;
   color: #000000;
   font-family: "Helvetica", sans-serif;
   font-size: 36px;
   line-height: 46px;
-  margin-top: 80px;
+  margin-top: 160px;
   margin-left: 100px;
 }
 
@@ -7571,9 +7612,8 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: "Helvetica", sans-serif;
   font-size: 36px;
   font-weight: 700;
-  margin-top: 80px;
-  margin-bottom: 200px;
-  margin-left: 100px;
+  margin-top: 65px;
+  margin-left: 105px;
 }
 
 .last__advice {
@@ -7585,7 +7625,8 @@ a.text-dark:hover, a.text-dark:focus {
 .last__footer {
   position: relative;
   display: flex;
-  left: -100;
+  margin-left: -30px;
+  margin-top: 300px;
 }
 
 .last__mail {
@@ -7599,8 +7640,8 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .last__rocket {
-  position: absolute;
-  top: 228px;
+  position: fixed;
+  bottom: 0;
   left: 0;
 }
 

@@ -11362,8 +11362,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
                 appendDots: $(element),
                 arrows: true,
                 asNavFor: null,
-                prevArrow: '<button class="slick-prev" aria-label="Previous" type="button">Previous</button>',
-                nextArrow: '<button class="slick-next" aria-label="Next" type="button">Next</button>',
+                prevArrow: '<button class="slick-prev" aria-label="Previous" type="button">&larr; Назад</button>',
+                nextArrow: '<button class="slick-next" aria-label="Next" type="button">ДАЛІ</button>',
                 autoplay: false,
                 autoplaySpeed: 3000,
                 centerMode: false,
@@ -11395,7 +11395,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
                 slidesPerRow: 1,
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                speed: 500,
+                speed: 900,
                 swipe: true,
                 swipeToSlide: false,
                 touchMove: true,
@@ -14480,7 +14480,7 @@ svg4everybody__WEBPACK_IMPORTED_MODULE_1___default()();
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/inevix/projects/Support/src/js/vendor.js */"./src/js/vendor.js");
+module.exports = __webpack_require__(/*! E:\Support\src\js\vendor.js */"./src/js/vendor.js");
 
 
 /***/ })

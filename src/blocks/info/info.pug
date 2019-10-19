@@ -22,9 +22,11 @@ mixin info(data = {})
                     .row
                         .col-md-6
                         .col-md-6
-                            a(class="js-btn btn-next", data-current="first", data-next="second") ДАЛІ
+                            .info__btn_first
+                                a(class="js-btn btn-next", data-current="first", data-next="second") ДАЛІ
                 
                 .info__slide.info__slide_second.is-hidden(data-slide="second")
+                    img(src="./img/page3/name_man.png", class="info__slide_second_man", alt="")
                     .info__title=data.fillTitle
                     .row
                         .col-md-6
@@ -35,11 +37,12 @@ mixin info(data = {})
                                 input(type="text", id="middle_name", data-type="text", data-control="length", data-min="2", placeholder=data.middleName)
                                 p.info__descr.info__descr_fio=data.descr
                         .col-md-6
+                            img(src="../../img/page3/name_path.png", class="info__slide_second_path", alt="")
                     .row
                         .col-md-6
                             .info__btn_prev
                                 label(for="btn-previous", class="info__prev_arrow")!=data.arrow
-                                a(class="js-btn btn-prev", data-current="second", data-next="first") Назад
+                                a(class="js-btn btn-prev", id="btn-previous", data-current="second", data-next="first") Назад
                         .col-md-6
                             .info__btn.info__btn_next
                                 a(class="js-btn btn-next", data-action="check", data-current="second", data-next="third") ДАЛІ
@@ -49,6 +52,8 @@ mixin info(data = {})
 
                 .info__slide.info__slide_third.is-hidden(data-slide="third")
                     .info__title=data.fillTitle
+                    img(src="../../img/page4/3-layers.png", class="info__slide_third_path", alt="")
+                    img(src="../../img/page4/2-layers.png", class="info__slide_third_man", alt="")
                     p.info__passport=data.passport
                     .row
                         .col-md-6
@@ -60,20 +65,23 @@ mixin info(data = {})
                             input(type="name",  data-type="text", data-control="length", data-min="2", id="info__pasNumb", placeholder=data.passNumb)
                             p.info__descr=data.descr
                         .col-md-6
+                            
                     .row
                         .col-md-6
                             .info__btn_prev.info__btn_prev_third
                                 label(for="btn-previous", class="info__prev_arrow")!=data.arrow
                                 a(class="js-btn btn-prev", id="btn-previous", data-current="third", data-next="second") Назад
                         .col-md-6
-                            a(class="js-btn btn-next", data-action="check", data-current="third", data-next="fourth") ДАЛІ
-                            a(class="js-btn btn-next btn-next_skip", data-current="third", data-next="fourth") ПРОПУСТИТИ
+                            .info__btn.info__btn_next.info__btn_third
+                                a(class="js-btn btn-next", data-action="check", data-current="third", data-next="fourth") ДАЛІ
+                                a(class="js-btn btn-next btn-next_skip", data-current="third", data-next="fourth") ПРОПУСТИТИ
 
 
 
                     
                 .info__slide.info__slide_fourth.is-hidden(data-slide="fourth")
                     .info__title=data.fillTitle
+                    img(src="../../img/page5/man5.png", class="info__slide_fourth_man", alt="")
                     p.info__adress=data.adress
                     .row
                         .col-md-6
@@ -82,22 +90,24 @@ mixin info(data = {})
                                 input(type="name",  data-type="text", data-control="length", data-min="2", id="info__region", placeholder=data.region required)
                                 input(type="name",  data-type="text", data-control="length", data-min="2", id="info__locality", placeholder=data.locality required)
                                 input(type="name",  data-type="text", data-control="length", data-min="2", id="info__street", placeholder=data.street required)
-                                input(type="name",  data-type="text", data-control="length", data-min="2", id="info__houseNumb", placeholder=data.houseNumb required)
-                                input(type="name",  data-type="text", data-control="length", data-min="2", id="info__houseblock", placeholder=data.houseblock required)
+                                input(type="name",  data-type="text", data-control="length", data-min="1", id="info__houseNumb", placeholder=data.houseNumb required)
+                                input(type="name",  data-type="text", data-control="length", data-min="1", id="info__houseblock", placeholder=data.houseblock required)
                             p.info__descr=data.descr
                         .col-md-6
+                            img(src="../../img/page5/path5.png", class="info__slide_fourth_path", alt="")
                     .row
                         .col-md-6
                             .info__btn_prev.info__btn_fourth
                                 label(for="btn-previous", class="info__prev_arrow")!=data.arrow
                                 a(class="js-btn btn-prev", id="btn-previous", data-current="fourth", data-next="third") Назад
                         .col-md-6
-                            a(class="js-btn btn-next", data-action="check", data-current="fourth", data-next="fifth") ДАЛІ
+                            .info__btn_next_fourth
+                                a(class="js-btn btn-next", data-action="check", data-current="fourth", data-next="fifth") ДАЛІ
 
 
 
 
-                .info__slide.info__slide_fifth(data-slide="fifth")
+                .info__slide.info__slide_fifth.is-hidden(data-slide="fifth")
                     .info__contactTitle=data.contactTitle
                     .row
                         .col-md-6
@@ -106,14 +116,23 @@ mixin info(data = {})
                                 input(type="number",  data-type="phone", data-control="length", data-min="6", data-max="12", id="phone", placeholder=data.number, required)
                                 p.info__email=data.email
                                 input(type="email",  data-type="text", data-control="length", data-min="2", data-max="8", id="email", placeholder=data.examp required)
+                            img(src="../../img/page6/man6.png", class="info__man_fifth", alt="")
                         .col-md-6
-                            a(class="js-btn btn-next", data-action="check", data-current="fifth", data-next="sixth") ОТРИМАТИ
+                            img(src="../../img/page6/path6.png", class="info__path_fifth", alt="")
+                            .info__btn_next_fifth
+                                a(class="js-btn btn-next", data-action="check", data-current="fifth", data-next="sixth") ОТРИМАТИ
 
 
                 .info__slide.info__slide_sixth.is-hidden(data-slide="sixth")
+                    h1.info__payTitle=data.payTitle
                     .row
                         .col-md-6
-                        h1.info__payTitle=data.payTitle
-                        h2.js-label-type.info__pay-subtitle
+                            h2.js-label-type.info__pay-subtitle
                         .col-md-6
-                            a(class="js-btn btn-next", data-action="check", data-current="sixth", data-next="#") ОПЛАТИТИ
+                            img(src="../../img/page7/path7.png", class="info__path_sixth", alt="")    
+                    .row
+                        .col-md-6
+                        .col-md-6
+                            .info__btn_sixth
+                                a(class="js-btn btn-next", data-action="check", data-current="sixth", data-next="#") ОПЛАТИТИ
+                    img(src="../../img/page7/woman7.png", class="info__woman_sixth", alt="")

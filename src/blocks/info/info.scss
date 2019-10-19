@@ -1,21 +1,22 @@
 .info {
+    display: flex;
+    flex-direction: column;
+
     &__logo {
-        position: absolute;
-        margin-top: 33px;
-        margin-left: 33px;
-        margin-bottom: 30px;
+        position: relative;
+        margin: 25px 0 40px 35px;
     }
 
     &__pic_woman {
         position: relative;
-        top: 5px;
-        left: 250px;
+        top: 45px;
+        left: 225px;
     }
 
     &__path_two {
         position: relative;
-        left: 445px;
-        top: -115px;
+        left: 410px;
+        top: -110px;
     }
 
     &__radio {
@@ -58,12 +59,17 @@
         left: 500px;
     }
 
+    &__btn_first {
+        margin-top: -120px;
+        margin-left: 20px;
+    }
+
     &__fio {
         color: #010000;
         font-family: $font-family-sans-serif;
         font-size: 12px;
         font-weight: 900;
-        margin-left: 153px;
+        margin-left: 120px;
         margin-top: 62px;
         margin-bottom: 10px;
     }
@@ -71,7 +77,7 @@
     &__fio_fields {
         display: flex;
         flex-direction: column;
-        margin-left: 152px;
+        margin-left: 120px;
     }
 
     &__descr_fio {
@@ -85,12 +91,34 @@
     }
 
 
-    &__slide_third {
-        background-image: url("./img/page4/2-layers.png");
+    &__slide_second_man {
+        position: absolute;
+        left: 860px;
+    }
+
+    &__slide_second_path {
+        margin-left: -150px;
+        max-width: 700px;
+    }
+
+    &__slide_third_path {
+        position: absolute;
+        margin-top: -145px;
+        margin-left: 84px;
+    }
+
+    &__slide_third_man {
+        position: absolute;
+        margin-left: 854px;
+        margin-top: 60px;
+    }
+
+    &__btn_third {
+        margin-top: 90px;
     }
 
     &__passport {
-        margin-left: 153px;
+        margin-left: 120px;
         margin-top: 62px;
         font-weight: 900;
         color: #030000;
@@ -102,7 +130,7 @@
     &__idPass {
         margin-top: 15px;
         margin-bottom: 5px;
-        margin-left: 152px;
+        margin-left: 120px;
         font-weight: 900;
         color: #030000;
         font-family: $font-family-sans-serif;
@@ -111,13 +139,13 @@
     }
 
     &__upper {
-        margin-left: 152px;
+        margin-left: 120px;
         margin-top: 10px;
         display: flex;
     }
 
     #info__pasNumb {
-        margin-left: 150px;
+        margin-left: 120px;
     }
 
     #info__series {
@@ -138,7 +166,7 @@
     }
 
     #info__ssn {
-        margin-left: 150px;
+        margin-left: 120px;
     }
 
     #info__form {
@@ -157,31 +185,34 @@
         font-size: 12px;
         font-weight: 900;
         text-transform: uppercase;
-        margin-left: 152px;
+        margin-left: 120px;
+    }
+
+    &__slide_fourth_man {
+        position: absolute;
+        left: 850px;
+        top: 0;
+    }
+
+    &__slide_fourth_path {
+        margin-left: -155px;
+        margin-top: 40px;
+        max-width: 700px;
     }
 
     .location {
-        margin-left: 150px;
+        margin-left: 120px;
         margin-top: 5px;
     }
 
     &__btn_prev {
         display: flex;
-        margin-top: 122px;
-        margin-left: 175px;
-    }
-
-    &__prev_arrow {
-        margin-top: 10px;
+        margin-left: 130px;
     }
 
     #btn-previous {
         margin-top: 14px;
         margin-left: 0;
-    }
-
-    &__slide_fifth {
-        background-image: url("./img/page6/contactPage.png");
     }
 
     &__contactTitle {
@@ -219,8 +250,14 @@
         text-transform: lowercase;
     }
 
-    &__slide_sixth {
-        background-image: url("./img/page7/Path_2.png");
+    &__path_fifth {
+        position: absolute;
+        margin-left: -230px;
+        max-width: 710px;
+    }
+
+    &__man_fifth {
+        margin-top: 115px;
     }
 
     &__payTitle {
@@ -229,7 +266,7 @@
         font-family: $font-family-sans-serif;
         font-size: 22px;
         font-weight: 700;
-        padding-top: 140px;
+        padding-top: 160px;
         margin-left: 120px;
     }
 
@@ -242,47 +279,40 @@
         margin-left: 120px;
     }
 
-    .slick-next__first {
-        left: 200px;
-        top: -100px;
+    &__path_sixth {
+        position: absolute;
+        margin-left: -250px;
+        max-width: 710px;
+        margin-top: 40px;
     }
 
-    .slick-next_second {
-        top: 400px;
-        left: 200px;
+    &__woman_sixth {
+        position: absolute;
+        bottom: 0;
+        left: 102px;
     }
 
-    .slick-next_third {
-        top: 300px;
-        left: 200px;
-    }
-
-    .btn-pass_third {
-        left: 26px;
-        top: 365px;
+    &__btn_sixth {
+        margin-top: 400px;
+        margin-left: -70px;
     }
 
     &__btn_prev_third {
-        margin-top: 54px;
+        margin-top: 84px;
     }
 
-    .slick-next_fourth {
-        top: 360px;
-        left: 200px;
-    }
 
-    .info__btn_fourth {
+    &__btn_fourth {
         margin-top: 15px;
     }
 
-    .slick-next_fifth {
-        top: 340px;
-        left: 140px;
+    &__btn_next_fourth {
+        margin-top: 30px;
     }
 
-    .slick-next_sixth {
-        top: 400px;
-        left: 280px;
+    &__btn_next_fifth {
+        margin-top: 340px;
+        margin-left: -70px;
     }
 
 }

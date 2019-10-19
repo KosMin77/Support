@@ -1,11 +1,13 @@
 .last {
+    overflow: hidden;
+
     &__lastPageDescr {
-        width: 60%;
+        max-width: 600px;
         color: #000000;
         font-family: $font-family-sans-serif;
         font-size: 36px;
         line-height: 46px;
-        margin-top: 80px;
+        margin-top: 160px;
         margin-left: 100px;
     }
 
@@ -14,9 +16,8 @@
         font-family: $font-family-sans-serif;
         font-size: 36px;
         font-weight: 700;
-        margin-top: 80px;
-        margin-bottom: 200px;
-        margin-left: 100px;
+        margin-top: 65px;
+        margin-left: 105px;
     }
 
     &__advice {
@@ -28,7 +29,8 @@
     &__footer {
         position: relative;
         display: flex;
-        left: -100;
+        margin-left: -30px;
+        margin-top: 300px;
     }
 
     &__mail {
@@ -42,8 +44,8 @@
     }
 
     &__rocket {
-        position: absolute;
-        top: 228px;
+        position: fixed;
+        bottom: 0;
         left: 0;
     }
 }

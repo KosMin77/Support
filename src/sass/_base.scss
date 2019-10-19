@@ -237,6 +237,7 @@ input {
     outline: none;
     text-decoration: none;
     cursor: pointer;
+    left: 200px;
 }
 
 .btn-link {
@@ -274,4 +275,13 @@ input {
     position: absolute;
     top: 30px;
     left: 30px;
+}
+
+.info__prev_arrow {
+    margin-top: 13px;
+    margin-right: 10px;
+}
+
+.btn-next_skip {
+    margin-top: 15px;
 }

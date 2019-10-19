@@ -21,13 +21,13 @@
                 margin-left: 60px;
             }
 
-            &__man,
-            &__path,
-            &__plane,
-            &__build,
-            &__dot {
-                display: none;
-            }
+            // &__man,
+            // &__path,
+            // &__plane,
+            // &__build,
+            // &__dot {
+            //     // display: none;
+            // }
 
             &__price {
                 margin-left: 15px;
@@ -99,22 +99,21 @@
     }
 
     &__path {
-        margin-top: 120px;
-        margin-left: -80px;
-        width: 100%;
-        height: auto;
+        margin-top: 130px;
+        margin-left: -125px;
+        max-width: 420px;
     }
 
     &__build {
         position: absolute;
-        margin-left: 70px;
-        margin-top: -155px;
+        margin-left: 80px;
+        margin-top: -175px;
     }
 
     &__dot {
         position: absolute;
-        margin-left: 115px;
-        margin-top: -40px;
+        margin-left: 130px;
+        margin-top: -60px;
     }
 
     .btn__descr {
