@@ -201,8 +201,9 @@ function initBlock() {
     var btns = document.querySelectorAll('.js-btn');
     var classHidden = 'is-hidden';
     var classError = 'box-error';
-    var maskBefore = /[/!@#$%^&*/|_=`.~;":'a-zA-Zа-яА-Я]/;
-    var maskAfter = /[/!@#$%^&*+()/|_=`.~;":'a-zA-Zа-яА-Я]/;
+    var maskPhoneBefore = /[/!@#$%^&*/|_=`.~;":'a-zA-Zа-яА-Я]/;
+    var maskPhoneAfter = /[/!@#$%^&*+()/|_=`.~;":'a-zA-Zа-яА-Я]/;
+    var maskEmail = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
     Array.from(btns).forEach(function (btn) {
       btn.addEventListener('click', function () {
         var currentSlide = document.querySelector("[data-slide=\"".concat(btn.dataset.current, "\"]"));
@@ -271,7 +272,7 @@ function initBlock() {
               }
             } else if (type === 'phone') {
               if (control === 'length') {
-                thisValue.replace(maskAfter, '');
+                thisValue.replace(maskPhoneAfter, '');
 
                 if (thisValue.length >= minValuePhone && thisValue.length <= maxValuePhone) {
                   statusArray.push('true');
@@ -301,7 +302,7 @@ function initBlock() {
         var control = input.dataset.control;
 
         if (type === 'phone' && control === 'length') {
-          input.value = input.value.replace(maskBefore, '');
+          input.value = input.value.replace(maskPhoneBefore, '');
         }
       };
 
@@ -481,7 +482,7 @@ function scanImages() {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/inevix/projects/Support/src/js/main.js */"./src/js/main.js");
+module.exports = __webpack_require__(/*! E:\Support\src\js\main.js */"./src/js/main.js");
 
 
 /***/ })
