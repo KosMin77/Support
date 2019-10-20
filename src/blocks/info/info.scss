@@ -1,7 +1,4 @@
 .info {
-    display: flex;
-    flex-direction: column;
-
     &__logo {
         margin: 25px 0 40px 35px;
     }
@@ -87,7 +84,7 @@
     &__btn_next {
         display: flex;
         flex-direction: column;
-        margin-bottom: 30px;
+        margin-left: 20px;
     }
 
 
@@ -114,7 +111,7 @@
     }
 
     &__btn_third {
-        margin: 90px 0 30px 0;
+        margin: 82px 0 30px 20px;
 
     }
 
@@ -212,6 +209,7 @@
     &__btn_prev {
         display: flex;
         margin-left: 130px;
+        margin-top: 2px;
     }
 
     #btn-previous {

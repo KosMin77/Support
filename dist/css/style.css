@@ -7263,11 +7263,6 @@ a.text-dark:hover, a.text-dark:focus {
   margin-top: 3px;
 }
 
-.info {
-  display: flex;
-  flex-direction: column;
-}
-
 .info__logo {
   margin: 25px 0 40px 35px;
 }
@@ -7353,7 +7348,7 @@ a.text-dark:hover, a.text-dark:focus {
 .info__btn_next {
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-left: 20px;
 }
 
 .info__slide_second_man {
@@ -7379,7 +7374,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .info__btn_third {
-  margin: 90px 0 30px 0;
+  margin: 82px 0 30px 20px;
 }
 
 .info__passport {
@@ -7492,6 +7487,7 @@ a.text-dark:hover, a.text-dark:focus {
 .info__btn_prev {
   display: flex;
   margin-left: 130px;
+  margin-top: 2px;
 }
 
 .info #btn-previous {
@@ -7631,14 +7627,14 @@ a.text-dark:hover, a.text-dark:focus {
   overflow: hidden;
 }
 
-.last__lastPageDescr {
+.last__page_descr {
   max-width: 600px;
   color: #000000;
   font-family: "Helvetica", sans-serif;
   font-size: 36px;
   line-height: 46px;
-  margin-top: 160px;
-  margin-left: 100px;
+  margin-top: 0;
+  margin-left: 140px;
 }
 
 .last__wait {
@@ -7647,7 +7643,7 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 36px;
   font-weight: 700;
   margin-top: 65px;
-  margin-left: 105px;
+  margin-left: 140px;
 }
 
 .last__advice {
@@ -7660,7 +7656,7 @@ a.text-dark:hover, a.text-dark:focus {
   position: relative;
   display: flex;
   margin-left: -30px;
-  margin-top: 300px;
+  margin-top: 240px;
 }
 
 .last__mail {
@@ -7677,6 +7673,18 @@ a.text-dark:hover, a.text-dark:focus {
   position: fixed;
   bottom: 0;
   left: 0;
+  max-width: 400px;
+  height: auto;
+}
+
+.last__logo {
+  margin: 25px 0 40px 35px;
+}
+
+@media screen and (min-width: 1200px) {
+  .last__footer {
+    margin-top: 140px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

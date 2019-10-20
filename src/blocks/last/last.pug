@@ -6,10 +6,11 @@
 
 mixin last(data = {})
     .last&attributes(attributes)
+        p.last__logo=data.logo
         .row
             .col-md-4
             .col-md-8
-                p.last__lastPageDescr=data.subtitle
+                p.last__page_descr=data.subtitle
                 h1.last__wait=data.wait
                 .last__footer
                     p.last__advice=data.advice
