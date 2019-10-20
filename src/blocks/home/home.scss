@@ -4,30 +4,34 @@
 .home {
     @media screen and (max-width: 767px) {
         .home {
+
             &__title {
+                margin-top: 100px;
                 text-align: center;
-                margin-left: 0;
-                margin-top: 25px;
+                font-size: 28px;
             }
 
             &__subtitle {
-                font-size: 18px;
-                margin-left: 20px;
+                font-size: 14px;
                 text-align: center;
+                width: 300px;
+                line-height: 2em;
+                margin-left: 15px;
             }
 
-            &__btn {
-                margin-top: 0;
-                margin-left: 60px;
+            &__btn_descr {
+                margin-left: 65px;
+                outline: none;
+                border: none;
             }
 
-            // &__man,
-            // &__path,
-            // &__plane,
-            // &__build,
-            // &__dot {
-            //     // display: none;
-            // }
+            &__man,
+            &__path,
+            &__plane,
+            &__build,
+            &__dot {
+                display: none;
+            }
 
             &__price {
                 margin-left: 15px;
@@ -116,7 +120,7 @@
         margin-top: -60px;
     }
 
-    .btn__descr {
+    &__btn_descr {
         color: #ffffff;
         font-family: $font-family-sans-serif;
         font-size: 18px;

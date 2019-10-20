@@ -19,14 +19,14 @@ mixin home(data = {})
                         p.home__subtitle--secondLine=data.secondLine
                 .col-md-5.col-sm-12
                     .row
-                        .col-md-4
+                        .col-md-4.col-sm-12
                             img.home__plane(src="./img/Shape.png", alt="alt")
-                        .col-md-8
+                        .col-md-8.col-sm-12
                             img.home__path(src="./img/Path.png", alt="alt")
             .row
                 .col-md-7.col-sm-12
                     a.home__btn(href="./info.html")
-                        p.btn__descr=data.btn
+                        p.home__btn_descr=data.btn
                     p.home__price=data.price
                 .col-md-5.col-sm-12
                     .row

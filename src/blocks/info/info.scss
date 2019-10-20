@@ -247,7 +247,7 @@
 
     #phone,
     #email {
-        max-width: 236px;
+        width: 236px;
         height: 40px;
         margin-top: 5px;
         margin-left: 0;
@@ -319,4 +319,24 @@
         margin-left: -70px;
     }
 
+    @media screen and (max-width: 767px) {
+        &__slide {
+            max-width: 400px;
+            height: 400px;
+        }
+
+        &__title {
+            height: 24px;
+            color: $color-black;
+            font-family: $font-family-sans-serif;
+            font-size: 22px;
+            font-weight: 900;
+            padding-top: 160px;
+            margin-left: 0;
+        }
+
+        img {
+            display: none;
+        }
+    }
 }
