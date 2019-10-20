@@ -196,7 +196,7 @@ img {
 }
 
 .info__descr {
-  width: 251px;
+  max-width: 251px;
   height: 12px;
   color: #3a9acd;
   font-family: "Helvetica", sans-serif;
@@ -215,7 +215,7 @@ label {
 input {
   margin-bottom: 15px;
   padding-left: 10px;
-  width: 236px;
+  max-width: 236px;
   height: 40px;
   box-shadow: 0 0 6px rgba(224, 224, 224, 0.5);
   border-radius: 3px;
@@ -264,7 +264,7 @@ input {
 }
 
 .btn-next {
-  width: 171px;
+  max-width: 171px;
   height: 40px;
   position: relative;
   padding: 7px 59px 10px;
@@ -323,7 +323,7 @@ input {
 }
 
 .btn-next_skip {
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 /*!
@@ -7268,13 +7268,12 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .info__logo {
-  position: relative;
   margin: 25px 0 40px 35px;
 }
 
 .info__pic_woman {
   position: relative;
-  top: 45px;
+  top: 6px;
   left: 225px;
 }
 
@@ -7353,6 +7352,7 @@ a.text-dark:hover, a.text-dark:focus {
 .info__btn_next {
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
 }
 
 .info__slide_second_man {
@@ -7367,8 +7367,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .info__slide_third_path {
   position: absolute;
-  margin-top: -145px;
-  margin-left: 84px;
+  margin-top: -160px;
+  margin-left: 88px;
 }
 
 .info__slide_third_man {
@@ -7378,7 +7378,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .info__btn_third {
-  margin-top: 90px;
+  margin: 70px 0 30px 0;
 }
 
 .info__passport {
@@ -7410,10 +7410,11 @@ a.text-dark:hover, a.text-dark:focus {
 
 .info #info__pasNumb {
   margin-left: 120px;
+  width: 236px;
 }
 
 .info #info__series {
-  width: 70px;
+  max-width: 70px;
   height: 40px;
   margin-left: 0;
   text-transform: uppercase;
@@ -7440,13 +7441,14 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .info #info__numb {
-  width: 157px;
+  max-width: 157px;
   height: 40px;
   margin-left: 10px;
 }
 
 .info #info__ssn {
   margin-left: 120px;
+  width: 236px;
 }
 
 .info #info__form {
@@ -7482,7 +7484,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .info .location {
   margin-left: 120px;
-  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
 }
 
 .info__btn_prev {
@@ -7522,7 +7525,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .info #phone,
 .info #email {
-  width: 45%;
+  max-width: 236px;
   height: 40px;
   margin-top: 5px;
   margin-left: 0;
