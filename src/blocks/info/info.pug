@@ -115,7 +115,7 @@ mixin info(data = {})
                                 p.info__phone=data.phone
                                 input(type="number",  data-type="phone", data-control="length", data-min="6", data-max="12", id="phone", placeholder=data.number, required)
                                 p.info__email=data.email
-                                input(type="email",  data-type="text", data-control="length", data-min="2", data-max="8", id="email", placeholder=data.examp required)
+                                input(type="email",  data-type="text", data-control="length", data-min="2", id="email", placeholder=data.examp required)
                             img(src="./img/page6/man6.png", class="info__man_fifth", alt="")
                         .col-md-6
                             img(src="./img/page6/path6.png", class="info__path_fifth", alt="")
@@ -124,7 +124,7 @@ mixin info(data = {})
 
 
                 .info__slide.info__slide_sixth.is-hidden(data-slide="sixth")
-                    h1.info__payTitle=data.payTitle
+                    h1.info__pay-title=data.payTitle
                     .row
                         .col-md-6
                             h2.js-label-type.info__pay-subtitle
@@ -133,6 +133,6 @@ mixin info(data = {})
                     .row
                         .col-md-6
                         .col-md-6
-                            .info__btn_sixth
+                            .info__btn_next_sixth
                                 a(class="js-btn btn-next", data-action="check", data-current="sixth", data-next="#") ОПЛАТИТИ
                     img(src="./img/page7/woman7.png", class="info__woman_sixth", alt="")

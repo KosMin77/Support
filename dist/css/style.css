@@ -123,11 +123,10 @@ section {
 }
 
 body {
-  overflow: hidden;
   box-sizing: border-box;
   line-height: 1;
   width: 100%;
-  height: 100%;
+  height: auto;
   background-image: linear-gradient(-63deg, #c2e9fb 0%, #a1c4fd 100%);
 }
 
@@ -174,10 +173,9 @@ img {
   position: absolute;
   left: 0;
   right: 0;
-  margin: 0 auto;
+  margin: 70px auto;
   top: 50%;
   transform: translate(0, -50%);
-  display: block;
   background-position: center;
   max-width: 1126px;
   height: 711px;
@@ -288,8 +286,9 @@ input {
 .btn-next_skip {
   position: relative;
   padding-right: 10px;
-  padding-top: 5px;
+  padding-top: 7px;
   padding-left: 17px;
+  margin-top: 5px;
 }
 
 .slick-prev {
@@ -7275,7 +7274,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .info__pic_woman {
   position: relative;
-  top: 6px;
+  top: 46px;
   left: 225px;
 }
 
@@ -7380,7 +7379,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .info__btn_third {
-  margin: 70px 0 30px 0;
+  margin: 90px 0 30px 0;
 }
 
 .info__passport {
@@ -7544,7 +7543,7 @@ a.text-dark:hover, a.text-dark:focus {
   margin-top: 115px;
 }
 
-.info__payTitle {
+.info__pay-title {
   height: 24px;
   color: #000000;
   font-family: "Helvetica", sans-serif;
@@ -7554,7 +7553,7 @@ a.text-dark:hover, a.text-dark:focus {
   margin-left: 120px;
 }
 
-.info__paySubtitle {
+.info__pay-subtitle {
   height: 18px;
   color: #000000;
   font-family: "Helvetica", sans-serif;
@@ -7598,12 +7597,23 @@ a.text-dark:hover, a.text-dark:focus {
   margin-left: -70px;
 }
 
+.info__btn_next_sixth {
+  margin-top: 270px;
+  margin-left: -60px;
+}
+
 @media screen and (max-width: 767px) {
+  .info__logo {
+    z-index: 1;
+  }
   .info__slide {
+    margin-top: 30px;
+    margin-left: 15px;
     max-width: 400px;
-    height: 400px;
+    height: 600px;
   }
   .info__title {
+    text-align: center;
     height: 24px;
     color: #000;
     font-family: "Helvetica", sans-serif;
