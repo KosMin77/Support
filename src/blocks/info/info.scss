@@ -200,7 +200,7 @@
         max-width: 700px;
     }
 
-    .location {
+    &__location {
         margin-left: 120px;
         display: flex;
         flex-direction: column;
@@ -217,7 +217,7 @@
         margin-left: 0;
     }
 
-    &__contactTitle {
+    &__contact_title {
         height: 24px;
         color: #000000;
         font-family: $font-family-sans-serif;
@@ -323,15 +323,18 @@
     }
 
     @media screen and (max-width: 767px) {
+        height: auto;
+
         &__logo {
-            z-index: 1;
+            margin-top: 10px;
+            margin-bottom: 0;
         }
 
         &__slide {
-            margin-top: 30px;
-            margin-left: 15px;
-            max-width: 400px;
-            height: 600px;
+            overflow: hidden;
+            margin-top: 20px;
+            max-width: 320px;
+            height: 500px;
         }
 
         &__title {
@@ -339,14 +342,163 @@
             height: 24px;
             color: $color-black;
             font-family: $font-family-sans-serif;
-            font-size: 22px;
+            font-size: 20px;
             font-weight: 900;
-            padding-top: 160px;
+            padding-top: 60px;
             margin-left: 0;
+            margin-bottom: 150px;
         }
 
         img {
             display: none;
         }
+
+        input {
+            margin-top: -7px;
+        }
+
+        &__upperChoice,
+        &__lowerChoice {
+            text-align: center;
+            margin-left: 30px;
+            width: 300px;
+        }
+
+        .info__btn_first {
+            margin-top: 100px;
+            margin-left: -100px;
+        }
+
+        &__choice {
+            margin-left: -15px;
+            margin-top: -8px;
+            width: 250px;
+        }
+
+
+        &__fio {
+            display: none;
+        }
+
+        &__fio_fields {
+            margin-left: 45px;
+            margin-top: -70px;
+        }
+
+        &__btn_prev {
+            margin-left: 40px;
+            margin-top: 60px;
+            font-size: 12px;
+        }
+
+        &__prev_arrow {
+            margin-top: 14px;
+        }
+
+        &__btn_next {
+            margin-left: -40px;
+            margin-top: -20px;
+        }
+
+        .btn-next {
+            width: 120px;
+            height: 30px;
+            padding: 4px 40px;
+            font-size: 14px;
+        }
+
+        .btn-next_skip {
+            padding: 4px 8px;
+        }
+
+        &__passport {
+            margin-left: 45px;
+            margin-top: -50px;
+            margin-bottom: -5px;
+        }
+
+        &__descr,
+        &__upper,
+        &__idPass,
+        #info__ssn,
+        #info__pasNumb {
+            margin-left: 45px;
+        }
+
+        &__idPass {
+            margin-top: 5px;
+        }
+
+        &__btn_prev_third {
+            margin-top: 20px;
+            margin-left: 50px;
+        }
+
+        &__title_fourth {
+            margin-top: -30px;
+        }
+
+        .box-error {
+            top: 470px;
+        }
+
+        &__adress {
+            display: none;
+        }
+
+        &__location {
+            margin-left: 45px;
+            margin-top: -70px;
+        }
+
+        &__btn_fourth {
+            margin-top: 10px;
+        }
+
+        &__btn_next_fourth {
+            margin-top: -20px;
+            margin-left: -40px;
+        }
+
+        &__contact_title {
+            margin-left: 30px;
+            margin-top: -70px;
+            width: 300px;
+            font-size: 16px;
+        }
+
+        &__contact {
+            margin-top: -30px;
+            margin-left: 45px;
+        }
+
+        &__btn_next_fifth {
+            margin-left: -120px;
+            margin-top: 60px;
+        }
+
+        &__pay-title {
+            width: 300;
+            text-align: center;
+            margin-left: 10px;
+            margin-right: 15px;
+            margin-top: -90px;
+        }
+
+        &__btn_next_sixth {
+            margin-top: 160px;
+            margin-left: -110px;
+        }
+
+        &__pay-subtitle {
+            margin-top: 150px;
+            margin-left: 0;
+            text-align: center;
+        }
+
+        .btn_next_sixth {
+            padding: 15px 30px;
+        }
     }
+
 }

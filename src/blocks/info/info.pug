@@ -80,12 +80,12 @@ mixin info(data = {})
 
                     
                 .info__slide.info__slide_fourth.is-hidden(data-slide="fourth")
-                    .info__title=data.fillTitle
+                    .info__title.info__title_fourth=data.fillTitle
                     img(src="./img/page5/man5.png", class="info__slide_fourth_man", alt="")
                     p.info__adress=data.adress
                     .row
                         .col-md-6
-                            .location
+                            .info__location
                                 input(type="name",  data-type="text", data-control="length", data-min="2", id="info__city", placeholder=data.city required)
                                 input(type="name",  data-type="text", data-control="length", data-min="2", id="info__region", placeholder=data.region required)
                                 input(type="name",  data-type="text", data-control="length", data-min="2", id="info__locality", placeholder=data.locality required)
@@ -108,7 +108,7 @@ mixin info(data = {})
 
 
                 .info__slide.info__slide_fifth.is-hidden(data-slide="fifth")
-                    .info__contactTitle=data.contactTitle
+                    .info__contact_title=data.contactTitle
                     .row
                         .col-md-6
                             .info__contact
@@ -134,5 +134,5 @@ mixin info(data = {})
                         .col-md-6
                         .col-md-6
                             .info__btn_next_sixth
-                                a(class="js-btn btn-next", data-action="check", data-current="sixth", data-next="#") ОПЛАТИТИ
+                                a(class="js-btn btn_next_sixth btn-next", data-current="sixth", src="#") ОПЛАТИТИ
                     img(src="./img/page7/woman7.png", class="info__woman_sixth", alt="")
