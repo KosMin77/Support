@@ -71,9 +71,42 @@
     }
 
     &__fio_fields {
+        position: relative;
         display: flex;
         flex-direction: column;
         margin-left: 120px;
+    }
+
+    &__fio_name {
+        position: absolute;
+        top: 8px;
+        left: 10px;
+        z-index: -1;
+        transition: 0.3s;
+        color: #9e9e9e;
+    }
+
+    &__fio_last_name {
+        top: 62px;
+        position: absolute;
+        left: 10px;
+        z-index: -1;
+        transition: 0.3s;
+        color: #9e9e9e;
+    }
+
+    &__fio_middle_name {
+        position: absolute;
+        top: 118px;
+        left: 10px;
+        z-index: -1;
+        transition: 0.3s;
+        color: #9e9e9e;
+    }
+
+    &__fio_name:focus {
+        top: 54px;
+
     }
 
     &__descr_fio {

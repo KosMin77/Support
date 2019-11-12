@@ -9,6 +9,17 @@ mixin info(data = {})
         p.info__logo=data.logo
         .container
             form.info__mainForm(action="mailto:help.dovidka.in.ua@gmail.com", enctype="text/plain", method="post")
+                ul.js-dots.dots
+                    li.dot_first.is-active(data-dot="first")
+                        span="1"
+                    li.dot_second(data-dot="second")
+                        span="2"
+                    li.dot_third(data-dot="third")
+                        span="3"
+                    li.dot_fourth(data-dot="fourth")
+                        span="4"
+                    li.dot_fifth(data-dot="fifth")
+                        span="5"
                 .info__slide(data-slide="first")
                     .info__title=data.title
                     .info__upperChoice
@@ -32,9 +43,12 @@ mixin info(data = {})
                         .col-md-6
                             p.info__fio=data.fio
                             .info__fio_fields
-                                input(type="text", id="first_name", data-type="text", data-control="length", data-min="2", placeholder=data.name)
-                                input(type="text", id="last_name", data-type="text", data-control="length", data-min="2", placeholder=data.lastName)
-                                input(type="text", id="middle_name", data-type="text", data-control="length", data-min="2", placeholder=data.middleName)
+                                input(type="text", id="first_name", data-type="text", data-control="length", data-min="2", placeholder='')
+                                label.info__fio_name(for="first_name")=data.name
+                                input(type="text", id="last_name", data-type="text", data-control="length", data-min="2", placeholder='')
+                                label.info__fio_last_name(for="last_name")=data.lastName
+                                input(type="text", id="middle_name", data-type="text", data-control="length", data-min="2", placeholder='')
+                                label.info__fio_middle_name(for="middle_name")=data.middleName
                                 p.info__descr.info__descr_fio=data.descr
                         .col-md-6
                             img(src="./img/page3/name_path.png", class="info__slide_second_path", alt="")

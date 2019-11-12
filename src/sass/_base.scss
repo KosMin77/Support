@@ -117,7 +117,7 @@ body {
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-image: linear-gradient(-63deg, #c2e9fb 0%, #a1c4fd 100%);
+    background-image: url(../img/Rectangle@2x.png);
 }
 
 ol,
@@ -211,6 +211,7 @@ input {
     border-radius: 3px;
     border: 1px solid #cccccc;
     background-color: transparent;
+
 }
 
 ::placeholder {
@@ -279,4 +280,28 @@ input {
 .info__prev_arrow {
     margin-top: 13px;
     margin-right: 10px;
+}
+
+li {
+    border: 1px solid $color-black;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    margin-right: 14px;
+    z-index: 1;
+}
+
+span {
+    display: none;
+}
+
+.dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.is-active {
+    background-color: $color-black;
 }
